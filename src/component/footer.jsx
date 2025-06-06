@@ -65,7 +65,7 @@ function Footer_section() {
           </div>
         </div>
       </div>
-
+      {/* footer section */}
       <div className="bg-primary !p-40">
         <div className="gap-6 grid ">
           <div className="">
@@ -131,8 +131,14 @@ function Footer_section() {
                   className="w-full border-b-1 p-5  border-borderline"
                   placeholder="Your email"
                 ></input>
-                <div>
-                  <h3 className="text-white">subscribe</h3>
+                <div class="mt-6 inline-flex items-center group gap-2">
+                  <span class="block w-14 h-0.5 bg-white mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
+                  <a
+                    href="#"
+                    class="text-xs text-white tracking-widest font-semibold uppercase ml-2"
+                  >
+                    subscribe
+                  </a>
                 </div>
               </div>
             </div>
