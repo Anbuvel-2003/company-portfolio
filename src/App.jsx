@@ -4,6 +4,8 @@ import Footer_section from "./component/footer";
 import Header from "./component/Header";
 import Client_section from "./component/client";
 import News_section from "./component/News";
+import ReadOurNews from "./component/ReadOurNews";
+import WhoWeAre from "./component/WhoWeAre";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         {/* This adds spacing so content doesn't touch border */}
         {/* <Header /> */}
         {/* <FeaturesSection /> */}
+        {/* <WhoWeAre /> */}
+        <ReadOurNews/>
         <News_section />
         <Client_section />
         <div className="!m-10 border-l-2 !pl-5">
