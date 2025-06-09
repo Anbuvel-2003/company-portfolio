@@ -34,7 +34,8 @@ function App() {
         {/* This adds spacing so content doesn't touch border */}
         {/* <Header /> */}
         {/* <FeaturesSection /> */}
-        {/* <WhoWeAre /> */}
+        {/* <HeroSection/> */}
+        <WhoWeAre />
         <ReadOurNews/>
         <News_section />
         <Client_section />
