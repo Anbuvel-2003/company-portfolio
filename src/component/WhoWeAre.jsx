@@ -48,19 +48,21 @@ const WhoWeAre = () => {
     //   </div>
     // </section>
     <section>
-      <div className="inline-flex bg-white">
-        <div className="w-1/2 content-center justify-items-center">
-          <div className="w-1/2">
-            <div>
-              <h3 className="text-[#b3938a]">Who We Are</h3>
+      <div className="lg:inline-flex md:grid bg-white">
+        <div className="ld:w-1/2 md:w-[70vw] content-center justify-items-end">
+          <div className="lg:w-1/2  md:w-[60%] sm:w-[80%] w-[80%]">
+            <div className="!mb-3">
+              <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
+                Who We Are
+              </h3>
             </div>
-            <div>
-              <h3 className="text-black">
+            <div className="!mb-3">
+              <h3 className="text-black text-5xl font-medium tracking-wide">
                 Network <br /> Structure <br /> Design
               </h3>
             </div>
-            <div>
-              <p className="text-black">
+            <div className="sm-w-full">
+              <p className="text-black ">
                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
                 Phasellus sapien nulla ut metus varius laoreet. Quisque rutrum.
                 Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
@@ -68,7 +70,7 @@ const WhoWeAre = () => {
                 ante tincidunt tempus vitae
               </p>
             </div>
-            <div>
+            <div className="!mt-3">
               <p className="text-black">
                 Aliquam lorem ante, dapibus viverra quis feugiat a, tellus.
                 Phasellus nisi vel augue. nulla ut metus varius laoreet. Quisque
@@ -81,7 +83,7 @@ const WhoWeAre = () => {
           <img
             src={phoneImage}
             alt="Phone UI"
-          className="w-[100%] h-[90vh] object-contain" 
+            className="w-[100%] h-[80vh] object-contain"
           />
         </div>
       </div>

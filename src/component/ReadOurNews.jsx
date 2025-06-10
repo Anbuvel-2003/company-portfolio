@@ -14,13 +14,13 @@ const ReadNews = () => {
 
   return (
     <section className=" min-h-screen w-full flex items-center justify-center bg-white px-6 py-24 overflow-hidden font-sans">
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-40 items-center">
+      <div className=" lg:w-[65vw] w-[75vw] grid grid-cols-1 lg:grid-cols-2 gap-40 items-center">
         {/* Left Side - Image */}
         <div className="">
           <img
             src={activeImage}
             alt="Card and Phone"
-            className="shadow-xl w-full h-[80vh] object-cover transition-all duration-300"
+            className="shadow-xl w-full lg:h-[80vh] object-cover transition-all duration-300"
           />
         </div>
 
@@ -34,9 +34,7 @@ const ReadNews = () => {
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight relative text-black mb-6">
             Network <br />
             Infrastructure <br />
-            <span className="relative inline-block">
-              Design
-            </span>
+            <span className="relative inline-block">Design</span>
           </h2>
 
           {/* Gradient Link List */}

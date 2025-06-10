@@ -6,43 +6,42 @@ import Client_section from "./component/client";
 import News_section from "./component/News";
 import ReadOurNews from "./component/ReadOurNews";
 import WhoWeAre from "./component/WhoWeAre";
+import Intro from "./component/intro";
 
 function App() {
   return (
-    // <div className="border-l-1 border-[#5ca7ee] ">
-    //   {/* <Header /> */}
-    //   {/* <div className="content"> */}
-
-    //   {/* <FeaturesSection /> */}
-    //   {/* <News_section /> */}
-    //   <Client_section />
-    //   <div className="!m-20 border-l-2 !pl-5">
-    //     <h2 className="font-mono text-[14px] text-black capitalize">
-    //       meet <br /> our client
-    //     </h2>
-    //   </div>
-    //   <Footer_section />
-    //   {/* {/* </div> */}
-    // </div>
     <div className="relative">
-      {/* Left vertical line */}
       <div className="absolute left-10 top-0 h-full w-[1px] bg-[#5ca7ee]" />
-
-      {/* Main content */}
       <div className="pl-4">
-        {" "}
-        {/* This adds spacing so content doesn't touch border */}
-        {/* <Header /> */}
-        {/* <FeaturesSection /> */}
-        {/* <HeroSection/> */}
+        <div className="lg:h-screen inset-1 bg-gradient-to-bl  from-white via-white to-blue-100 top-1 right-1">
+          <div className="h-[90%]">
+            <Intro />
+          </div>
+          <div className="">
+            <div className="!ml-10 border-l-2 !pl-5 flex justify-between lg:w-[90vw] h-[5%]   ">
+              <h2 className="font-mono text-[14px] text-black capitalize">
+                Who <br /> We Are
+              </h2>
+              <div className="flex !gap-2">
+                <div className="cursor-pointer">
+                  <h3 className="text-black text-[14px] ">PREV</h3>
+                </div>
+                <span className="w-40 border-t-black border-t-1 !mt-3"></span>
+                <div className="cursor-pointer">
+                  <h3 className="text-black text-[14px] ">NEXT</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <WhoWeAre />
-        <div className="!m-10 border-l-2 !pl-5">
+        <div className="!ml-10 border-l-2 !pl-5">
           <h2 className="font-mono text-[14px] text-black capitalize">
             Who <br /> We Are
           </h2>
         </div>
         <ReadOurNews />
-        <div className="!m-10 border-l-2 !pl-5">
+        <div className="!ml-10 border-l-2 !pl-5">
           <h2 className="font-mono text-[14px] text-black capitalize">
             Read <br /> Our News
           </h2>

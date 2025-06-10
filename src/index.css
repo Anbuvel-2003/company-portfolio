@@ -10,3 +10,9 @@
   --color-borderline: #315361;
   --color-danger: #f06473;
 }
+@layer utilities {
+  .border-gradient-to-r {
+    border-image: linear-gradient(to right, var(--tw-gradient-stops));
+    border-image-slice: 1;
+  }
+}
