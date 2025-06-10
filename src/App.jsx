@@ -7,6 +7,7 @@ import News_section from "./component/News";
 import ReadOurNews from "./component/ReadOurNews";
 import WhoWeAre from "./component/WhoWeAre";
 import Intro from "./component/intro";
+import NavBar from "./component/NavBar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="absolute left-10 top-0 h-full w-[1px] bg-[#5ca7ee]" />
       <div className="pl-4">
         <div className="lg:h-screen inset-1 bg-gradient-to-bl  from-white via-white to-blue-100 top-1 right-1">
+          <NavBar/>
           <div className="h-[90%]">
             <Intro />
           </div>
