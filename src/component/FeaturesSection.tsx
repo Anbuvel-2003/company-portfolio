@@ -56,7 +56,7 @@ export default function FeaturesSection() {
                 <img src={feature.icon} alt={feature.title} className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-              <p className="text-gray-500 mb-6">{feature.description}</p>
+              <p className="text-gray-500 mb-6">{feature.description}</p>€
               <a
                 href="#"
                 className="inline-flex items-center text-blue-600 font-medium hover:underline"

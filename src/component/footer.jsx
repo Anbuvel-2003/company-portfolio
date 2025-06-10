@@ -3,8 +3,8 @@ import React from "react";
 function Footer_section() {
   return (
     <div className="">
-      <div className="md:h-[300px]  bg-red-200 sm:h-auto md:flex sm:grid">
-        <div className="md:w-1/2 sm:h-[300px] inline-flex bg-[#acd1f7] w-full h-[300px]">
+      <div className="md:h-[300px] lg:h-[50vh]   bg-red-200 sm:h-auto md:flex sm:grid">
+        <div className="md:w-1/2 sm:h-full inline-flex bg-gradient-to-r from-sky-200 to-purple-200 w-full h-full">
           <div className="w-full items-center justify-items-center content-center">
             <h4 className=" w-[300px] text-4xl text-black font-semibold">
               Join Our Team
@@ -34,7 +34,7 @@ function Footer_section() {
             </svg>
           </div>
         </div>
-        <div className="md:w-1/2 sm:h-[300px]  inline-flex bg-[#f3f3f3] w-full h-[300px]">
+        <div className="md:w-1/2 sm:h-full  inline-flex bg-[#f3f3f3] w-full h-full">
           <div className="w-full items-center justify-items-center content-center">
             <h4 className=" w-[300px] text-4xl text-black font-semibold">
               Our Newsletter

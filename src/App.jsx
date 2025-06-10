@@ -30,13 +30,23 @@ function App() {
 
       {/* Main content */}
       <div className="pl-4">
-        {" "} 
+        {" "}
         {/* This adds spacing so content doesn't touch border */}
         {/* <Header /> */}
         {/* <FeaturesSection /> */}
         {/* <HeroSection/> */}
         <WhoWeAre />
-        <ReadOurNews/>
+        <div className="!m-10 border-l-2 !pl-5">
+          <h2 className="font-mono text-[14px] text-black capitalize">
+            Who <br /> We Are
+          </h2>
+        </div>
+        <ReadOurNews />
+        <div className="!m-10 border-l-2 !pl-5">
+          <h2 className="font-mono text-[14px] text-black capitalize">
+            Read <br /> Our News
+          </h2>
+        </div>
         <News_section />
         <Client_section />
         <div className="!m-10 border-l-2 !pl-5">

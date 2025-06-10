@@ -14,19 +14,43 @@ function Client_section() {
   return (
     <>
       <div className="flex">
-        <div className="lg:w-1/10"></div>
-        <div className="lg:w-full grid md:grid-cols-3 sm:grid-cols-2 gap-2 items-center justify-center sm:!pl-10 p-6">
-          {[img10, img8, img9].map((imgSrc, idx) => (
-            <img
-              key={idx}
-              src={imgSrc}
-              alt={`client-${idx}`}
-              className="w-[700px] h-[600px] object-cover sm:object-fill"
-            />
+        <div className="lg:w-1/4 h-[95vh] "></div>
+        <div className="  grid md:grid-cols-3 sm:grid-cols-2  sm:!pl-10 p-6 ">
+          {[
+            { url: img10, text: "SmarTek" },
+            { url: img8, text: "Tablet" },
+            { url: img9, text: "Watches" },
+          ].map((imgSrc, idx) => (
+            // <div className="bg-[#efefef] hover:opacity-75 h-[80%] relative group">
+            //   <img
+            //     key={idx}
+            //     src={imgSrc?.url}
+            //     alt={`client-${idx}`}
+            //     className="w-full h-full object-contain sm:object-fill transition-transform duration-300 transform hover:scale-90 "
+            //   />
+            //   <div className="absolute bottom-6 left-6.5">
+            //     <h3 className="text-4xl text-black hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-sky-400 hover:from-indigo-500 hover:to-cyan-400 transition-all duration-300 cursor-pointer">
+            //       {imgSrc?.text}
+            //     </h3>
+            //   </div>
+            // </div>
+            <div className="bg-[#efefef] hover:opacity-75 h-[80%] relative group">
+              <img
+                key={idx}
+                src={imgSrc?.url}
+                alt={`client-${idx}`}
+                className="w-full h-full object-contain sm:object-fill transition-transform duration-300 transform group-hover:scale-90"
+              />
+              <div className="absolute bottom-6 left-6.5">
+                <h3 className="text-4xl text-black group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-sky-400 group-hover:from-indigo-500 group-hover:to-cyan-400 transition-all duration-300 cursor-pointer">
+                  {imgSrc?.text}
+                </h3>
+              </div>
+            </div>
           ))}
         </div>
       </div>
-      <div className="w-full lg:h-[450px] bg-white lg:flex md:grid">
+      <div className="w-full lg:h-[70vh] bg-white lg:flex md:grid">
         <div className="lg:w-1/2 bg-white h-full content-center !gap-2 grid lg:justify-center md:!pl-20 sm:!pl-15 !pl-20 ">
           <h4 className="text-[#949494] text-1xl uppercase">partners</h4>
           <h4 className="text-black text-5xl font-sans font-semibold ">

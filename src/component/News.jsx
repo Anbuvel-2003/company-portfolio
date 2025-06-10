@@ -8,12 +8,12 @@ function News_section() {
           <div class="text-[200px] text-purple-100 font-bold absolute -top-35 !-left-20 -z-10  md:left-0">
             01
           </div>
-          <h3 class="text-4xl font-semibold">
+          <h3 class="text-4xl font-semibold text-black">
             Manage <br />
             your data <br />
             efficiently
           </h3>
-          <p class="text-[#57b8e0] text-[18px] mt-4">
+          <p class="text-black text-[18px] mt-4">
             Lorem ipsum dolor sit amet ridiculus consectetuer adipiscing elit.
             Aenean commodo ligula eget dolor. Montes est massa. Cum sociis Theme
             natoq
@@ -22,7 +22,7 @@ function News_section() {
             <span class="block w-14 h-0.5 bg-[#57b8e0] mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
             <a
               href="#"
-              class="text-xs tracking-widest font-semibold uppercase ml-2"
+              class="text-xs tracking-widest font-semibold uppercase ml-2 text-black"
             >
               View More
             </a>
@@ -32,11 +32,11 @@ function News_section() {
           <div class="text-[200px] text-purple-100 font-bold absolute -top-35 !-left-20 -z-10  md:left-0">
             02
           </div>
-          <h3 class="text-4xl font-semibold">
+          <h3 class="text-4xl font-semibold text-black">
             Built with <br /> neat utility <br />
             features
           </h3>
-          <p class="text-[#57b8e0] text-[18px] mt-4">
+          <p class="text-black text-[18px] mt-4">
             Lorem ipsum dolor sit amet ridiculus consectetuer adipiscing elit.
             Aenean commodo ligula eget dolor. Montes est massa. Cum sociis Theme
             natoq
@@ -45,7 +45,7 @@ function News_section() {
             <span class="block w-14 h-0.5 bg-[#57b8e0] mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
             <a
               href="#"
-              class="text-xs tracking-widest font-semibold uppercase ml-2"
+              class="text-xs tracking-widest font-semibold uppercase ml-2 text-black"
             >
               View More
             </a>
@@ -55,10 +55,10 @@ function News_section() {
           <div class="text-[200px] text-purple-100 font-bold absolute -top-35 !-left-20 -z-10  md:left-0">
             03
           </div>
-          <h3 class="text-4xl font-semibold">
+          <h3 class="text-4xl font-semibold text-black">
             Futuristic <br /> interactive <br /> designs
           </h3>
-          <p class="text-[#57b8e0] text-[18px] mt-4">
+          <p class="text-black text-[18px] mt-4">
             Lorem ipsum dolor sit amet ridiculus consectetuer adipiscing elit.
             Aenean commodo ligula eget dolor. Montes est massa. Cum sociis Theme
             natoq
@@ -67,7 +67,7 @@ function News_section() {
             <span class="block w-14 h-0.5 bg-[#57b8e0] mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
             <a
               href="#"
-              class="text-xs tracking-widest font-semibold uppercase ml-2"
+              class="text-xs tracking-widest font-semibold uppercase ml-2 text-black"
             >
               View More
             </a>
