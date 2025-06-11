@@ -25,7 +25,7 @@ const ReadNews = () => {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:place-self-center">
           <span className="uppercase tracking-widest text-sm text-gray-500 mb-3">
             How It Works
           </span>

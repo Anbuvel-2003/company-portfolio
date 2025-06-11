@@ -3,7 +3,7 @@ import React from "react";
 function News_section() {
   return (
     <section class="py-20 px-6 md:px-16 !p-40 justify-items-center">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-20  md:text-left ">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-20 md:text-left ">
         <div class="relative">
           <div class="text-[200px] text-purple-100 font-bold absolute -top-35 !-left-20 -z-10  md:left-0">
             01

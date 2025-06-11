@@ -15,12 +15,12 @@ function App() {
       <div className="absolute left-10 top-0 h-full w-[1px] bg-[#5ca7ee]" />
       <div className="pl-4">
         <div className="lg:h-screen inset-1 bg-gradient-to-bl  from-white via-white to-blue-100 top-1 right-1">
-          <NavBar/>
           <div className="h-[90%]">
+            <NavBar />
             <Intro />
           </div>
           <div className="">
-            <div className="!ml-10 border-l-2 !pl-5 flex justify-between lg:w-[90vw] h-[5%]   ">
+            <div className="!ml-10 !mb-10 border-l-2 !pl-5 flex justify-between lg:w-[90vw] h-[5%]   ">
               <h2 className="font-mono text-[14px] text-black capitalize">
                 Who <br /> We Are
               </h2>
@@ -28,7 +28,7 @@ function App() {
                 <div className="cursor-pointer">
                   <h3 className="text-black text-[14px] ">PREV</h3>
                 </div>
-                <span className="w-40 border-t-black border-t-1 !mt-3"></span>
+                <span className="lg:w-40 md:w-30 sm:w-20 border-t-black border-t-1 !mt-3"></span>
                 <div className="cursor-pointer">
                   <h3 className="text-black text-[14px] ">NEXT</h3>
                 </div>

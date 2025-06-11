@@ -21,20 +21,19 @@ function Intro() {
   ];
   return (
     <section className="inset-3 bg-gradient-to-tr  via-white to-blue-100 w-full h-full">
-      <div></div>
       <div className="relative">
-        <div className=" absolute w-1/2 h-[70vh] content-center top-70 left-70 bg-transparent z-1">
+        <div className=" lg:absolute w-1/2 lg:h-[70vh] md:h-[70vh] h-[45vh] place-self-center content-center lg:top-70 lg:left-70 bg-transparent z-1">
           <div className="!gap-10">
-            <h5 className="text-[14px] uppercase text-[#a4a5a6]">
+            <h5 className="lg:text-[14px]  uppercase text-[#a4a5a6]">
               modern technologies
             </h5>
-            <h2 className="text-8xl capitalize text-black font-semibold">
+            <h2 className="lg:text-8xl md:text-6xl sm:text-4xl capitalize text-black font-semibold">
               new generation of
             </h2>
-            <h2 className="text-8xl capitalize text-black font-semibold">
+            <h2 className="lg:text-8xl md:text-6xl sm:text-4xl capitalize text-black font-semibold">
               technology and
             </h2>
-            <h2 className="text-8xl capitalize text-black font-semibold">
+            <h2 className="lg:text-8xl md:text-6xl sm:text-4xl capitalize text-black font-semibold">
               design
             </h2>
             <div className="flex !gap-5 !mt-10">
@@ -63,7 +62,7 @@ function Intro() {
             </div>
           </div>
         </div>
-        <div className="w-1\2 absolute right-40 top-20">
+        <div className="w-1/2 lg:absolute right-40 top-20 place-self-center  ">
           <img src={img2} alt={`client-`} className="" />
         </div>
       </div>

@@ -38,7 +38,7 @@ function Client_section() {
         </div>
       </div>
       <div className="w-full lg:h-[50vh] bg-white lg:flex md:grid sm:!mt-10 md:!mt-10 !mt-10">
-        <div className="lg:w-1/2 bg-white h-full content-center !gap-2 grid lg:justify-center md:!pl-20 sm:!pl-15 !pl-20 ">
+        <div className="lg:w-1/2 bg-white h-full sm:place-self-center content-center !gap-2 grid lg:justify-center md:!pl-20 sm:!pl-15 !pl-20 ">
           <h4 className="text-[#949494] text-1xl uppercase">partners</h4>
           <h4 className="text-black text-5xl font-sans font-semibold ">
             Trusted and <br /> Supported by <br /> Many
