@@ -31,7 +31,7 @@ const ReadNews = () => {
           </span>
 
           {/* Title with dot */}
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight relative text-black mb-6">
+          <h2 className="text-4xl sm:text-5xl font-syne leading-tight relative text-black mb-6">
             Network <br />
             Infrastructure <br />
             <span className="relative inline-block">Design</span>
@@ -40,10 +40,11 @@ const ReadNews = () => {
           {/* Gradient Link List */}
           <ul className="flex flex-col gap-6 !mt-10 border-gray-700 pl-6">
             {[
-              "Fast And Easy",
-              "Safe Online Service",
-              "Modern Look",
-              "Reliable Usage",
+              "Strategy-First Approach",
+              "Discovery & Ideation",
+              "Tech-Driven Execution",
+              "Agile Development Process",
+              "Future-Ready Design",
             ].map((text, i) => (
               <li
                 key={i}
@@ -53,7 +54,7 @@ const ReadNews = () => {
                 }
                 onMouseLeave={() => setActiveImage(cardImage)}
               >
-                <span className="absolute left-0 top-0 h-0 w-0.5 bg-black group-hover:h-full transition-all duration-400"></span>
+                <span className="absolute  left-0 top-0 h-0 w-0.5 bg-black group-hover:h-full transition-all duration-400"></span>
                 <span className="!ml-8 text-transparent bg-clip-text text-3xl bg-gradient-to-r from-purple-500 to-sky-400 hover:from-indigo-500 hover:to-cyan-400 transition-all duration-300 cursor-pointer">
                   {text}
                 </span>

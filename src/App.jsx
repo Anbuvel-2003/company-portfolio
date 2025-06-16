@@ -1,63 +1,103 @@
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import "./App.css";
 import Footer_section from "./component/footer";
-import Header from "./component/Header";
-import Client_section from "./component/client";
-import News_section from "./component/News";
-import ReadOurNews from "./component/ReadOurNews";
-import WhoWeAre from "./component/WhoWeAre";
-import Intro from "./component/intro";
 import NavBar from "./component/NavBar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+import LandingPage from "./pages/homePage/landingPage";
+import AppPresentation from "./pages/homePage/appPresentation";
+import DigitalServices from "./pages/homePage/digitalServices";
+import ProductShowcase from "./pages/homePage/productShowcase";
+import SoftwareSupport from "./pages/homePage/softwareSupport";
+import Techcompany from "./pages/homePage/techCompany";
+import Main from "./pages/homePage/main/main";
+import ItBusiness from "./pages/homePage/itBusiness";
+import AboutMe from "./pages/pages/aboutMe";
+import AboutUs from "./pages/pages/aboutUs";
+import ContactUs from "./pages/pages/contactUs";
+import Ourprocess from "./pages/pages/ourProcess";
+import OurTeam from "./pages/pages/ourTeam";
+import PricingPlan from "./pages/pages/pricingPlan";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  }, []);
+  const router = createBrowserRouter([
+    {
+      path: "/company-portfolio",
+      element: <Main />,
+    },
+    {
+      path: "company-portfolio/apppresentation",
+      element: <AppPresentation />,
+    },
+    {
+      path: "company-portfolio/digitalServices",
+      element: <DigitalServices />,
+    },
+    {
+      path: "company-portfolio/productShowcase",
+      element: <ProductShowcase />,
+    },
+    {
+      path: "company-portfolio/softwareSupport",
+      element: <SoftwareSupport />,
+    },
+    {
+      path: "company-portfolio/itBusiness",
+      element: <ItBusiness />,
+    },
+    {
+      path: "company-portfolio/techcompany",
+      element: <Techcompany />,
+    },
+    {
+      path: "company-portfolio/landing",
+      element: <LandingPage />,
+    },
+    {
+      path: "company-portfolio/aboutMe",
+      element: <AboutMe />,
+    },
+    {
+      path: "company-portfolio/aboutUs",
+      element: <AboutUs />,
+    },
+    {
+      path: "company-portfolio/contactUs",
+      element: <ContactUs />,
+    },
+    {
+      path: "company-portfolio/ourprocess",
+      element: <Ourprocess />,
+    },
+    {
+      path: "company-portfolio/ourTeam",
+      element: <OurTeam />,
+    },
+    {
+      path: "company-portfolio/pricingPlan",
+      element: <PricingPlan />,
+    },
+  ]);
   return (
-    <div className="relative">
-      <div className="absolute left-10 top-0 h-full w-[1px] bg-[#5ca7ee]" />
-      <div className="pl-4">
-        <div className="lg:h-screen inset-1 bg-gradient-to-bl  from-white via-white to-blue-100 top-1 right-1">
-          <div className="h-[90%]">
-            <NavBar />
-            <Intro />
-          </div>
-          <div className="">
-            <div className="!ml-10 !mb-10 border-l-2 !pl-5 flex justify-between lg:w-[90vw] h-[5%]   ">
-              <h2 className="font-mono text-[14px] text-black capitalize">
-                Who <br /> We Are
-              </h2>
-              <div className="flex !gap-2">
-                <div className="cursor-pointer">
-                  <h3 className="text-black text-[14px] ">PREV</h3>
-                </div>
-                <span className="lg:w-40 md:w-30 sm:w-20 border-t-black border-t-1 !mt-3"></span>
-                <div className="cursor-pointer">
-                  <h3 className="text-black text-[14px] ">NEXT</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <WhoWeAre />
-        <div className="!ml-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            Who <br /> We Are
-          </h2>
-        </div>
-        <ReadOurNews />
-        <div className="!ml-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            Read <br /> Our News
-          </h2>
-        </div>
-        <News_section />
-        <Client_section />
-        <div className="!m-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            meet <br /> our client
-          </h2>
-        </div>
-        <Footer_section />
-      </div>
-    </div>
+    <>
+      <NavBar />
+      <RouterProvider router={router} />
+      <Footer_section />
+    </>
   );
 }
 

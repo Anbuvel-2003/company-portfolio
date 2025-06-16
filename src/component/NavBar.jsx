@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Logo from "../assets/logo.png";
 
 // Dropdown component for better organization
 const DropdownMenu = ({ items, isOpen, isHorizontal }) => {
@@ -33,7 +34,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal }) => {
                   isHorizontal
                     ? "px-4 whitespace-nowrap"
                     : "block px-6 !py-3 mb-2"
-                } uppercase text-sm font-medium tracking-wide text-black hover:text-blue-500 transition-colors duration-200 text-center`}
+                } uppercase text-sm font-medium tracking-wide text-black hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-colors duration-200 text-center`}
               >
                 {item.title}
               </a>
@@ -44,7 +45,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal }) => {
                   <a
                     key={subIdx}
                     href={subItem.path}
-                    className="block px-6 !py-2 mb-2 text-sm text-black hover:text-blue-500 transition-colors duration-200 uppercase font-medium tracking-wide text-center"
+                    className="block px-6 !py-2 mb-2 text-sm text-black hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-colors duration-200 uppercase font-medium tracking-wide text-center"
                   >
                     {subItem.title}
                   </a>
@@ -116,30 +117,38 @@ const NavBar = () => {
       title: "Home",
       path: "/",
       dropdown: [
-        { title: "Main Home", path: "/home/main" },
-        { title: "App Presentation", path: "/home/app-presentation" },
-        { title: "Digital Services", path: "/home/digital-services" },
-        { title: "Product Showcase", path: "/home/product-showcase" },
-        { title: "Company Home", path: "/home/company" },
-        { title: "App Showcase", path: "/home/app-showcase" },
-        { title: "App Landing", path: "/home/app-landing" },
-        { title: "Software Support", path: "/home/software-support" },
-        { title: "Startup Home", path: "/home/startup" },
-        { title: "IT Business", path: "/home/it-business" },
-        { title: "Tech Company", path: "/home/tech-company" },
-        { title: "Landing", path: "/home/landing" },
+        { title: "Main Home", path: "/company-portfolio" },
+        {
+          title: "App Presentation",
+          path: "/company-portfolio/apppresentation",
+        },
+        {
+          title: "Digital Services",
+          path: "/company-portfolio/digitalServices",
+        },
+        {
+          title: "Product Showcase",
+          path: "/company-portfolio/productShowcase",
+        },
+        {
+          title: "Software Support",
+          path: "/company-portfolio/softwareSupport",
+        },
+        { title: "IT Business", path: "/company-portfolio/itBusiness" },
+        { title: "Tech Company", path: "/company-portfolio/techcompany" },
+        { title: "Landing", path: "/company-portfolio/landing" },
       ],
     },
     {
       title: "Pages",
-      path: "/pages",
+      path: "/",
       dropdown: [
-        { title: "About Us", path: "/pages/about-us" },
-        { title: "About Me", path: "/pages/about-me" },
-        { title: "Our Team", path: "/pages/our-team" },
-        { title: "Our Process", path: "/pages/our-process" },
-        { title: "Pricing Plans", path: "/pages/pricing-plans" },
-        { title: "Contact Us", path: "/pages/contact-us" },
+        { title: "About Us", path: "/company-portfolio/aboutUs" },
+        { title: "About Me", path: "/company-portfolio/aboutMe" },
+        { title: "Our Team", path: "/company-portfolio/ourTeam" },
+        { title: "Our Process", path: "/company-portfolio/ourprocess" },
+        { title: "Pricing Plans", path: "/company-portfolio/pricingPlan" },
+        { title: "Contact Us", path: "/company-portfolio/contactUs" },
       ],
     },
     {
@@ -262,7 +271,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-transparent backdrop-blur-sm ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-transparent ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -270,9 +279,14 @@ const NavBar = () => {
         <div className="flex  lg:justify-start justify-between w-[95vw]  items-center h-16">
           {/* Logo - moved significantly to the right */}
           <div className="flex-shrink-0 ml-32 pl-20 ">
-            <a href="/" className="text-xl font-bold text-black !ml-20">
+            {/* <a href="/" className="text-xl font-bold text-black !ml-20">
               DEON
-            </a>
+            </a> */}
+            <img
+              src={Logo}
+              alt={`client-`}
+              className="w-[8vw] h-[8vh] !ml-10 contain"
+            />
           </div>
 
           {/* Desktop Navigation - improved spacing */}
@@ -291,7 +305,8 @@ const NavBar = () => {
               >
                 <a
                   href={link.path}
-                  className="uppercase text-sm font-medium tracking-wide text-black hover:text-blue-500 relative group flex items-center"
+                  className="relative group flex items-center uppercase text-sm font-medium tracking-wide text-black 
+    hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-all duration-700 ease-in-out"
                 >
                   {link.title}
                   {link.dropdown && (

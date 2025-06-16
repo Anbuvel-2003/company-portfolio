@@ -14,7 +14,7 @@ function Client_section() {
   return (
     <>
       <div className="flex">
-        <div className="lg:w-1/4 lg:h-[95vh]   "></div>
+        <div className="lg:w-1/4 lg:h-[95vh]"></div>
         <div className="  grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  sm:!pl-15 !pl-15  ">
           {[
             { url: img10, text: "SmarTek" },
@@ -29,7 +29,10 @@ function Client_section() {
                 className="w-full h-full object-contain sm:object-fill transition-transform duration-300 transform group-hover:scale-90"
               />
               <div className="absolute bottom-6 left-6.5">
-                <h3 className="text-4xl text-black group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-sky-400 group-hover:from-indigo-500 group-hover:to-cyan-400 transition-all duration-300 cursor-pointer">
+                <h3
+                  className="text-4xl font-syne text-black group-hover:text-transparent bg-clip-text bg-gradient-to-r  from-purple-500 to-sky-400 group-hover:from-indigo-500 group-hover:to-cyan-400  cursor-pointer
+                "
+                >
                   {imgSrc?.text}
                 </h3>
               </div>
@@ -39,15 +42,29 @@ function Client_section() {
       </div>
       <div className="w-full lg:h-[50vh] bg-white lg:flex md:grid sm:!mt-10 md:!mt-10 !mt-10">
         <div className="lg:w-1/2 bg-white h-full sm:place-self-center content-center !gap-2 grid lg:justify-center md:!pl-20 sm:!pl-15 !pl-20 ">
-          <h4 className="text-[#949494] text-1xl uppercase">partners</h4>
-          <h4 className="text-black text-5xl font-sans font-semibold ">
+          <h4
+            className="text-[#949494] text-1xl uppercase"
+            data-aos="fade-up"
+            data-aos-duration="5000"
+          >
+            partners
+          </h4>
+          <h4
+            className="text-black text-5xl font-sans font-semibold "
+            data-aos="fade-up"
+            data-aos-duration="4000"
+          >
             Trusted and <br /> Supported by <br /> Many
           </h4>
-          <h4>
+          <h4 data-aos="fade-up" data-aos-duration="5000">
             Ut enim ad minim veniam, quis nostrud exercitation <br />{" "}
             ullamconisi ut aliquip ex
           </h4>
-          <div className=" border w-[130px] h-[40px] justify-items-center content-center hover:bg-blue-500">
+          <div
+            className=" border w-[130px] h-[40px] justify-items-center content-center hover:bg-blue-500"
+            data-aos="fade-up"
+            data-aos-duration="6000"
+          >
             <h2 className="uppercase text-black text-[16px] font-sans hover:text-white">
               View More
             </h2>

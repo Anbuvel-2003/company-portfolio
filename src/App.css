@@ -4,7 +4,24 @@
   padding: 0;
   text-align: left;
 }
-
+.wrapper {
+  cursor: url("/src/assets/custom-cursor.png"), auto;
+}
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #3c1111;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 1000ms, height 1000ms;
+}
+.cursor.large {
+  height: 70px;
+  width: 70px;
+}
 /* Header Styles */
 .header {
   width: 100%;
@@ -84,11 +101,11 @@
   transition: all 0.3s ease-in-out;
   border-radius: 0.5rem;
   margin: 0.25rem 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .dropdown-content a:hover {
-  background: linear-gradient(135deg, #FFA500, #FFEB99);
+  background: linear-gradient(135deg, #ffa500, #ffeb99);
   color: white;
   transform: scale(1.02);
 }
@@ -156,7 +173,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .sidebar-dropdown-header {
@@ -169,7 +186,7 @@
 }
 
 .sidebar-dropdown-header:hover {
-  background: linear-gradient(135deg, #FFA500, #FFEB99);
+  background: linear-gradient(135deg, #ffa500, #ffeb99);
   color: white;
   transform: scale(1.02);
 }
@@ -190,7 +207,7 @@
 }
 
 .sidebar-dropdown-content a:hover {
-  background: linear-gradient(135deg, #FFA500, #FFEB99);
+  background: linear-gradient(135deg, #ffa500, #ffeb99);
   color: white;
   transform: scale(1.02);
 }

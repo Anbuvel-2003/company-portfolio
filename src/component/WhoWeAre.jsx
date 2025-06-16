@@ -13,29 +13,35 @@ const WhoWeAre = () => {
               </h3>
             </div>
             <div className="!mb-3">
-              <h3 className="text-black text-5xl font-medium tracking-wide">
+              <h3 className="text-black text-5xl font-medium tracking-wide font-syne">
                 Network <br /> Structure <br /> Design
               </h3>
             </div>
             <div className="sm-w-full">
               <p className="text-black ">
-                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                Phasellus sapien nulla ut metus varius laoreet. Quisque rutrum.
-                Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                ullamcorper ultricies nisi. Nam eget dui. Maecenas nec odio et
-                ante tincidunt tempus vitae
+                Web, Android, and iOS app development are our areas of expertise
+                as a full-stack digital development business. We provide
+                complete mobile solutions for the Android and iOS platforms,
+                from conception to implementation. We have experience with both
+                web design and development, fusing strong functionality with
+                creative visuals to create quick, responsive, and captivating
+                online experiences.
               </p>
             </div>
             <div className="!mt-3">
               <p className="text-black">
-                Aliquam lorem ante, dapibus viverra quis feugiat a, tellus.
-                Phasellus nisi vel augue. nulla ut metus varius laoreet. Quisque
-                rutrum. Aenean imperdiet.
+                We develop growth-oriented solutions that increase user
+                engagement and brand value, propelled by a passion for
+                technological excellence and creative design. We create
+                user-friendly, high-performing products by utilizing
+                cutting-edge design principles and next-generation technologies.
+                Our primary goals are to maximize user experience and transform
+                your concepts into impressive digital reality
               </p>
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-items-end">
+        <div className="w-full flex justify-items-end" data-aos="fade-up">
           <img
             src={phoneImage}
             alt="Phone UI"

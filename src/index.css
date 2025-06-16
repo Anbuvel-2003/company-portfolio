@@ -1,11 +1,17 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: syne-;
+  src: url("./assets/fonts/Syne-Medium.ttf");
+}
 @theme {
+  --font-syne: syne-;
   --color-primary: #1b1b1b;
   --color-borderline: #315361;
   --color-danger: #f06473;
