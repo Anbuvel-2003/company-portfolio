@@ -285,7 +285,7 @@ const NavBar = () => {
             <img
               src={Logo}
               alt={`client-`}
-              className="w-[8vw] h-[8vh] !ml-10 contain"
+              className="lg:w-[8vw] lg:h-[8vh] md:w-[6vw] md:h-[6vh] sm:h-[4vh] sm:w-[vw] h-[4vh] w-[10vw] !ml-10 contain"
             />
           </div>
 
@@ -316,7 +316,6 @@ const NavBar = () => {
                   )}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                 </a>
-
                 {/* Dropdown Menu */}
                 {link.dropdown && (
                   <DropdownMenu
