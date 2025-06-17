@@ -1,17 +1,23 @@
 import React from "react";
+import Logo from "../assets/logo.png";
 
 function Footer_section() {
   return (
     <div className="">
       {/* footer section */}
-      <div className="bg-primary !p-40">
+      <div className="bg-primary lg:!p-40 md:!p-40 !p-20">
         <div className="gap-6 grid ">
           <div className="">
-            <h3 className="text-5xl text-white">Deon</h3>
+            <h3 className="text-5xl text-white font-syne">VineAtZ</h3>
+            {/* <img
+              src={Logo}
+              alt={`client-`}
+              className="lg:w-[8vw] lg:h-[8vh] md:w-[6vw] md:h-[6vh] sm:h-[4vh] sm:w-[vw] h-[4vh] w-[10vw] !ml-10 contain"
+            /> */}
           </div>
-          <div className="lg:inline-flex md:grid  bg-primary ">
-            <div className="gap-2 sm:grid md:flex md:w-full lg: w-1/2">
-              <div className="grid lg:w-1/4 md:w-1/3 sm:w-full  items-center justify-items-start">
+          <div className="lg:inline-flex md:grid sm:w-full bg-primary">
+            <div className="gap-2 sm:grid w-[100%] md:flex md:w-full">
+              <div className="grid lg:w-1/4 md:w-1/3 sm:w-full !gap-5  items-center justify-items-start">
                 <a href="/footer1" className="text-white">
                   A: Seestrasse 21
                 </a>
@@ -25,7 +31,7 @@ function Footer_section() {
                   T: 99 8 76 54 321
                 </a>
               </div>
-              <div className="grid gap-2 lg:w-1/6 md:w-1/3 sm-w-full justify-items-start">
+              <div className="!mt-5 lg:!mt-0 md:!mt-0 grid lg:!gap-2  md:!gap-2 !gap-5 lg:w-1/6 md:w-1/3 sm-w-full justify-items-start">
                 <a href="/footer1" className="text-white uppercase">
                   Main Home
                 </a>
@@ -42,7 +48,7 @@ function Footer_section() {
                   Landing
                 </a>
               </div>
-              <div className="grid gap-2 lg:w-1/3 md:w-1/3 justify-items-start">
+              <div className="grid lg:!gap-2 md:!gap-2 !mt-5 md:!mt-0 lg:!mt-0 !gap-5 lg:w-1/3 md:w-1/3 justify-items-start">
                 <a href="/footer1" className="text-white uppercase">
                   About Us
                 </a>
@@ -60,7 +66,7 @@ function Footer_section() {
                 </a>
               </div>
             </div>
-            <div className="w-1/2 sm:!pt-19 sm:w-full ">
+            <div className="lg:w-1/2 md:w-1/ w-[90%] sm:!pt-19 sm:w-full !mt-5 md:!mt-0 lg:!mt-0">
               <div className="grid gap-5">
                 <h3 className="text-white text-3xl">Our Newsletter</h3>
                 <input
@@ -84,7 +90,7 @@ function Footer_section() {
           </div>
         </div>
       </div>
-      <div className="bg-primary !pl-40 !pb-20 sm:!pb-10 ">
+      <div className="lg:!pl-40 !pl-20 md:!pl-40 !pt-5 lg:!pb-20 md:!pb-20 !pb-10 sm:!pb-10 bg-primary">
         <h4 className="text-[#6e6e6e] ">
           © 2022 <a href="/">Qode Interactive</a>, All Rights Reserved
         </h4>

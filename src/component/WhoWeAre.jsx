@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           <img
             src={phoneImage}
             alt="Phone UI"
-            className="w-[100%] lg:h-[80vh] md:h-[60vh] sm:h-[40vh] object-contain"
+            className="w-[90%] lg:h-[80vh] md:h-[60vh] sm:h-[40vh] object-contain"
           />
         </div>
       </div>

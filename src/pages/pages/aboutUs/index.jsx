@@ -172,7 +172,7 @@ function AboutUs() {
               Trusted <br />
               and Supported <br /> by Many
             </h3>
-            <div className="lg:flex grid md:flex !gap-3 !mt-3  lg:!gap-10 md:!gap-10 border-b-1 border-[#57b8e0] w-[50%] !mb-4">
+            <div className="lg:flex grid md:flex !gap-3 !mt-3  lg:!gap-10 md:!gap-10 border-b-1 border-[#57b8e0] lg:w-[100%] md:w-[70%] w-[50%] !mb-4">
               {data?.map((item, index) => {
                 const isselected = item?.id == selecteditem?.id;
                 return (
@@ -193,7 +193,7 @@ function AboutUs() {
               })}
             </div>
             <div className="">
-              <p className="text-[20px] text-black !mb-4 font-sans ld:w-1/2 md:w-1/2 w-[90vw]">
+              <p className="text-[20px] text-black !mb-4 font-sans lg:w-[90%] md:w-[70%] w-[80vw]">
                 {selecteditem?.paragraph}
               </p>
               <ul>
