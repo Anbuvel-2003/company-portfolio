@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../App.css';
+import React, { useState } from "react";
+import "../App.css";
 
 const Header: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -14,10 +14,12 @@ const Header: React.FC = () => {
         <div className="brand">
           <h1>DEON</h1>
         </div>
-        
+
         <div className="nav-links">
           <div className="dropdown">
-            <a href="/" className="dropdown-trigger">Home</a>
+            <a href="/" className="dropdown-trigger">
+              Home
+            </a>
             <div className="dropdown-content">
               <a href="/main-home">Main Home</a>
               <a href="/app-presentation">App Presentation</a>
@@ -34,7 +36,9 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="dropdown">
-            <a href="/pages" className="dropdown-trigger">Pages</a>
+            <a href="/pages" className="dropdown-trigger">
+              Pages
+            </a>
             <div className="dropdown-content">
               <a href="/about-us">About Us</a>
               <a href="/about-me">About Me</a>
@@ -44,8 +48,11 @@ const Header: React.FC = () => {
               <a href="/contact-us">Contact Us</a>
             </div>
           </div>
+          <a href="/Services">Services</a>
           <a href="/portfolio">Portfolio</a>
-          <a href="/shop">Shop</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="/About us">Shop</a>
+          <a href="/carrers">Shop</a>
           <a href="/blog">Blog</a>
         </div>
 
@@ -55,11 +62,15 @@ const Header: React.FC = () => {
       </nav>
 
       {/* Sidebar that slides from right to left */}
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <button className="close-sidebar" onClick={toggleSidebar}>×</button>
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+        <button className="close-sidebar" onClick={toggleSidebar}>
+          ×
+        </button>
         <div className="sidebar-content">
           <div className="sidebar-dropdown">
-            <a href="/" className="sidebar-dropdown-header">Home</a>
+            <a href="/" className="sidebar-dropdown-header">
+              Home
+            </a>
             <div className="sidebar-dropdown-content">
               <a href="/main-home">Main Home</a>
               <a href="/app-presentation">App Presentation</a>
@@ -76,7 +87,9 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="sidebar-dropdown">
-            <a href="/pages" className="sidebar-dropdown-header">Pages</a>
+            <a href="/pages" className="sidebar-dropdown-header">
+              Pages
+            </a>
             <div className="sidebar-dropdown-content">
               <a href="/about-us">About Us</a>
               <a href="/about-me">About Me</a>

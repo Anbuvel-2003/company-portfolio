@@ -5,7 +5,7 @@ function Meetourclient() {
         <div className="md:w-1/2 sm:h-full inline-flex bg-gradient-to-r from-sky-200 to-purple-200 w-full h-[30vh]">
           <div className="w-full items-center justify-items-center content-center">
             <h4 className=" w-[300px] text-4xl text-black font-semibold">
-              Join Our Team
+              Our Team
             </h4>
             <p className="w-[300px] text-left">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem

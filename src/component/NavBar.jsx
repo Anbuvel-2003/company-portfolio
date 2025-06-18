@@ -1,59 +1,143 @@
 import React, { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo.png";
+import { CiMobile3, CiSettings } from "react-icons/ci";
+import { LuBrainCircuit, LuCloudCog, LuMonitorCog } from "react-icons/lu";
+import { FaPencilRuler } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { TbBrandSpeedtest } from "react-icons/tb";
 
 // Dropdown component for better organization
-const DropdownMenu = ({ items, isOpen, isHorizontal }) => {
+const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
   return (
     <div
-      className={`absolute top-full top:full left-1/2 transform -translate-x-1/2 ${
-        isHorizontal ? "w-auto min-w-[1000px]" : "w-80"
-      } mt-6 !py-6 bg-white backdrop-blur-sm shadow-lg rounded-md z-50 transition-all duration-300 ease-in-out ${
-        isOpen
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 -translate-y-2 pointer-events-none"
-      }`}
+      className={`absolute top-full left-1/2 !w-[50vw] !h-[40vh] transform -translate-x-1/2
+      mt-6 !py-6 bg-white flex backdrop-blur-sm shadow-lg rounded-md z-50 transition-all duration-300 ease-in-out
+       ${
+         isOpen
+           ? "opacity-100 translate-y-0"
+           : "opacity-0 -translate-y-2 pointer-events-none"
+       }
+      `}
     >
       <div
         className={`${
-          isHorizontal
-            ? "flex justify-between px-12"
-            : "flex flex-col items-center"
+          isHorizontal ? "flex flex-wrap justify-between !px-12" : ""
         }`}
       >
-        {items.map((item, idx) => (
-          <div
-            key={idx}
-            className={`relative ${
-              isHorizontal ? "flex flex-col items-center w-1/4" : ""
-            }`}
-          >
-            <div className="text-center w-full">
-              <a
-                href={item.path}
-                className={`${
-                  isHorizontal
-                    ? "px-4 whitespace-nowrap"
-                    : "block px-6 !py-3 mb-2"
-                } uppercase text-sm font-medium tracking-wide text-black hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-colors duration-200 text-center`}
-              >
-                {item.title}
-              </a>
-            </div>
-            {item.subItems && (
-              <div className="mt-6 flex flex-col items-center bg-transparent backdrop-blur-sm rounded-md !py-4">
-                {item.subItems.map((subItem, subIdx) => (
-                  <a
-                    key={subIdx}
-                    href={subItem.path}
-                    className="block px-6 !py-2 mb-2 text-sm text-black hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-colors duration-200 uppercase font-medium tracking-wide text-center"
-                  >
-                    {subItem.title}
-                  </a>
-                ))}
+        {items.map((item, idx) => {
+          return (
+            <div
+              key={idx}
+              className={`relative ${
+                isHorizontal
+                  ? "flex flex-col items-start w-1/2"
+                  : "flex flex-wrap"
+              }`}
+            >
+              <div className="bg-white !px-2 !py-2  rounded-lg hover:shadow-[0_0_6px_2px_rgba(99,102,241,0.7)] transition-all duration-300 group ">
+                <div className="flex justify-center items-center !gap-2">
+                  {item?.id == 1 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <CiSettings size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : item?.id == 2 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <LuCloudCog size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : item?.id == 3 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <CiMobile3 size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : item?.id == 4 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <LuMonitorCog size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : item?.id == 5 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <AiOutlineShoppingCart
+                        size={30}
+                        style={{ color: "white" }}
+                      />
+                    </div>
+                  ) : item?.id == 6 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <FaPencilRuler size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : item?.id == 7 ? (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <LuBrainCircuit size={30} style={{ color: "white" }} />
+                    </div>
+                  ) : (
+                    <div
+                      className={`flex justify-center items-center transition-all duration-300 
+                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       !p-3 rounded-full`}
+                    >
+                      <TbBrandSpeedtest size={30} style={{ color: "white" }} />
+                    </div>
+                  )}
+
+                  <div>
+                    <a
+                      href={item.path}
+                      className={`${
+                        isHorizontal
+                          ? "px-4 whitespace-nowrap"
+                          : "block px-6 !py-3 mb-2"
+                      } uppercase text-[14 px] font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
+                    >
+                      {item.title}
+                    </a>
+                    <p className="text-[12px] text-black font-syne">
+                      {item?.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            )}
-          </div>
-        ))}
+              {/* {item.subItems && (
+                <div className="mt-6 flex flex-col items-center bg-transparent backdrop-blur-sm rounded-md !py-4">
+                  {item.subItems.map((subItem, subIdx) => (
+                    <a
+                      key={subIdx}
+                      href={subItem.path}
+                      className="block px-6 !py-2 mb-2 text-sm text-black hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-colors duration-200 uppercase font-medium tracking-wide text-center"
+                    >
+                      {subItem.title}
+                    </a>
+                  ))}
+                </div>
+              )} */}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -116,153 +200,69 @@ const NavBar = () => {
     {
       title: "Home",
       path: "/",
-      dropdown: [
-        { title: "Main Home", path: "/company-portfolio" },
-        {
-          title: "App Presentation",
-          path: "/company-portfolio/apppresentation",
-        },
-        {
-          title: "Digital Services",
-          path: "/company-portfolio/digitalServices",
-        },
-        {
-          title: "Product Showcase",
-          path: "/company-portfolio/productShowcase",
-        },
-        {
-          title: "Software Support",
-          path: "/company-portfolio/softwareSupport",
-        },
-        { title: "IT Business", path: "/company-portfolio/itBusiness" },
-        { title: "Tech Company", path: "/company-portfolio/techcompany" },
-        { title: "Landing", path: "/company-portfolio/landing" },
-      ],
     },
     {
-      title: "Pages",
+      title: "Services",
       path: "/",
       dropdown: [
-        { title: "About Us", path: "/company-portfolio/aboutUs" },
-        { title: "About Me", path: "/company-portfolio/aboutMe" },
-        { title: "Our Team", path: "/company-portfolio/ourTeam" },
-        { title: "Our Process", path: "/company-portfolio/ourprocess" },
-        { title: "Pricing Plans", path: "/company-portfolio/pricingPlan" },
-        { title: "Contact Us", path: "/company-portfolio/contactUs" },
+        {
+          id: 1,
+          title: "Custom Software Development",
+          path: "/company-portfolio/aboutUs",
+          description:
+            "Get end-to-end bespoke solutions for your business needs",
+        },
+        {
+          id: 2,
+          title: "Saas app development",
+          path: "/company-portfolio/ourTeam",
+          description: "Build reliable Software-as-a-service applications",
+        },
+        {
+          id: 3,
+          title: "Mobile app development",
+          path: "/company-portfolio/aboutMe",
+          description:
+            "Build ios and Android apps using native and cross platform",
+        },
+        {
+          id: 4,
+          title: "Web app development",
+          path: "/company-portfolio/aboutMe",
+          description: "Develope web apps with frontend, backend or full-stack",
+        },
+        {
+          id: 5,
+          title: "E-Commerce app development",
+          path: "/company-portfolio/ourprocess",
+          description: "Driving online sales with powerful eCommerce solution",
+        },
+        {
+          id: 6,
+          title: "UI and UX Design",
+          path: "/company-portfolio/ourprocess",
+          description:
+            "Design intuitive and visually appealing user interfaces",
+        },
+        {
+          id: 7,
+          title: "Digital marketing",
+          path: "/company-portfolio/pricingPlan",
+          description: "Accelerate your digital marketing with us",
+        },
+        {
+          id: 8,
+          title: "Testing Services",
+          path: "/company-portfolio/contactUs",
+          description:
+            "Ensuring seamless user experience across all devices and platforms",
+        },
       ],
+      isHorizontal: true,
     },
     {
       title: "Portfolio",
       path: "/portfolio",
-      dropdown: [
-        {
-          title: "List\u00A0Types",
-          path: "/portfolio/list-types",
-          subItems: [
-            { title: "Standard", path: "/portfolio/list-types/standard" },
-            { title: "Gallery", path: "/portfolio/list-types/gallery" },
-            {
-              title: "Gallery Joined",
-              path: "/portfolio/list-types/gallery-joined",
-            },
-            { title: "Masonry", path: "/portfolio/list-types/masonry" },
-            {
-              title: "Masonry Joined",
-              path: "/portfolio/list-types/masonry-joined",
-            },
-            {
-              title: "3 Image Slider",
-              path: "/portfolio/list-types/3-image-slider",
-            },
-            {
-              title: "Draggable Slider",
-              path: "/portfolio/list-types/draggable-slider",
-            },
-          ],
-        },
-        {
-          title: "Layout\u00A0Types",
-          path: "/portfolio/layout-types",
-          subItems: [
-            {
-              title: "Two Columns",
-              path: "/portfolio/layout-types/two-columns",
-            },
-            {
-              title: "Three Columns",
-              path: "/portfolio/layout-types/three-columns",
-            },
-            {
-              title: "Three Columns Wide",
-              path: "/portfolio/layout-types/three-columns-wide",
-            },
-            {
-              title: "Four Columns",
-              path: "/portfolio/layout-types/four-columns",
-            },
-            {
-              title: "Four Columns Wide",
-              path: "/portfolio/layout-types/four-columns-wide",
-            },
-            {
-              title: "Five Columns Wide",
-              path: "/portfolio/layout-types/five-columns-wide",
-            },
-            {
-              title: "Six Columns Wide",
-              path: "/portfolio/layout-types/six-columns-wide",
-            },
-          ],
-        },
-        {
-          title: "Single\u00A0Types",
-          path: "/portfolio/single-types",
-          subItems: [
-            {
-              title: "Small Images",
-              path: "/portfolio/single-types/small-images",
-            },
-            { title: "Big Images", path: "/portfolio/single-types/big-images" },
-            {
-              title: "Small Gallery",
-              path: "/portfolio/single-types/small-gallery",
-            },
-            {
-              title: "Big Gallery",
-              path: "/portfolio/single-types/big-gallery",
-            },
-            {
-              title: "Small Slider",
-              path: "/portfolio/single-types/small-slider",
-            },
-            { title: "Big Slider", path: "/portfolio/single-types/big-slider" },
-            {
-              title: "Small Masonry",
-              path: "/portfolio/single-types/small-masonry",
-            },
-            {
-              title: "Big Masonry",
-              path: "/portfolio/single-types/big-masonry",
-            },
-          ],
-        },
-        {
-          title: "Hover\u00A0Types",
-          path: "/portfolio/hover-types",
-          subItems: [
-            { title: "Fade In", path: "/portfolio/hover-types/fade-in" },
-            {
-              title: "Info On Hover",
-              path: "/portfolio/hover-types/info-on-hover",
-            },
-            {
-              title: "Zoom On Hover",
-              path: "/portfolio/hover-types/zoom-on-hover",
-            },
-          ],
-        },
-      ],
-      isHorizontal: true,
     },
     { title: "Blog", path: "/blog" },
     { title: "Shop", path: "/shop" },
@@ -291,7 +291,7 @@ const NavBar = () => {
 
           {/* Desktop Navigation - improved spacing */}
           <div
-            className="hidden md:flex items-center justify-end gap-20 flex-1 pr-8"
+            className="hidden lg:flex items-center justify-end gap-20 flex-1 pr-8"
             ref={dropdownRef}
           >
             {navLinks.map((link, index) => (
@@ -329,7 +329,7 @@ const NavBar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-black"
@@ -355,7 +355,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white rounded-b-lg shadow-lg">
+        <div className="lg:hidden bg-white rounded-b-lg shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navLinks.map((link, index) => (
               <div key={index}>
