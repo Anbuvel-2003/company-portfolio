@@ -4,7 +4,7 @@ function Meetourclient() {
       <div className="md:h-[300px] lg:h-[50vh] sm:h-[60vh] h-[50%] bg-red-200  md:flex sm:grid">
         <div className="md:w-1/2 sm:h-full inline-flex bg-gradient-to-r from-sky-200 to-purple-200 w-full h-[30vh]">
           <div className="w-full items-center justify-items-center content-center">
-            <h4 className=" w-[300px] text-4xl text-black font-semibold">
+            <h4 className=" w-[300px] lg:text-3xl md:text-3xl text-2xl  text-black font-syne">
               Our Team
             </h4>
             <p className="w-[300px] text-left">
@@ -34,7 +34,7 @@ function Meetourclient() {
         </div>
         <div className="md:w-1/2 sm:h-full  inline-flex bg-[#f3f3f3] w-full h-[30vh]">
           <div className="w-full items-center justify-items-center content-center">
-            <h4 className=" w-[300px] text-4xl text-black font-semibold">
+            <h4 className=" w-[300px] lg:text-3xl md:text-3xl text-2xl text-black font-syne">
               Our Newsletter
             </h4>
             <p className="w-[300px] text-left">

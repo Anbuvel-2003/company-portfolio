@@ -18,7 +18,7 @@ const WhoWeAre = () => {
               </h3>
             </div>
             <div className="sm-w-full">
-              <p className="text-black ">
+              <p className="text-black">
                 Web, Android, and iOS app development are our areas of expertise
                 as a full-stack digital development business. We provide
                 complete mobile solutions for the Android and iOS platforms,

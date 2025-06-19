@@ -12,24 +12,27 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
     <div
       className={`absolute top-full left-1/2 !w-[60vw] !h-[50vh] transform -translate-x-1/2
       mt-6 !py-6 bg-white flex backdrop-blur-sm shadow-lg rounded-md z-50 transition-all duration-300 ease-in-out
-       ${isOpen
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 -translate-y-2 pointer-events-none"
-        }
+       ${
+         isOpen
+           ? "opacity-100 translate-y-0"
+           : "opacity-0 -translate-y-2 pointer-events-none"
+       }
       `}
     >
       <div
-        className={`${isHorizontal ? "flex flex-wrap justify-between !px-12" : ""
-          }`}
+        className={`${
+          isHorizontal ? "flex flex-wrap justify-between !px-12" : ""
+        }`}
       >
         {items.map((item, idx) => {
           return (
             <div
               key={idx}
-              className={`relative ${isHorizontal
-                ? "flex flex-col items-start w-1/2"
-                : "flex flex-wrap"
-                }`}
+              className={`relative ${
+                isHorizontal
+                  ? "flex flex-col items-start w-1/2"
+                  : "flex flex-wrap"
+              }`}
             >
               <div className="bg-white !px-2 !py-2  rounded-lg hover:shadow-[0_0_6px_2px_rgba(99,102,241,0.7)] transition-all duration-300 group ">
                 <div className="flex justify-center items-center !gap-2">
@@ -105,10 +108,11 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   <div>
                     <a
                       href={item.path}
-                      className={`${isHorizontal
-                        ? "px-4 whitespace-nowrap"
-                        : "block px-6 !py-3 mb-2"
-                        } uppercase text-[14 px] font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
+                      className={`${
+                        isHorizontal
+                          ? "px-4 whitespace-nowrap"
+                          : "block px-6 !py-3 mb-2"
+                      } uppercase text-[14 px] font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
                     >
                       {item.title}
                     </a>
@@ -179,7 +183,6 @@ const NavBar = () => {
     // setActiveDropdown(activeDropdown == index ? null : index);
     console.log("checkingggg", activeDropdown);
     if (activeDropdown) {
-
       setActiveDropdown(null);
     } else {
       setActiveDropdown(index);
@@ -206,76 +209,79 @@ const NavBar = () => {
     },
     {
       title: "Services",
-      path: "/",
+      // path: "/",
       dropdown: [
         {
           id: 1,
           title: "Custom Software Development",
-          path: "/company-portfolio/aboutUs",
+          path: "/company-portfolio/softwareSection",
           description:
             "Get end-to-end bespoke solutions for your business needs",
         },
         {
           id: 2,
           title: "Saas app development",
-          path: "/company-portfolio/ourTeam",
+          path: "/company-portfolio/saasproductSection",
           description: "Build reliable Software-as-a-service applications",
         },
         {
           id: 3,
           title: "Mobile app development",
-          path: "/company-portfolio/aboutMe",
+          path: "/company-portfolio/mobileappSection",
           description:
             "Build ios and Android apps using native and cross platform",
         },
         {
           id: 4,
           title: "Web app development",
-          path: "/company-portfolio/aboutMe",
+          path: "/company-portfolio/webappSection",
           description: "Develope web apps with frontend, backend or full-stack",
         },
         {
           id: 5,
           title: "E-Commerce app development",
-          path: "/company-portfolio/ourprocess",
+          path: "/company-portfolio/ecommerceSection",
           description: "Driving online sales with powerful eCommerce solution",
         },
         {
           id: 6,
           title: "UI and UX Design",
-          path: "/company-portfolio/ourprocess",
+          path: "/company-portfolio/uxuiSection",
           description:
             "Design intuitive and visually appealing user interfaces",
         },
         {
           id: 7,
           title: "Digital marketing",
-          path: "/company-portfolio/pricingPlan",
+          path: "/company-portfolio/digitalSection",
           description: "Accelerate your digital marketing with us",
         },
         {
           id: 8,
           title: "Testing Services",
-          path: "/company-portfolio/contactUs",
+          path: "/company-portfolio/testingSection",
           description:
             "Ensuring seamless user experience across all devices and platforms",
         },
       ],
       isHorizontal: true,
     },
+    { title: "Products", path: "/company-portfolio/ProductSection" },
     {
       title: "Portfolio",
-      path: "/portfolio",
+      path: "/company-portfolio/portfolio",
     },
-    { title: "Blog", path: "/blog" },
-    { title: "Shop", path: "/shop" },
-    { title: "Contact", path: "/contact" },
+    { title: "Blog", path: "/company-portfolio/blogsection" },
+    { title: "About Us", path: "/company-portfolio/aboutUs" },
+    { title: "Careers", path: "/company-portfolio/Careerssection" },
+    { title: "Contact Us", path: "/company-portfolio/contactUs" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-transparent ${isVisible ? "translate-y-0" : "-translate-y-full"
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-transparent ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
       <div className="  px-4">
         <div className="flex  lg:justify-start justify-between w-[95vw]  items-center h-16">
@@ -293,7 +299,7 @@ const NavBar = () => {
 
           {/* Desktop Navigation - improved spacing */}
           <div
-            className="hidden lg:flex items-center justify-end gap-20 flex-1 pr-8"
+            className="hidden lg:flex !py-5 items-center justify-end gap-20 flex-1 pr-8"
             ref={dropdownRef}
           >
             {navLinks.map((link, index) => (
@@ -376,8 +382,9 @@ const NavBar = () => {
                       aria-expanded={activeDropdown === index}
                     >
                       <svg
-                        className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === index ? "transform rotate-180" : ""
-                          }`}
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          activeDropdown === index ? "transform rotate-180" : ""
+                        }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -397,10 +404,13 @@ const NavBar = () => {
                 {/* Mobile Dropdown - Accordion style */}
                 {link.dropdown && (
                   <div
-                    className={`pl-4 overflow-hidden transition-all duration-300 ease-in-out ${activeDropdown === index
-                      ? "max-h-64 opacity-100"
-                      : activeDropdown == null ? "max-h-0 opacity-0 bg-red-900" : "max-h-0 opacity-0"
-                      }`}
+                    className={`pl-4 overflow-hidden transition-all duration-300 ease-in-out ${
+                      activeDropdown === index
+                        ? "max-h-64 opacity-100"
+                        : activeDropdown == null
+                        ? "max-h-0 opacity-0 bg-red-900"
+                        : "max-h-0 opacity-0"
+                    }`}
                   >
                     {link.dropdown.map((item, idx) => (
                       <a

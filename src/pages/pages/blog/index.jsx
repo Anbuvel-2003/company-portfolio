@@ -1,12 +1,11 @@
 import React from "react";
 import Meetourclient from "../../../component/meetourclient";
 
-function ContactUs() {
+function Blog_Section() {
   return (
     <div className="!pt-15">
-      <h2>ContactUs</h2>
+      <h2>Blog_Section</h2>
        <Meetourclient />
     </div>
   );}
-
-export default ContactUs;
+export default Blog_Section;

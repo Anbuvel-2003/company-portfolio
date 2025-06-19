@@ -24,6 +24,18 @@ import ContactUs from "./pages/pages/contactUs";
 import Ourprocess from "./pages/pages/ourProcess";
 import OurTeam from "./pages/pages/ourTeam";
 import PricingPlan from "./pages/pages/pricingPlan";
+import Mobile_App from "./pages/services/mobile_Page";
+import Web_Page from "./pages/services/web_Page";
+import UIUX_Page from "./pages/services/uiux_Page";
+import Saas_Page from "./pages/services/saas_Page";
+import Testing_Page from "./pages/services/testing_Page";
+import Ecommerce from "./pages/services/ecommerce_Page";
+import Digital_Marketing from "./pages/services/digital_Page";
+import Sowtware_Page from "./pages/services/software_Page";
+import Product_Section from "./pages/products";
+import Portfolio_Sction from "./pages/portfolio";
+import Careers_Section from "./pages/pages/careers";
+import Blog_Section from "./pages/pages/blog";
 
 function App() {
   useEffect(() => {
@@ -40,56 +52,64 @@ function App() {
       element: <Main />,
     },
     {
-      path: "company-portfolio/apppresentation",
-      element: <AppPresentation />,
+      path: "company-portfolio/mobileappSection",
+      element: <Mobile_App />,
     },
     {
-      path: "company-portfolio/digitalServices",
-      element: <DigitalServices />,
+      path: "company-portfolio/webappSection",
+      element: <Web_Page />,
     },
     {
-      path: "company-portfolio/productShowcase",
-      element: <ProductShowcase />,
+      path: "company-portfolio/saasproductSection",
+      element: <Saas_Page />,
     },
     {
-      path: "company-portfolio/softwareSupport",
-      element: <SoftwareSupport />,
+      path: "company-portfolio/uxuiSection",
+      element: <UIUX_Page />,
     },
     {
-      path: "company-portfolio/itBusiness",
-      element: <ItBusiness />,
+      path: "company-portfolio/testingSection",
+      element: <Testing_Page />,
     },
     {
-      path: "company-portfolio/techcompany",
-      element: <Techcompany />,
+      path: "company-portfolio/ecommerceSection",
+      element: <Ecommerce />,
     },
     {
-      path: "company-portfolio/landing",
-      element: <LandingPage />,
+      path: "company-portfolio/digitalSection",
+      element: <Digital_Marketing />,
     },
     {
-      path: "company-portfolio/aboutMe",
-      element: <AboutMe />,
+      path: "company-portfolio/softwareSection",
+      element: <Sowtware_Page />,
+    },
+    {
+      path: "company-portfolio/ProductSection",
+      element: <Product_Section />,
+    },
+    {
+      path: "company-portfolio/portfolio",
+      element: <Portfolio_Sction />,
+    },
+    {
+      path: "company-portfolio/Careerssection",
+      element: <Careers_Section />,
     },
     {
       path: "company-portfolio/aboutUs",
       element: <AboutUs />,
     },
     {
-      path: "company-portfolio/contactUs",
-      element: <ContactUs />,
-    },
-    {
-      path: "company-portfolio/ourprocess",
-      element: <Ourprocess />,
-    },
-    {
       path: "company-portfolio/ourTeam",
       element: <OurTeam />,
     },
     {
-      path: "company-portfolio/pricingPlan",
-      element: <PricingPlan />,
+      path: "company-portfolio/blogsection",
+      element: <Blog_Section />,
+    },
+    {
+      path: "company-portfolio/contactUs",
+      element: <ContactUs />,
     },
   ]);
   return (
