@@ -9,171 +9,81 @@ function Ecommerce() {
     "50%": "#ccdfff",
     "100%": "#e7d5ff",
   };
-  const service = [
-    {
-      id: 1,
-      title: "Saas app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 2,
-      title: "Mobile app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 3,
-      title: "Web app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 4,
-      title: "UI and UX Design",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 5,
-      title: "Digital marketing",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 6,
-      title: "Testing Services",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-  ];
   const data = [
     {
       id: 1,
-      title: "Design",
+      title: "Storefront",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We design e-commerce platforms that captivate and convert. Every detail—from product pages to checkout—is user-focused.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "Intuitive Product Layouts",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "Smooth Checkout Flow",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Personalized Shopping UX.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Mobile-Ready Interfaces.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "Backend",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Powerful backend solutions manage your inventory, logistics, and user accounts. Our systems support efficiency and scale.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Inventory Sync Tools.",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "Secure Payment Gateways.",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
+          data: "User Account Portals.",
         },
         {
           id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Order Management Systems.",
         },
       ],
     },
     {
       id: 3,
-      title: "Devs",
+      title: "Sales",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "We implement conversion-focused features that drive revenue. From upselling tools to promo engines, your growth is built-in.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Abandoned Cart Recovery.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "Smart Product Suggestions.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "Discount Rule Engines.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "SEO for Products.",
         },
       ],
     },
   ];
-  const newsData = [
-    {
-      id: "01",
-      title: "Build with Precision",
-      description:
-        "Our solutions are meticulously crafted by our team to ensure accuracy and effectiveness in meeting your unique business needs.",
-      link: "#",
-    },
-    {
-      id: "02",
-      title: "Continuous Evolution",
-      description:
-        " We embrace innovation and adaptability, constantly evolving to provide cutting-edge solutions that keep your business ahead of the curve.",
-      link: "#",
-    },
-    {
-      id: "03",
-      title: "Quality & Performance Driven",
-      description:
-        "We are committed to delivering software that not only meets high-quality standards but also drives performance to deliver optimal results for your business.",
-      link: "#",
-    },
-  ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
-    points: [
-      {
-        id: 1,
-        data: "Donec pede justo, fringilla.",
-      },
-      {
-        id: 2,
-        data: "Viverra quis, feugiat tellus.",
-      },
-      {
-        id: 3,
-        data: "Aenean commodo eget dolor.",
-      },
-      {
-        id: 4,
-        data: "Etiam orci eget eros.",
-      },
-    ],
-  });
+  const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
   return (
     <div className="!pt-15">
@@ -201,9 +111,8 @@ function Ecommerce() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -248,7 +157,7 @@ function Ecommerce() {
             <div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl  font-medium -tracking-tighter font-syne ">
-                  Design
+                  Storefront
                 </h3>
                 <Progress
                   percent={95}
@@ -258,7 +167,7 @@ function Ecommerce() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Projects
+                  Backend
                 </h3>
                 <Progress
                   percent={75}
@@ -268,7 +177,7 @@ function Ecommerce() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Development
+                  Sales
                 </h3>
                 <Progress
                   percent={83}
@@ -293,16 +202,11 @@ function Ecommerce() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Scalable <br /> Commerce <br /> Solutions
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                Whether you're a growing brand or a large-scale enterprise, our e-commerce platforms are scalable and performance-optimized. Built with platforms like Shopify, Magento, or custom stacks, we ensure flexibility and growth-readiness.
               </p>
             </div>
           </div>
@@ -315,16 +219,11 @@ function Ecommerce() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Secure <br /> Shopping <br /> Experience
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We prioritize customer trust by integrating SSL, secure payments, and GDPR compliance. From browsing to purchase, users enjoy a frictionless and protected shopping experience.
               </p>
             </div>
           </div>

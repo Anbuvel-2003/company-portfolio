@@ -9,168 +9,101 @@ function Web_Page() {
     "50%": "#ccdfff",
     "100%": "#e7d5ff",
   };
-  const service = [
-    {
-      id: 1,
-      title: "Saas app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 2,
-      title: "Mobile app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 3,
-      title: "Web app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 4,
-      title: "UI and UX Design",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 5,
-      title: "Digital marketing",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 6,
-      title: "Testing Services",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-  ];
   const data = [
     {
       id: 1,
       title: "Design",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We create visually appealing interfaces that align with your brand identity. Our designs are intuitive, modern, and built to enhance user engagement.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "User-Centric Layouts.",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "Modern UI Elements.",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Brand-Driven Aesthetics.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Creative Visual Flow.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "Responsive",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Our web applications adapt seamlessly to any device, ensuring consistent functionality and experience on desktops, tablets, and smartphones.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Mobile-First Approach.",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "Cross-Device Compatibility.",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
+          data: "Flexible Grid Systems.",
         },
         {
           id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Adaptive Components.",
         },
       ],
     },
     {
       id: 3,
-      title: "Devs",
+      title: "Security",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "We embed security at every layer and optimize performance to ensure your app is fast, reliable, and ready for scale.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Data Protection Standards.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "Fast Load Times.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "High Traffic Handling.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "Code Optimization.",
         },
       ],
-    },
-  ];
-  const newsData = [
-    {
-      id: "01",
-      title: "Build with Precision",
-      description:
-        "Our solutions are meticulously crafted by our team to ensure accuracy and effectiveness in meeting your unique business needs.",
-      link: "#",
-    },
-    {
-      id: "02",
-      title: "Continuous Evolution",
-      description:
-        " We embrace innovation and adaptability, constantly evolving to provide cutting-edge solutions that keep your business ahead of the curve.",
-      link: "#",
-    },
-    {
-      id: "03",
-      title: "Quality & Performance Driven",
-      description:
-        "We are committed to delivering software that not only meets high-quality standards but also drives performance to deliver optimal results for your business.",
-      link: "#",
     },
   ];
   const [selecteditem, setselecteditem] = useState({
     id: 1,
     title: "Design",
     paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+      "We create visually appealing interfaces that align with your brand identity. Our designs are intuitive, modern, and built to enhance user engagement.",
     points: [
       {
         id: 1,
-        data: "Donec pede justo, fringilla.",
+        data: "User-Centric Layouts.",
       },
       {
         id: 2,
-        data: "Viverra quis, feugiat tellus.",
+        data: "Modern UI Elements.",
       },
       {
         id: 3,
-        data: "Aenean commodo eget dolor.",
+        data: "Brand-Driven Aesthetics.",
       },
       {
         id: 4,
-        data: "Etiam orci eget eros.",
+        data: "Creative Visual Flow.",
       },
     ],
   });
@@ -201,9 +134,8 @@ function Web_Page() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -258,7 +190,7 @@ function Web_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Projects
+                  Responsive
                 </h3>
                 <Progress
                   percent={75}
@@ -268,7 +200,7 @@ function Web_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Development
+                  Security
                 </h3>
                 <Progress
                   percent={83}
@@ -293,16 +225,10 @@ function Web_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
-            </h2>
+              Modern <br /> Web Engineering</h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We specialize in building robust and scalable web applications tailored to meet modern business needs. Our development process integrates cutting-edge UI/UX design to ensure visually appealing and user-friendly interfaces. Every application we deliver is fully responsive, offering seamless functionality across desktops, tablets, and mobile devices.
               </p>
             </div>
           </div>
@@ -315,16 +241,11 @@ function Web_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Reliable <br /> Web Infrastructure
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We prioritize security at every layer of development, implementing best practices to protect your data and users. In addition, our performance-optimized code ensures fast load times and a smooth user experience, even under high traffic. Whether you’re launching a startup or scaling an enterprise solution, our web applications are built for reliability, growth, and long-term success.
               </p>
             </div>
           </div>

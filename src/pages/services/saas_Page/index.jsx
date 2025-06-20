@@ -9,177 +9,87 @@ function Saas_Page() {
     "50%": "#ccdfff",
     "100%": "#e7d5ff",
   };
-  const service = [
-    {
-      id: 1,
-      title: "Saas app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 2,
-      title: "Mobile app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 3,
-      title: "Web app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 4,
-      title: "UI and UX Design",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 5,
-      title: "Digital marketing",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 6,
-      title: "Testing Services",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-  ];
   const data = [
     {
       id: 1,
-      title: "Design",
+      title: "Product",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We design and develop scalable SaaS platforms with modular architecture. Our products are crafted for high performance and flexibility.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "Component-Based Structure.",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "Clean Codebase Design.",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Cloud Native Builds.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Modular Feature Sets.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "User Experience",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "From dashboards to settings panels, our SaaS interfaces are built for usability. We ensure intuitive navigation and seamless onboarding.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Easy User Onboarding.",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "Smart UI Flow.",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
+          data: "Interactive Dashboards.",
         },
         {
           id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Role-Based Access.",
         },
       ],
     },
     {
       id: 3,
-      title: "Devs",
+      title: "Security",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "Our SaaS solutions are built to grow with your users while protecting their data. Expect reliable, secure, and scalable environments.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Multi-Tenant Architecture.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "User Data Protection.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "Secure APIs & Tokens.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "Load-Resilient Infrastructure.",
         },
       ],
     },
   ];
-  const newsData = [
-    {
-      id: "01",
-      title: "Build with Precision",
-      description:
-        "Our solutions are meticulously crafted by our team to ensure accuracy and effectiveness in meeting your unique business needs.",
-      link: "#",
-    },
-    {
-      id: "02",
-      title: "Continuous Evolution",
-      description:
-        " We embrace innovation and adaptability, constantly evolving to provide cutting-edge solutions that keep your business ahead of the curve.",
-      link: "#",
-    },
-    {
-      id: "03",
-      title: "Quality & Performance Driven",
-      description:
-        "We are committed to delivering software that not only meets high-quality standards but also drives performance to deliver optimal results for your business.",
-      link: "#",
-    },
-  ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
-    points: [
-      {
-        id: 1,
-        data: "Donec pede justo, fringilla.",
-      },
-      {
-        id: 2,
-        data: "Viverra quis, feugiat tellus.",
-      },
-      {
-        id: 3,
-        data: "Aenean commodo eget dolor.",
-      },
-      {
-        id: 4,
-        data: "Etiam orci eget eros.",
-      },
-    ],
-  });
+  const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
   return (
     <div className="!pt-15">
       <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
         <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl ">
-         Saas app development
+          Saas app development
         </h3>
       </div>
       <div className="lg:flex lg:gap-0 ">
@@ -201,9 +111,8 @@ function Saas_Page() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -248,7 +157,7 @@ function Saas_Page() {
             <div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl  font-medium -tracking-tighter font-syne ">
-                  Design
+                  Product
                 </h3>
                 <Progress
                   percent={95}
@@ -258,7 +167,7 @@ function Saas_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Projects
+                  User Experience
                 </h3>
                 <Progress
                   percent={75}
@@ -268,7 +177,7 @@ function Saas_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Development
+                  Security
                 </h3>
                 <Progress
                   percent={83}
@@ -293,16 +202,13 @@ function Saas_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Next-Gen <br /> SaaS <br /> Development
+
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We deliver flexible and feature-rich SaaS platforms that solve real-world problems. Our development focuses on automation, third-party integrations, subscription handling, and multi-user experiences. Whether launching a new platform or modernizing an existing one, we deliver growth-ready SaaS solutions.
+
               </p>
             </div>
           </div>
@@ -315,16 +221,12 @@ function Saas_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Cloud-First <br /> Reliability
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                Backed by cloud-native infrastructure, our SaaS applications guarantee uptime and performance. We utilize DevOps, containerization, and CI/CD to keep your software agile, secure, and deployment-ready.
+
               </p>
             </div>
           </div>

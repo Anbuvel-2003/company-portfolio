@@ -9,171 +9,81 @@ function Mobile_App() {
     "50%": "#ccdfff",
     "100%": "#e7d5ff",
   };
-  const service = [
-    {
-      id: 1,
-      title: "Saas app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 2,
-      title: "Mobile app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 3,
-      title: "Web app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 4,
-      title: "UI and UX Design",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 5,
-      title: "Digital marketing",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 6,
-      title: "Testing Services",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-  ];
   const data = [
     {
       id: 1,
-      title: "Design",
+      title: "Experience",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We design seamless mobile interfaces that prioritize usability and engagement. Every screen is crafted for clarity, responsiveness, and a smooth user journey.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "Intuitive Navigation Flow.",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "Clean UI Components.",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Mobile-Centric Aesthetics.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Consistent Brand Styling.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "Platform",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "We develop apps that work flawlessly across Android and iOS. Enjoy native performance with unified codebases using the latest frameworks.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Android & iOS Support",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "React Native",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
+          data: "Shared Code Logic",
         },
         {
           id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Native-Like Experience.",
         },
       ],
     },
     {
       id: 3,
-      title: "Devs",
+      title: "Functionality",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "Our apps are engineered for speed, reliability, and efficiency. We ensure robust performance even under high user loads.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Optimized App Speed.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "Low Resource Usage.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "Smooth Transitions & Animations.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "Crash-Free Stability.",
         },
       ],
     },
   ];
-  const newsData = [
-    {
-      id: "01",
-      title: "Build with Precision",
-      description:
-        "Our solutions are meticulously crafted by our team to ensure accuracy and effectiveness in meeting your unique business needs.",
-      link: "#",
-    },
-    {
-      id: "02",
-      title: "Continuous Evolution",
-      description:
-        " We embrace innovation and adaptability, constantly evolving to provide cutting-edge solutions that keep your business ahead of the curve.",
-      link: "#",
-    },
-    {
-      id: "03",
-      title: "Quality & Performance Driven",
-      description:
-        "We are committed to delivering software that not only meets high-quality standards but also drives performance to deliver optimal results for your business.",
-      link: "#",
-    },
-  ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
-    points: [
-      {
-        id: 1,
-        data: "Donec pede justo, fringilla.",
-      },
-      {
-        id: 2,
-        data: "Viverra quis, feugiat tellus.",
-      },
-      {
-        id: 3,
-        data: "Aenean commodo eget dolor.",
-      },
-      {
-        id: 4,
-        data: "Etiam orci eget eros.",
-      },
-    ],
-  });
+  const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
   return (
     <div className="!pt-15">
@@ -201,9 +111,8 @@ function Mobile_App() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -248,7 +157,7 @@ function Mobile_App() {
             <div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl  font-medium -tracking-tighter font-syne ">
-                  Design
+                  Experience
                 </h3>
                 <Progress
                   percent={95}
@@ -258,7 +167,7 @@ function Mobile_App() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Projects
+                  Platform
                 </h3>
                 <Progress
                   percent={75}
@@ -268,7 +177,7 @@ function Mobile_App() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Development
+                  Functionality
                 </h3>
                 <Progress
                   percent={83}
@@ -293,16 +202,12 @@ function Mobile_App() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Smart <br /> Mobile <br /> Solutions
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We create powerful mobile solutions tailored to your business goals. From MVPs to full-scale apps, our process ensures speed, performance, and visual appeal. We integrate advanced features like push notifications, geolocation, and real-time sync, delivering apps that are both intuitive and scalable.
+
               </p>
             </div>
           </div>
@@ -315,16 +220,12 @@ function Mobile_App() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Reliable <br /> App <br /> Infrastructure
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                Security and backend strength power every app we build. We implement best practices for API integration, data encryption, and offline capabilities. Whether B2B or B2C, we ensure secure, scalable, and future-ready mobile ecosystems.
+
               </p>
             </div>
           </div>

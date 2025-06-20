@@ -9,171 +9,81 @@ function Testing_Page() {
     "50%": "#ccdfff",
     "100%": "#e7d5ff",
   };
-  const service = [
-    {
-      id: 1,
-      title: "Saas app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 2,
-      title: "Mobile app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 3,
-      title: "Web app development",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 4,
-      title: "UI and UX Design",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 5,
-      title: "Digital marketing",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-    {
-      id: 6,
-      title: "Testing Services",
-      img: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-      path: "/company-portfolio/saasproductSection",
-      description: "Build reliable Software-as-a-service applications",
-    },
-  ];
   const data = [
     {
       id: 1,
-      title: "Design",
+      title: "Manual",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We execute real-world test scenarios to uncover bugs and UX issues before users do.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "Functional User Testing.",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "UI Consistency Checks.",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Regression Testing.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Exploratory Sessions.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "Automated",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "We create test scripts that accelerate QA and support continuous integration workflows.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Selenium Test Scripts.",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "Unit Test Coverage.",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
+          data: "CI/CD Pipeline Testing.",
         },
         {
           id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Load Simulation Tools.",
         },
       ],
     },
     {
       id: 3,
-      title: "Devs",
+      title: "Performance",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "Your app is tested under stress and against threats to ensure stability and safety.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Penetration Testing.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "Stress & Load Testing.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "SSL & Token Checks.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "Vulnerability Scanning.",
         },
       ],
     },
   ];
-  const newsData = [
-    {
-      id: "01",
-      title: "Build with Precision",
-      description:
-        "Our solutions are meticulously crafted by our team to ensure accuracy and effectiveness in meeting your unique business needs.",
-      link: "#",
-    },
-    {
-      id: "02",
-      title: "Continuous Evolution",
-      description:
-        " We embrace innovation and adaptability, constantly evolving to provide cutting-edge solutions that keep your business ahead of the curve.",
-      link: "#",
-    },
-    {
-      id: "03",
-      title: "Quality & Performance Driven",
-      description:
-        "We are committed to delivering software that not only meets high-quality standards but also drives performance to deliver optimal results for your business.",
-      link: "#",
-    },
-  ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
-    points: [
-      {
-        id: 1,
-        data: "Donec pede justo, fringilla.",
-      },
-      {
-        id: 2,
-        data: "Viverra quis, feugiat tellus.",
-      },
-      {
-        id: 3,
-        data: "Aenean commodo eget dolor.",
-      },
-      {
-        id: 4,
-        data: "Etiam orci eget eros.",
-      },
-    ],
-  });
+  const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
   return (
     <div className="!pt-15">
@@ -201,9 +111,8 @@ function Testing_Page() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -248,7 +157,7 @@ function Testing_Page() {
             <div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl  font-medium -tracking-tighter font-syne ">
-                  Design
+                  Manual
                 </h3>
                 <Progress
                   percent={95}
@@ -258,7 +167,7 @@ function Testing_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Projects
+                  Automated
                 </h3>
                 <Progress
                   percent={75}
@@ -268,7 +177,7 @@ function Testing_Page() {
               </div>
               <div className="!my-5 ">
                 <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Development
+                  Performance
                 </h3>
                 <Progress
                   percent={83}
@@ -293,16 +202,11 @@ function Testing_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Quality <br /> Assurance <br /> Process
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                Our testing workflow covers the entire SDLC—from requirement review to final sign-off. We use agile test cycles, issue tracking tools, and continuous feedback to ensure every release meets business standards and user expectations.
               </p>
             </div>
           </div>
@@ -315,16 +219,11 @@ function Testing_Page() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Custom <br /> Software <br /> Development
+              Reliable <br /> Product <br /> Delivery
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Custom software development is the process of building tailored
-                software solutions designed specifically to meet the unique
-                needs of a business or organization. Unlike off-the-shelf
-                software, custom solutions are developed from the ground up to
-                align with specific workflows, goals, and challenges, offering
-                greater flexibility, scalability, and efficiency.
+                We make your software dependable through rigorous validation. Every module is tested for usability, stability, and resilience—minimizing post-launch issues and enhancing user trust.
               </p>
             </div>
           </div>
