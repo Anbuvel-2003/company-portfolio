@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+  
 
 * {
   margin: 0;
@@ -21,4 +23,38 @@
     border-image: linear-gradient(to right, var(--tw-gradient-stops));
     border-image-slice: 1;
   }
+}
+
+/* src/index.css */
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-map-container {
+  margin: 2rem 0;
+}
+
+.contact-map-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.contact-map {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
 }
