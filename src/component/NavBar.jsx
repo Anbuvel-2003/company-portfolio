@@ -205,7 +205,7 @@ const NavBar = () => {
   const navLinks = [
     {
       title: "Home",
-      path: "/",
+      path: "/test/",
     },
     {
       title: "Services",
@@ -214,67 +214,67 @@ const NavBar = () => {
         {
           id: 1,
           title: "Custom Software Development",
-          path: "/softwareSection",
+          path: "/test/softwareSection",
           description:
             "Get end-to-end bespoke solutions for your business needs",
         },
         {
           id: 2,
           title: "Saas app development",
-          path: "/saasproductSection",
+          path: "/test/saasproductSection",
           description: "Build reliable Software-as-a-service applications",
         },
         {
           id: 3,
           title: "Mobile app development",
-          path: "/mobileappSection",
+          path: "/test/mobileappSection",
           description:
             "Build ios and Android apps using native and cross platform",
         },
         {
           id: 4,
           title: "Web app development",
-          path: "/webappSection",
+          path: "/test/webappSection",
           description: "Develope web apps with frontend, backend or full-stack",
         },
         {
           id: 5,
           title: "E-Commerce app development",
-          path: "/ecommerceSection",
+          path: "/test/ecommerceSection",
           description: "Driving online sales with powerful eCommerce solution",
         },
         {
           id: 6,
           title: "UI and UX Design",
-          path: "/uxuiSection",
+          path: "/test/uxuiSection",
           description:
             "Design intuitive and visually appealing user interfaces",
         },
         {
           id: 7,
           title: "Digital marketing",
-          path: "/digitalSection",
+          path: "/test/digitalSection",
           description: "Accelerate your digital marketing with us",
         },
         {
           id: 8,
           title: "Testing Services",
-          path: "/testingSection",
+          path: "/test/testingSection",
           description:
             "Ensuring seamless user experience across all devices and platforms",
         },
       ],
       isHorizontal: true,
     },
-    { title: "Products", path: "/ProductSection" },
+    { title: "Products", path: "/test/ProductSection" },
     {
       title: "Portfolio",
-      path: "/portfolio",
+      path: "/test/portfolio",
     },
-    { title: "Blog", path: "/blogsection" },
-    { title: "About Us", path: "/aboutUs" },
-    { title: "Careers", path: "/Careerssection" },
-    { title: "Contact Us", path: "/contactUs" },
+    { title: "Blog", path: "/test/blogsection" },
+    { title: "About Us", path: "/test/aboutUs" },
+    { title: "Careers", path: "/test/Careerssection" },
+    { title: "Contact Us", path: "/test/contactUs" },
   ];
 
   return (

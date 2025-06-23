@@ -64,67 +64,67 @@ const scrollToTop = () => {
 };
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/test",
       element: <Main />,
     },
     {
-      path: "/mobileappSection",
+      path: "/test/mobileappSection",
       element: <Mobile_App />,
     },
     {
-      path: "/webappSection",
+      path: "/test/webappSection",
       element: <Web_Page />,
     },
     {
-      path: "/saasproductSection",
+      path: "/test/saasproductSection",
       element: <Saas_Page />,
     },
     {
-      path: "/uxuiSection",
+      path: "/test/uxuiSection",
       element: <UIUX_Page />,
     },
     {
-      path: "/testingSection",
+      path: "/test/testingSection",
       element: <Testing_Page />,
     },
     {
-      path: "/ecommerceSection",
+      path: "/test/ecommerceSection",
       element: <Ecommerce />,
     },
     {
-      path: "/digitalSection",
+      path: "/test/digitalSection",
       element: <Digital_Marketing />,
     },
     {
-      path: "/softwareSection",
+      path: "/test/softwareSection",
       element: <Sowtware_Page />,
     },
     {
-      path: "/ProductSection",
+      path: "/test/ProductSection",
       element: <Product_Section />,
     },
     {
-      path: "/portfolio",
+      path: "/test/portfolio",
       element: <Portfolio_Sction />,
     },
     {
-      path: "/Careerssection",
+      path: "/test/Careerssection",
       element: <Careers_Section />,
     },
     {
-      path: "/aboutUs",
+      path: "/test/aboutUs",
       element: <AboutUs />,
     },
     {
-      path: "/ourTeam",
+      path: "/test/ourTeam",
       element: <OurTeam />,
     },
     {
-      path: "/blogsection",
+      path: "/test/blogsection",
       element: <Blog_Section />,
     },
     {
-      path: "/contactUs",
+      path: "/test/contactUs",
       element: <ContactUs />,
     },
   ]);
