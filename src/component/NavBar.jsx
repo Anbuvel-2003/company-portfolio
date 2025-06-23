@@ -10,8 +10,8 @@ import { TbBrandSpeedtest } from "react-icons/tb";
 const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
   return (
     <div
-      className={`absolute top-full left-1/2 !w-[60vw] !h-[50vh] transform -translate-x-1/2
-      mt-6 !py-6 bg-white flex backdrop-blur-sm shadow-lg rounded-md z-50 transition-all duration-300 ease-in-out
+      className={`absolute top-full left-1/2  transform -translate-x-1/2
+      mt-6 !py-6 bg-white hover:shadow-3xl flex backdrop-blur-sm shadow-lg rounded-md z-50 transition-all duration-300 ease-in-out
        ${
          isOpen
            ? "opacity-100 translate-y-0"
@@ -21,7 +21,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
     >
       <div
         className={`${
-          isHorizontal ? "flex flex-wrap justify-between !px-12" : ""
+          isHorizontal ? "grid justify-between !px-12" : ""
         }`}
       >
         {items.map((item, idx) => {
@@ -34,7 +34,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   : "flex flex-wrap"
               }`}
             >
-              <div className="bg-white !px-2 !py-2  rounded-lg hover:shadow-[0_0_6px_2px_rgba(99,102,241,0.7)] transition-all duration-300 group ">
+              <div className="bg-transparent !px-2 !py-2  rounded-lg  transition-all duration-300 group ">
                 <div className="flex justify-center items-center !gap-2">
                   {item?.id == 1 ? (
                     <div
@@ -112,13 +112,13 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                         isHorizontal
                           ? "px-4 whitespace-nowrap"
                           : "block px-6 !py-3 mb-2"
-                      } uppercase text-[14 px] font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
+                      } uppercase text-sm font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
                     >
                       {item.title}
                     </a>
-                    <p className="text-[12px] text-black font-syne">
+                    {/* <p className="text-[12px] text-black font-syne">
                       {item?.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -313,8 +313,9 @@ const NavBar = () => {
               >
                 <a
                   href={link.path}
-                  className="relative group flex items-center uppercase text-sm font-medium tracking-wide text-black 
+                  className="relative group flex items-center uppercase text-sm font-syne text-black 
     hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-all duration-700 ease-in-out"
+    style={{ letterSpacing: '0.15em' }}
                 >
                   {link.title}
                   {link.dropdown && (
@@ -330,7 +331,7 @@ const NavBar = () => {
                     items={link.dropdown}
                     isOpen={activeDropdown === index}
                     isHorizontal={link.isHorizontal}
-                  />
+                  />    
                 )}
               </div>
             ))}
