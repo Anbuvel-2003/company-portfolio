@@ -16,8 +16,7 @@ const ContactMap = () => {
         if (!mapRef.current) return
 
         // Initialize map
-        const map = L.map(mapRef.current).setView([51.505, -0.09], 13)
-
+        const map = L.map(mapRef.current).setView([11.0168, 76.9558], 13)
         // Add tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -36,9 +35,9 @@ const ContactMap = () => {
         })
 
         // Add marker
-        markerRef.current = L.marker([51.505, -0.09], { icon: defaultIcon })
+        markerRef.current = L.marker([11.0168, 76.9558], { icon: defaultIcon })
             .addTo(map)
-            .bindPopup('<b>Our Office</b><br>123 Main Street, London')
+            .bindPopup('<b>Our Office</b><br>123 Main Street, Coimbatore')
             .openPopup()
 
         return () => {
@@ -48,7 +47,7 @@ const ContactMap = () => {
 
     return (
         <div className="contact-map-container">
-            <h2>Find Us Here</h2>
+            <h2 className='text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl'>Find Us Here</h2>
             <div
                 ref={mapRef}
                 className="contact-map"

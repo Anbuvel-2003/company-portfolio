@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import Meetourclient from "../../../component/meetourclient";
 import About1 from "../../../assets/About-us-img-1.jpg";
 import ContactMap from "../../../component/constactmap";
 
 function ContactUs() {
+  const formRef = useRef(null);
+  const handleSubmit = (e) => {
+    console.log(e?.preventDefault());
+
+    // e.preventDefault();
+    // const formData = new FormData(formRef.current);
+    // const data = Object.fromEntries(formData);
+    // console.log('Form submitted:', data);
+    // alert('Thank you for your message! We\'ll get back to you soon.');
+    // formRef.current.reset();
+  };
   return (
     <div className="!pt-15">
       <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
@@ -31,36 +42,109 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <h2 className="">Connect With our team!</h2>
-          <h4>Reach out to us! We're here to discuss your projects, brainstorm ideas and answer  any  questions you might have.</h4>
-          <div>
-            <div>
-              <h3>have a great idea ?</h3>
-              <h3>abc@gmail.com</h3>
-              <h3>tell Us more about your business idea to get consulted</h3>
+      <div className=" place-self-center !mt-10">
+        <div className=" justify-items-center">
+          <h2 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">Connect With our team!</h2>
+          <h4 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 w-1/2 text-center">Reach out to us! We're here to discuss your projects, brainstorm ideas and answer  any  questions you might have.</h4>
+          <div className="flex !mt-10 w-full">
+            <div className="w-1/3">
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">have a great idea ?</h3>
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center" >abc@gmail.com</h3>
+              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">tell Us more about your business idea to get consulted</h3>
             </div>
-            <div>
-              <h3>Got questions to ask ?</h3>
-              <h3>Support abc @gmail.com</h3>
-              <h3>Discuss your projects with us. We're open to question</h3>
+            <div className="w-1/3">
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">Got questions to ask ?</h3>
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">Support abc @gmail.com</h3>
+              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">Discuss your projects with us. We're open to question</h3>
             </div>
-            <div>
-              <h3>We are hiring!</h3>
-              <h3>abc@gmail.com</h3>
-              <h3>We do more for your career. Come and  join Us</h3>
+            <div className="w-1/3">
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">We are hiring!</h3>
+              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">abc@gmail.com</h3>
+              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">We do more for your career. Come and  join Us</h3>
             </div>
           </div>
         </div>
-        <div>
-          <h3>
+        <ContactMap />
+        <div className="!mt-10 justify-items-center !mb-10">
+          <h3 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
             Where We Work!
           </h3>
-          <h3>visit our office locations to experience the environment where our teams thrives. Our spaces are Spaces are designed to inspire and support our work </h3>
+          <h3 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 text-center w-1/2">visit our office locations to experience the environment where our teams thrives. Our spaces are Spaces are designed to inspire and support our work </h3>
         </div>
-        <ContactMap/>
+        <div className="!mt-10 justify-items-center !mb-10">
+          <h3 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
+            Contact
+          </h3>
+          <h3 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 text-center w-1/2">Have a question or an idea? Drop us a line and our business development team will be happy to connect.</h3>
+        </div>
 
+        <form ref={formRef} onSubmit={handleSubmit} className="space-y-6 !p-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div>
+              <label htmlFor="name" className="block text-[#9e9e9e] font-syne lg:text-2xl sm:text-xl !mb-2">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="w-full !px-4 !py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 !mb-3"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-[#9e9e9e] font-syne lg:text-2xl sm:text-xl !mb-2">
+                Email Address *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full !px-4 !py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 !mb-3"
+                placeholder="your.email@example.com"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="subject" className="block text-[#9e9e9e] font-syne lg:text-2xl sm:text-xl !mb-2">
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              className="w-full !px-4 !py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 !mb-3"
+              placeholder="How can we help?"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-[#9e9e9e] font-syne lg:text-2xl sm:text-xl !mb-2">
+              Your Message *
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              className="w-full !px-4 !py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 !mb-3"
+              placeholder="Tell us about your project..."
+            ></textarea>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover: text-white font-medium !py-3 !px-6 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
       <Meetourclient />
     </div>
