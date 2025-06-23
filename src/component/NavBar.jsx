@@ -214,67 +214,67 @@ const NavBar = () => {
         {
           id: 1,
           title: "Custom Software Development",
-          path: "/company-portfolio/softwareSection",
+          path: "/softwareSection",
           description:
             "Get end-to-end bespoke solutions for your business needs",
         },
         {
           id: 2,
           title: "Saas app development",
-          path: "/company-portfolio/saasproductSection",
+          path: "/saasproductSection",
           description: "Build reliable Software-as-a-service applications",
         },
         {
           id: 3,
           title: "Mobile app development",
-          path: "/company-portfolio/mobileappSection",
+          path: "/mobileappSection",
           description:
             "Build ios and Android apps using native and cross platform",
         },
         {
           id: 4,
           title: "Web app development",
-          path: "/company-portfolio/webappSection",
+          path: "/webappSection",
           description: "Develope web apps with frontend, backend or full-stack",
         },
         {
           id: 5,
           title: "E-Commerce app development",
-          path: "/company-portfolio/ecommerceSection",
+          path: "/ecommerceSection",
           description: "Driving online sales with powerful eCommerce solution",
         },
         {
           id: 6,
           title: "UI and UX Design",
-          path: "/company-portfolio/uxuiSection",
+          path: "/uxuiSection",
           description:
             "Design intuitive and visually appealing user interfaces",
         },
         {
           id: 7,
           title: "Digital marketing",
-          path: "/company-portfolio/digitalSection",
+          path: "/digitalSection",
           description: "Accelerate your digital marketing with us",
         },
         {
           id: 8,
           title: "Testing Services",
-          path: "/company-portfolio/testingSection",
+          path: "/testingSection",
           description:
             "Ensuring seamless user experience across all devices and platforms",
         },
       ],
       isHorizontal: true,
     },
-    { title: "Products", path: "/company-portfolio/ProductSection" },
+    { title: "Products", path: "/ProductSection" },
     {
       title: "Portfolio",
-      path: "/company-portfolio/portfolio",
+      path: "/portfolio",
     },
-    { title: "Blog", path: "/company-portfolio/blogsection" },
-    { title: "About Us", path: "/company-portfolio/aboutUs" },
-    { title: "Careers", path: "/company-portfolio/Careerssection" },
-    { title: "Contact Us", path: "/company-portfolio/contactUs" },
+    { title: "Blog", path: "/blogsection" },
+    { title: "About Us", path: "/aboutUs" },
+    { title: "Careers", path: "/Careerssection" },
+    { title: "Contact Us", path: "/contactUs" },
   ];
 
   return (

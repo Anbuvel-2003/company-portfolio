@@ -64,67 +64,67 @@ const scrollToTop = () => {
 };
   const router = createBrowserRouter([
     {
-      path: "/company-portfolio",
+      path: "/",
       element: <Main />,
     },
     {
-      path: "company-portfolio/mobileappSection",
+      path: "/mobileappSection",
       element: <Mobile_App />,
     },
     {
-      path: "company-portfolio/webappSection",
+      path: "/webappSection",
       element: <Web_Page />,
     },
     {
-      path: "company-portfolio/saasproductSection",
+      path: "/saasproductSection",
       element: <Saas_Page />,
     },
     {
-      path: "company-portfolio/uxuiSection",
+      path: "/uxuiSection",
       element: <UIUX_Page />,
     },
     {
-      path: "company-portfolio/testingSection",
+      path: "/testingSection",
       element: <Testing_Page />,
     },
     {
-      path: "company-portfolio/ecommerceSection",
+      path: "/ecommerceSection",
       element: <Ecommerce />,
     },
     {
-      path: "company-portfolio/digitalSection",
+      path: "/digitalSection",
       element: <Digital_Marketing />,
     },
     {
-      path: "company-portfolio/softwareSection",
+      path: "/softwareSection",
       element: <Sowtware_Page />,
     },
     {
-      path: "company-portfolio/ProductSection",
+      path: "/ProductSection",
       element: <Product_Section />,
     },
     {
-      path: "company-portfolio/portfolio",
+      path: "/portfolio",
       element: <Portfolio_Sction />,
     },
     {
-      path: "company-portfolio/Careerssection",
+      path: "/Careerssection",
       element: <Careers_Section />,
     },
     {
-      path: "company-portfolio/aboutUs",
+      path: "/aboutUs",
       element: <AboutUs />,
     },
     {
-      path: "company-portfolio/ourTeam",
+      path: "/ourTeam",
       element: <OurTeam />,
     },
     {
-      path: "company-portfolio/blogsection",
+      path: "/blogsection",
       element: <Blog_Section />,
     },
     {
-      path: "company-portfolio/contactUs",
+      path: "/contactUs",
       element: <ContactUs />,
     },
   ]);
