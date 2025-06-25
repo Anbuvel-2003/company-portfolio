@@ -98,7 +98,7 @@ function News_section({ newsItems, view = true }) {
         {newsItems.map((item, index) => (
           <div className="relative lg:w-[80%] md:w-[80%] w-[100%]" key={index}>
             <div
-              className="text-[200px] bg-gradient-to-r bg-clip-text to-[#dfecfc] from-[#c4b7e5] text-transparent font-bold absolute -top-35 !-left-15 -z-10 md:left-0"
+              className="text-[200px] bg-gradient-to-r bg-clip-text to-[#dfecfc] from-[#c4b7e5] text-transparent font-bold absolute !-top-20 !-left-2 lg:!-top-35 lg:!-left-15 -z-10 md:!left-0"
               data-aos="fade-left"
             >
               {item.id}

@@ -5,7 +5,7 @@ function Footer_section() {
   return (
     <div className="">
       {/* footer section */}
-      <div className="bg-primary lg:!p-40 md:!p-40 !p-20">
+      <div className="bg-primary lg:!p-40 md:!pl-40 !p-20">
         <div className="gap-6 grid ">
           <div className="">
             <h3 className="text-5xl text-white font-syne">VineAtZ</h3>
@@ -19,50 +19,52 @@ function Footer_section() {
             <div className="gap-2 sm:grid w-[100%] md:flex md:w-full">
               <div className="grid lg:w-1/4 md:w-1/3 sm:w-full !gap-5  items-center justify-items-start">
                 <a href="/footer1" className="text-white">
-                  A: Seestrasse 21
+                  info@vineatz.com
                 </a>
                 <a href="/footer1" className="text-white">
-                  T: 00 1 23 45 67 89
+                  admin@vineatz.com
                 </a>
                 <a href="/footer1" className="text-white">
-                  E: qi@example.com
+                  P : 94881 60083
                 </a>
                 <a href="/footer1" className="text-white">
-                  T: 99 8 76 54 321
+                  T : 91 422 4711 021
                 </a>
               </div>
               <div className="!mt-5 lg:!mt-0 md:!mt-0 grid lg:!gap-2  md:!gap-2 !gap-5 lg:w-1/6 md:w-1/3 sm-w-full justify-items-start">
-                <a href="/footer1" className="text-white uppercase">
+                <a href="/test/" className="text-white uppercase">
                   Main Home
                 </a>
-                <a href="/footer1" className="text-white uppercase">
-                  Contact
+                <a href="/test/ProductSection" className="text-white uppercase">
+                  products
                 </a>
-                <a href="/footer1" className="text-white uppercase">
+                <a href="/test/portfolio" className="text-white uppercase">
                   Portfolio
                 </a>
-                <a href="/footer1" className="text-white uppercase">
-                  Shop
+                <a href="/test/blogsection" className="text-white uppercase">
+                  blog
                 </a>
-                <a href="/footer1" className="text-white uppercase">
-                  Landing
+
+                <a href="/test/Careerssection" className="text-white uppercase">
+                  careers
                 </a>
               </div>
               <div className="grid lg:!gap-2 md:!gap-2 !mt-5 md:!mt-0 lg:!mt-0 !gap-5 lg:w-1/3 md:w-1/3 justify-items-start">
-                <a href="/footer1" className="text-white uppercase">
+                <a href="/test/aboutUs" className="text-white uppercase">
                   About Us
                 </a>
+                <a href="/test/contactUs" className="text-white uppercase">
+                  contact Us
+                </a>
+
                 <a href="/footer1" className="text-white uppercase">
-                  About Me
+                  Cookie Policy
                 </a>
                 <a href="/footer1" className="text-white uppercase">
-                  Our Process
+                  Privacy Policy
                 </a>
                 <a href="/footer1" className="text-white uppercase">
-                  Our Team
-                </a>
-                <a href="/footer1" className="text-white uppercase">
-                  Pricing Plans
+                  Terms of service
                 </a>
               </div>
             </div>
@@ -87,6 +89,16 @@ function Footer_section() {
               </div>
             </div>
             <div></div>
+          </div>
+          <div className="lg:flex md:flex grid lg:w-[30%] md:w-[70%] lg:!gap-20 md:!gap-20 !gap-5">
+            <div className="">
+              <h3 className="text-white font-medium capitalize">Registered Office : </h3>
+              <span className="text-white font-medium capitalize">Floor, Krishnagiri to Salem Highways, Near Nsk Landmark, Krishnagiri-635001.</span>
+            </div>
+            <div>
+              <h3 className="text-white font-medium capitalize">Corporate Office :</h3>
+              <span className="text-white font-medium capitalize">H-22, Peelamedu, HUDCO Colony, Coimbatore, Tamil Nadu 641004</span>
+            </div>
           </div>
         </div>
       </div>

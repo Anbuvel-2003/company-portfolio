@@ -111,16 +111,16 @@ function Web_Page() {
   return (
     <div className="!pt-15">
       <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
-        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl ">
+        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl " data-aos="zoom-in">
           Web app development
         </h3>
       </div>
       <div className="lg:flex lg:gap-0 ">
-        <div className="lg:w-1/2 w-full lg:!mb-0  !mb-10">
+        <div className="lg:w-1/2 w-full lg:!mb-0  !mb-10" data-aos="zoom-in" data-aos-duration="1000">
           <img src={software1} alt="software1" className="" />
         </div>
         <div className="lg:w-1/2  lg:place-self-center !justify-items-center  md:!pl-40 sm:!pl-40 !pl-5 lg:!mb-0 !mb-5">
-          <div className="">
+          <div className="" data-aos="zoom-in" data-aos-duration="1000">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase ">
               Who We Are
             </h3>
@@ -169,7 +169,7 @@ function Web_Page() {
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:!mb-0 !mb-10 ">
+        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:!mb-0 !mb-10 " data-aos="fade-right">
           <div className="w-[60%]">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase !mb-3">
               Brands
@@ -211,15 +211,15 @@ function Web_Page() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full" data-aos="fade-left">
           <img src={software1} alt="software1" className="" />
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-1/2 w-full lg:mb-0 ">
+        <div className="lg:w-1/2 w-full lg:mb-0 " data-aos="fade-right">
           <img src={software1} alt="software1" className="" />
         </div>
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 ">
+        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-left">
           <div className="w-[60%]">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
@@ -235,7 +235,7 @@ function Web_Page() {
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 ">
+        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-right">
           <div className="w-[60%]">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
@@ -250,7 +250,7 @@ function Web_Page() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full ">
+        <div className="lg:w-1/2 w-full " data-aos="fade-left">
           <img src={software1} alt="software1" className="" />
         </div>
       </div>
@@ -273,7 +273,7 @@ function Web_Page() {
           </div>
         </div>
       </div> */}
-      <div className="relative w-full h-[800px]">
+      <div className="relative w-full h-[800px]" data-aos="fade-up" >
         <img
           src="https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Home-6-parallax-img.jpg"
           alt="software2"
@@ -281,7 +281,7 @@ function Web_Page() {
         />
 
         {/* Overlay content */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
           <div className="bg-transparent bg-opacity-80 !p-8 max-w-xl text-left">
             <h3 className="text-white text-[16px] tracking-wide uppercase mb-3">
               Brands

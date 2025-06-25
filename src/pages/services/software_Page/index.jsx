@@ -88,15 +88,22 @@ function Sowtware_Page() {
   return (
     <div className="!pt-15">
       <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
-        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl ">
+        <h3
+          className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl "
+          data-aos="zoom-in"
+        >
           Custom Software Development
         </h3>
       </div>
       <div className="lg:flex lg:gap-0 ">
-        <div className="lg:w-1/2 w-full lg:!mb-0  !mb-10">
+        <div className="lg:w-1/2 w-full lg:!mb-0  !mb-10" data-aos="zoom-in" data-aos-duration="1000">
           <img src={software1} alt="software1" className="" />
         </div>
-        <div className="lg:w-1/2  lg:place-self-center !justify-items-center  md:!pl-40 sm:!pl-40 !pl-5 lg:!mb-0 !mb-5">
+        <div
+          className="lg:w-1/2  lg:place-self-center !justify-items-center  md:!pl-40 sm:!pl-40 !pl-5 lg:!mb-0 !mb-5"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div className="">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase ">
               Who We Are
@@ -111,8 +118,9 @@ function Sowtware_Page() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
-                      } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3 pr-10  ${
+                      isselected ? "border-b-1" : "border-0"
+                    } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
@@ -147,7 +155,7 @@ function Sowtware_Page() {
       </div>
       <div className="lg:flex">
         <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:!mb-0 !mb-10 ">
-          <div className="w-[60%]">
+          <div className="w-[60%]" data-aos="fade-right">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase !mb-3">
               Brands
             </h3>
@@ -188,33 +196,35 @@ function Sowtware_Page() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full" data-aos="fade-left">
           <img src={software1} alt="software1" className="" />
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-1/2 w-full lg:mb-0 ">
+        <div className="lg:w-1/2 w-full lg:mb-0 " data-aos="fade-right">
           <img src={software1} alt="software1" className="" />
         </div>
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 ">
+        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-left">
           <div className="w-[60%]">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
               Tailored <br /> Enterprise <br /> Solutions
-
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                We build high-impact software that adapts to your business model. Whether automating workflows, improving productivity, or launching internal platforms, our solutions scale with you—designed for performance and maintainability.
+                We build high-impact software that adapts to your business
+                model. Whether automating workflows, improving productivity, or
+                launching internal platforms, our solutions scale with
+                you—designed for performance and maintainability.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="lg:flex">
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 ">
+        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-right">
           <div className="w-[60%]">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
@@ -224,12 +234,14 @@ function Sowtware_Page() {
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Our custom applications are designed with future growth in mind. Modular code, clean architecture, and robust documentation make scaling, upgrading, and handoffs easier and more cost-effective.
+                Our custom applications are designed with future growth in mind.
+                Modular code, clean architecture, and robust documentation make
+                scaling, upgrading, and handoffs easier and more cost-effective.
               </p>
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full ">
+        <div className="lg:w-1/2 w-full " data-aos="fade-left">
           <img src={software1} alt="software1" className="" />
         </div>
       </div>
@@ -252,7 +264,7 @@ function Sowtware_Page() {
           </div>
         </div>
       </div> */}
-      <div className="relative w-full h-[800px]">
+      <div className="relative w-full h-[800px]" data-aos="fade-up">
         <img
           src="https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Home-6-parallax-img.jpg"
           alt="software2"
@@ -260,7 +272,7 @@ function Sowtware_Page() {
         />
 
         {/* Overlay content */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
           <div className="bg-transparent bg-opacity-80 !p-8 max-w-xl text-left">
             <h3 className="text-white text-[16px] tracking-wide uppercase mb-3">
               Brands

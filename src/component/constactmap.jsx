@@ -16,12 +16,14 @@ const ContactMap = () => {
     if (!mapRef.current) return;
 
     // Initialize map
-    const map = L.map(mapRef.current).setView([11.0168, 76.9558], 13);
+    const map = L.map(mapRef.current).setView([11.021353,77.007341], 20);
     // Add tile layer
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    //    {
+    //   attribution:
+    //     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    // }
+  ).addTo(map);
 
     // Fix default marker
     const defaultIcon = L.icon({
@@ -29,8 +31,8 @@ const ContactMap = () => {
       //   shadowUrl: markerShadow,
       iconUrl:
         "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
-      shadowUrl:
-        "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
+      // shadowUrl:
+      //   "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
       iconSize: [25, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],
@@ -38,9 +40,9 @@ const ContactMap = () => {
     });
 
     // Add marker
-    markerRef.current = L.marker([11.0168, 76.9558], { icon: defaultIcon })
+    markerRef.current = L.marker([11.021353,77.007341], { icon: defaultIcon })
       .addTo(map)
-      .bindPopup("<b>Our Office</b><br>123 Main Street, Coimbatore")
+      .bindPopup("<b>Our Office</b><br>H-22, Peelamedu, HUDCO Colony, Coimbatore, Tamil Nadu 641004, Coimbatore")
       .openPopup();
 
     return () => {

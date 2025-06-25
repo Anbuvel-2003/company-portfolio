@@ -41,11 +41,11 @@ const WhoWeAre = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-items-end" data-aos="fade-up">
+        <div className="w-full flex justify-items-end " data-aos="fade-up">
           <img
             src={phoneImage}
             alt="Phone UI"
-            className="w-[90%] lg:h-[80vh] md:h-[60vh] sm:h-[40vh] object-contain"
+            className="lg:w-[90%] md:w-[90%] w-[70%] lg:h-[80vh] md:h-[60vh] sm:h-[40vh] object-contain lg:p-0 md:p-0 !pl-20"
           />
         </div>
       </div>

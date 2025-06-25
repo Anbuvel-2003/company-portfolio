@@ -2,8 +2,8 @@ function Meetourclient() {
   return (
     <div>
       <div className="md:h-[300px] lg:h-[50vh] sm:h-[60vh] h-[50%] bg-red-200  md:flex sm:grid">
-        <div className="md:w-1/2 sm:h-full inline-flex bg-gradient-to-r from-sky-200 to-purple-200 w-full h-[30vh]">
-          <div className="w-full items-center justify-items-center content-center">
+        <div className="md:w-1/2 sm:h-full lg:inline-flex md:inline-flex grid bg-gradient-to-r from-sky-200 to-purple-100 w-full h-[30vh]">
+          <div className="w-full !pl-10 items-center justify-items-center content-center">
             <h4 className=" w-[300px] lg:text-3xl md:text-3xl text-2xl  text-black font-syne">
               Our Team
             </h4>
@@ -12,9 +12,10 @@ function Meetourclient() {
               accusantium doloremque laudanti.
             </p>
           </div>
-          <div className=" w-[100px] content-center">
+          <div className="  lg:!mr-5 w-[50px]  h-[50px] place-content-center place-self-center border-1 justify-items-center    items-center rounded-[100px] border-[#c3c4f9]
+          cursor-pointer">
             <svg
-              class="w-6 h-6 text-gray-800 dark:text-white"
+              class="w-6 h-6 text-gray-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -32,8 +33,8 @@ function Meetourclient() {
             </svg>
           </div>
         </div>
-        <div className="md:w-1/2 sm:h-full  inline-flex bg-[#f3f3f3] w-full h-[30vh]">
-          <div className="w-full items-center justify-items-center content-center">
+        <div className="md:w-1/2 sm:h-full  lg:inline-flex md:inline-flex grid bg-[#f3f3f3] w-full h-[30vh]">
+          <div className="w-full !pl-10 items-center justify-items-center content-center">
             <h4 className=" w-[300px] lg:text-3xl md:text-3xl text-2xl text-black font-syne">
               Our Newsletter
             </h4>
@@ -43,7 +44,7 @@ function Meetourclient() {
               putting together.(what we're building)
             </p>
           </div>
-          <div className=" w-[100px] content-center">
+          <div className=" lg:!mr-5 w-[50px]  h-[50px] place-content-center place-self-center border-1 justify-items-center    items-center rounded-[100px] border-[#c3c4f9] cursor-pointer">
             <svg
               class="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -52,6 +53,7 @@ function Meetourclient() {
               height="24"
               fill="none"
               viewBox="0 0 24 24"
+              className=""
             >
               <path
                 stroke="currentColor"

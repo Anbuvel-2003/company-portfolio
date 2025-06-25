@@ -60,8 +60,8 @@ function ContactUs() {
               <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
                 have a great idea ?
               </h3>
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
-                abc@gmail.com
+              <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
+               94881 60083
               </h3>
               <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
                 tell Us more about your business idea to get consulted
@@ -72,7 +72,7 @@ function ContactUs() {
                 Got questions to ask ?
               </h3>
               <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
-                Support abc @gmail.com
+                admin@vineatz.com
               </h3>
               <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
                 Discuss your projects with us. We're open to question
@@ -82,8 +82,8 @@ function ContactUs() {
               <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
                 We are hiring!
               </h3>
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
-                abc@gmail.com
+              <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
+                6379108978
               </h3>
               <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
                 We do more for your career. Come and join Us

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import img1 from "../assets/Rev-slider-img-3.png";
 import img2 from "../assets/Rev-slider-img-2.png";
+// import img12 from "../assets/intro1.png";
+import img12 from "../assets/intro2.png";
+// import img12 from "../assets/intro1.png";
+import img23 from "../assets/intro3.png";
 
 function Intro() {
   const main = [
@@ -9,7 +13,7 @@ function Intro() {
       p1: "New generation of ",
       p2: "technology and",
       p3: "conceptualization design.",
-      url: img2,
+      url: img23,
       p: "New generation of immense technology and conceptualization design",
     },
     {
@@ -17,7 +21,7 @@ function Intro() {
       p1: "End to End development",
       p2: "with superior design",
       p3: "and technical solutions",
-      url: img2,
+      url: img23,
       p: "End-to-end app development with superior design and growth solutions",
     },
     {
@@ -25,7 +29,7 @@ function Intro() {
       p1: "Scalable SaaS solutions",
       p2: "tailored for",
       p3: "modern businesses",
-      url: img2,
+      url: img23,
       p: "Scalable SaaS solutions tailored for modern businesses",
     },
   ];
@@ -107,7 +111,7 @@ function Intro() {
           data-aos-delay="100"
         >
           <div className="lg:w-[50vw] lg:h-[70vh]">
-            {/* <img src={data?.url} alt={`client-`} /> */}
+            <img src={data?.url} alt={`client-`} />
           </div>
           <div className="flex lg:!gap-30 md:!gap-20 sm:!gap-10 !gap-5 place-self-end">
             <div className="cursor-pointer" onClick={handlePrev}>

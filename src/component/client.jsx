@@ -21,12 +21,12 @@ function Client_section() {
             { url: img8, text: "Tablet" },
             { url: img9, text: "Watches" },
           ].map((imgSrc, idx) => (
-            <div className="bg-[#efefef] hover:opacity-75 lg:h-[80%] relative group">
+            <div className="bg-[#efefef] hover:opacity-75 lg:h-[80%] relative group cursor-pointer" >
               <img
                 key={idx}
                 src={imgSrc?.url}
                 alt={`client-${idx}`}
-                className="w-full h-full object-contain sm:object-fill transition-transform duration-300 transform group-hover:scale-90"
+                className="w-full h-full object-contain sm:object-fill transition-transform duration-300 transform group-hover:scale-80  group-hover:object-cover"
               />
               <div className="absolute bottom-6 left-6.5">
                 <h3
@@ -61,11 +61,11 @@ function Client_section() {
             ullamconisi ut aliquip ex
           </h4>
           <div
-            className=" border w-[130px] h-[40px] justify-items-center content-center hover:bg-blue-500"
+            className=" border hover:border-none w-[130px] h-[40px] justify-items-center content-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400   cursor-pointer group"
             data-aos="fade-up"
             data-aos-duration="6000"
           >
-            <h2 className="uppercase text-black text-[16px] font-sans hover:text-white">
+            <h2 className="uppercase text-black text-[16px] font-sans group-hover:text-white">
               View More
             </h2>
           </div>
