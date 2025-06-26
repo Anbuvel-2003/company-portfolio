@@ -6,9 +6,9 @@ import img4 from "../assets/Client-img-4.png";
 import img5 from "../assets/Client-img-5.png";
 import img6 from "../assets/Client-img-6.png";
 import img7 from "../assets/Portfolio-img1.jpg";
-import img8 from "../assets/Portfolio-img2.jpg";
-import img9 from "../assets/Portfolio-img3.jpg";
-import img10 from "../assets/Portfolio-img4.jpg";
+import img8 from "../assets/client2.jpg";
+import img9 from "../assets/client3.jpg";
+import img10 from "../assets/client1.jpg";
 
 function Client_section() {
   return (
@@ -17,9 +17,9 @@ function Client_section() {
         <div className="lg:w-1/4 lg:h-[95vh]"></div>
         <div className="  grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  sm:!pl-15 !pl-15  ">
           {[
-            { url: img10, text: "SmarTek" },
-            { url: img8, text: "Tablet" },
-            { url: img9, text: "Watches" },
+            { url: img10, text: "Idea" },
+            { url: img8, text: "Convert" },
+            { url: img9, text: "Product" },
           ].map((imgSrc, idx) => (
             <div className="bg-[#efefef] hover:opacity-75 lg:h-[80%] relative group cursor-pointer" >
               <img
@@ -30,8 +30,8 @@ function Client_section() {
               />
               <div className="absolute bottom-6 left-6.5">
                 <h3
-                  className="text-4xl font-syne text-black group-hover:text-transparent bg-clip-text bg-gradient-to-r  from-purple-500 to-sky-400 group-hover:from-indigo-500 group-hover:to-cyan-400  cursor-pointer
-                "
+                  className="text-4xl font-syne text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r  from-purple-500 to-sky-400 group-hover:from-indigo-500 group-hover:to-cyan-400  cursor-pointer
+                " 
                 >
                   {imgSrc?.text}
                 </h3>
@@ -57,10 +57,9 @@ function Client_section() {
             Trusted and <br /> Supported by <br /> Many
           </h4>
           <h4 data-aos="fade-up" data-aos-duration="5000">
-            Ut enim ad minim veniam, quis nostrud exercitation <br />{" "}
-            ullamconisi ut aliquip ex
+            Empowered by trust and anchored in excellence, <br/> our expert-driven team is unwaveringly reliable <br/>committed to delivering your success, consistently
           </h4>
-          <div
+          {/* <div
             className=" border hover:border-none w-[130px] h-[40px] justify-items-center content-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400   cursor-pointer group"
             data-aos="fade-up"
             data-aos-duration="6000"
@@ -68,7 +67,7 @@ function Client_section() {
             <h2 className="uppercase text-black text-[16px] font-sans group-hover:text-white">
               View More
             </h2>
-          </div>
+          </div> */}
         </div>
         <div className="lg:w-1/3 grid md:grid-cols-3 sm:grid-cols-2 gap-2 items-center justify-center sm:!pl-10 p-6">
           {[img1, img2, img3, img4, img5, img6].map((imgSrc, idx) => (

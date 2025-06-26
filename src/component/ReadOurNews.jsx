@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import cardImage from "../assets/image.png";
 import cardImage1 from "../assets/image1.png";
+import card1 from "../assets/home1.jpg";
+import card2 from "../assets/home2.jpg";
+import card3 from "../assets/home3.jpg";
+import card4 from "../assets/home4.jpg";
 
 // const features = [
 //   { title: "Fast And Easy", link: "/portfolio-item/phones" },
@@ -10,7 +14,7 @@ import cardImage1 from "../assets/image1.png";
 // ];
 
 const ReadNews = () => {
-  const [activeImage, setActiveImage] = useState(cardImage);
+  const [activeImage, setActiveImage] = useState(card1);
 
   return (
     <section className=" min-h-screen w-full flex items-center justify-center bg-white px-6 py-24 overflow-hidden font-sans">
@@ -50,10 +54,11 @@ const ReadNews = () => {
                 key={i}
                 className="text-xl font-semibold relative group"
                 onMouseEnter={() =>
-                  setActiveImage(i % 2 === 0 ? cardImage : cardImage1)
+                  setActiveImage(i == 0 ? card1  : i==1 ? card2 : i==2 ? card3 : i==3 ? card4 : cardImage1)
                 }
-                onMouseLeave={() => setActiveImage(cardImage)}
+                // onMouseLeave={() => setActiveImage(cardImage)}
               >
+                {console.log("qqqq", i)}
                 <span className="absolute  left-0 top-0 h-0 w-0.5 bg-black group-hover:h-full transition-all duration-400"></span>
                 <span className="!ml-8 text-transparent bg-clip-text lg:text-3xl md:text-3xl text-[14px] bg-gradient-to-r from-purple-500 to-sky-400 hover:from-indigo-500 hover:to-cyan-400 transition-all duration-300 cursor-pointer">
                   {text}

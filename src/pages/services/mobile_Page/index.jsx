@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Meetourclient from "../../../component/meetourclient";
-import software1 from "../../../assets/softwareimg1.jpg";
+import software1 from "../../../assets/mobile1.jpg";
+import software2 from "../../../assets/mobile2.jpg";
+import software3 from "../../../assets/mobile3.jpg";
+import software4 from "../../../assets/mobile4.jpg";
 import { Flex, Progress, Card } from "antd";
 
 function Mobile_App() {
@@ -189,12 +192,12 @@ function Mobile_App() {
           </div>
         </div>
         <div className="lg:w-1/2 w-full" data-aos="fade-left">
-          <img src={software1} alt="software1" className="" />
+          <img src={software2} alt="software1" className="" />
         </div>
       </div>
       <div className="lg:flex">
         <div className="lg:w-1/2 w-full lg:mb-0 " data-aos="fade-right">
-          <img src={software1} alt="software1" className="" />
+          <img src={software3} alt="software1" className="" />
         </div>
         <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-left">
           <div className="w-[60%]">
@@ -231,7 +234,7 @@ function Mobile_App() {
           </div>
         </div>
         <div className="lg:w-1/2 w-full " data-aos="fade-left">
-          <img src={software1} alt="software1" className="" />
+          <img src={software4} alt="software1" className="" />
         </div>
       </div>
       {/* <div className="flex !my-20">

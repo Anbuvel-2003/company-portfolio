@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Meetourclient from "../../../component/meetourclient";
-import About1 from "../../../assets/About-us-img-1.jpg";
+import About1 from "../../../assets/contact.jpg";
 import ContactMap from "../../../component/constactmap";
 import Projectreport from "../../../component/projectsreport";
 
@@ -33,14 +33,15 @@ function ContactUs() {
               Built for Your Business
             </h3>
             <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Data-Driven <br /> Growth
+              Get in Touch <br />
+              With Our Experts
             </h2>
             <div className="">
               <p className="text-black text-[16px] font-normal">
-                Our marketing strategies are rooted in analytics and optimized
-                for results. From user behavior to audience segmentation, we
-                tailor content, SEO, email flows, and ads that align with your
-                business KPIs—turning reach into revenue.
+                Stay ahead with expert insights and the latest in tech. Whether
+                you're planning a project or exploring ideas, our team is just a
+                message away.Let’s connect and turn possibilities into powerful
+                digital outcomes.
               </p>
             </div>
           </div>
@@ -61,9 +62,9 @@ function ContactUs() {
                 have a great idea ?
               </h3>
               <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
-               94881 60083
+                94881 60083
               </h3>
-              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
+              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-[1/3] text-center">
                 tell Us more about your business idea to get consulted
               </h3>
             </div>
@@ -74,7 +75,7 @@ function ContactUs() {
               <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
                 admin@vineatz.com
               </h3>
-              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
+              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] w-[1/3] text-center">
                 Discuss your projects with us. We're open to question
               </h3>
             </div>
@@ -85,7 +86,7 @@ function ContactUs() {
               <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
                 6379108978
               </h3>
-              <h3 className="text-black font-syne font-[18px] w-[1/3] text-center">
+              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] w-[1/3] text-center">
                 We do more for your career. Come and join Us
               </h3>
             </div>

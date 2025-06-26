@@ -19,11 +19,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
        }
       `}
     >
-      <div
-        className={`${
-          isHorizontal ? "grid justify-between !px-12" : ""
-        }`}
-      >
+      <div className={`${isHorizontal ? "grid justify-between !px-12" : ""}`}>
         {items.map((item, idx) => {
           return (
             <div
@@ -250,12 +246,12 @@ const NavBar = () => {
           description:
             "Design intuitive and visually appealing user interfaces",
         },
-        {
-          id: 7,
-          title: "Digital marketing",
-          path: "/test/digitalSection",
-          description: "Accelerate your digital marketing with us",
-        },
+        // {
+        //   id: 7,
+        //   title: "Digital marketing",
+        //   path: "/test/digitalSection",
+        //   description: "Accelerate your digital marketing with us",
+        // },
         {
           id: 8,
           title: "Testing Services",
@@ -266,14 +262,14 @@ const NavBar = () => {
       ],
       isHorizontal: true,
     },
-    { title: "Products", path: "/test/ProductSection" },
+    // { title: "Products", path: "/test/ProductSection" },
     {
       title: "Portfolio",
       path: "/test/portfolio",
     },
-    { title: "Blog", path: "/test/blogsection" },
+    // { title: "Blog", path: "/test/blogsection" },
     { title: "About Us", path: "/test/aboutUs" },
-    { title: "Careers", path: "/test/Careerssection" },
+    // { title: "Careers", path: "/test/Careerssection" },
     { title: "Contact Us", path: "/test/contactUs" },
   ];
 
@@ -315,7 +311,7 @@ const NavBar = () => {
                   href={link.path}
                   className="relative group flex items-center uppercase text-sm font-syne text-black 
     hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-all duration-700 ease-in-out"
-    style={{ letterSpacing: '0.15em' }}
+                  style={{ letterSpacing: "0.15em" }}
                 >
                   {link.title}
                   {link.dropdown && (
@@ -331,7 +327,7 @@ const NavBar = () => {
                     items={link.dropdown}
                     isOpen={activeDropdown === index}
                     isHorizontal={link.isHorizontal}
-                  />    
+                  />
                 )}
               </div>
             ))}
@@ -370,7 +366,7 @@ const NavBar = () => {
               <div key={index}>
                 <div className="flex justify-between items-center w-full">
                   <a
-                    // href={link.path}
+                    href={link.path}
                     className="block !px-3 !py-2 text-[16px]  font-syne text-black w-full"
                     onClick={() => toggleDropdown(index)}
                   >
