@@ -34,7 +34,7 @@ function Main() {
     <div className="relative">
       <div className="absolute left-10 top-0 h-full w-[1px] bg-[#5ca7ee]" />
       <div className="pl-4">
-        <div className="lg:h-screen inset-1 bg-gradient-to-bl from-white via-white to-blue-100 top-1 right-1">
+        <div className="lg:h-screen inset-1  top-1 right-1">
           <div className="h-[90%]">
             <Intro />
           </div>

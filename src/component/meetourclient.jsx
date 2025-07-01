@@ -8,8 +8,7 @@ function Meetourclient() {
               Our Team
             </h4>
             <p className="w-[300px] text-left">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudanti.
+              Our team blends deep expertise with a collaborative, friendly approach. We work closely to turn ideas into impactful, high-quality digital solutions.
             </p>
           </div>
           <div className="  lg:!mr-5 w-[50px]  h-[50px] place-content-center place-self-center border-1 justify-items-center    items-center rounded-[100px] border-[#c3c4f9]
@@ -41,7 +40,7 @@ function Meetourclient() {
             <p className="w-[300px] text-left">
               Innovation moves fast; don't miss a beat. Stay up to date with our
               latest tech insights and behind-the-scenes defines at what we're
-              putting together.(what we're building)
+              putting together.
             </p>
           </div>
           <div className=" lg:!mr-5 w-[50px]  h-[50px] place-content-center place-self-center border-1 justify-items-center    items-center rounded-[100px] border-[#c3c4f9] cursor-pointer">

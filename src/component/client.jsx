@@ -57,7 +57,7 @@ function Client_section() {
             Trusted and <br /> Supported by <br /> Many
           </h4>
           <h4 data-aos="fade-up" data-aos-duration="5000">
-            Empowered by trust and anchored in excellence, <br/> our expert-driven team is unwaveringly reliable <br/>committed to delivering your success, consistently
+            Empowered by trust and anchored in excellence, <br/> our expert-driven team is unwaveringly reliable <br/>committed to delivering your success and  consistently.
           </h4>
           {/* <div
             className=" border hover:border-none w-[130px] h-[40px] justify-items-center content-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400   cursor-pointer group"

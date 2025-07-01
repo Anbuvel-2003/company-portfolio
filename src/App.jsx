@@ -17,7 +17,8 @@ import ProductShowcase from "./pages/homePage/productShowcase";
 import SoftwareSupport from "./pages/homePage/softwareSupport";
 import Techcompany from "./pages/homePage/techCompany";
 import Main from "./pages/homePage/main/main";
-import ItBusiness from "./pages/homePage/itBusiness"; import AboutMe from "./pages/pages/aboutMe";
+import ItBusiness from "./pages/homePage/itBusiness";
+import AboutMe from "./pages/pages/aboutMe";
 import AboutUs from "./pages/pages/aboutUs";
 import ContactUs from "./pages/pages/contactUs";
 import Ourprocess from "./pages/pages/ourProcess";
@@ -47,21 +48,21 @@ function App() {
   }, []);
   const [showTopBtn, setShowTopBtn] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    setShowTopBtn(window.scrollY > 300);
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
-
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
   const router = createBrowserRouter([
     {
       path: "/test",
@@ -132,28 +133,28 @@ const scrollToTop = () => {
     <div>
       <NavBar />
       <div className="relative">
-      <RouterProvider router={router} />
-      <Footer_section />
-      {/* <div className="absolute cursor-pointer right-10 bottom-10 " onClick={()=>{
+        <RouterProvider router={router} />
+        <Footer_section />
+        {/* <div className="absolute cursor-pointer right-10 bottom-10 " onClick={()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' })}}
         > 
         <h2 className="bg-amber-200 transform -rotate-90 origin-left">Back To Top</h2>
         <span class="block w-14 h-0.5 bg-white transform -rotate-90 origin-left mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
       </div> */}
-     {showTopBtn && (
- <div
-  onClick={scrollToTop}
-  className="fixed right-10 bottom-50 cursor-pointer !grid items-center transform -rotate-90 origin-bottom-right group z-50"
->
-  {/* Text first */}
-  <span className="text-xs text-[#8c8c8c] tracking-widest font-medium uppercase mb-2">
-  <span className="w-14 h-0.5 bg-[#8c8c8c] transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
-    Back to Top
-  </span>
-</div>
-)}
+        {showTopBtn && (
+          <div
+            onClick={scrollToTop}
+            className="fixed right-10 bottom-50 cursor-pointer !grid items-center transform -rotate-90 origin-bottom-right group z-50"
+          >
+            {/* Text first */}
+            <span className="text-xs text-[#8c8c8c] tracking-widest font-medium uppercase mb-2">
+              <span className="w-14 h-0.5 bg-[#8c8c8c] transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
+              Back to Top
+            </span>
+          </div>
+        )}
       </div>
-   </div>
+    </div>
   );
 }
 
