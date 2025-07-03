@@ -34,28 +34,28 @@ function Footer_section() {
     //             </a>
     //           </div>
     //           <div className="!mt-5 lg:!mt-0 md:!mt-0 grid lg:!gap-2  md:!gap-2 !gap-5 lg:w-1/6 md:w-1/3 sm-w-full justify-items-start">
-    //             <a href="/test/" className="text-white uppercase">
+    //             <a href="/" className="text-white uppercase">
     //               Main Home
     //             </a>
-    //             <a href="/test/ProductSection" className="text-white uppercase">
+    //             <a href="/ProductSection" className="text-white uppercase">
     //               products
     //             </a>
-    //             <a href="/test/portfolio" className="text-white uppercase">
+    //             <a href="/portfolio" className="text-white uppercase">
     //               Portfolio
     //             </a>
-    //             <a href="/test/blogsection" className="text-white uppercase">
+    //             <a href="/blogsection" className="text-white uppercase">
     //               blog
     //             </a>
 
-    //             <a href="/test/Careerssection" className="text-white uppercase">
+    //             <a href="/Careerssection" className="text-white uppercase">
     //               careers
     //             </a>
     //           </div>
     //           <div className="grid lg:!gap-2 md:!gap-2 !mt-5 md:!mt-0 lg:!mt-0 !gap-5 lg:w-1/3 md:w-1/3 justify-items-start">
-    //             <a href="/test/aboutUs" className="text-white uppercase">
+    //             <a href="/aboutUs" className="text-white uppercase">
     //               About Us
     //             </a>
-    //             <a href="/test/contactUs" className="text-white uppercase">
+    //             <a href="/contactUs" className="text-white uppercase">
     //               contact Us
     //             </a>
 
@@ -121,7 +121,7 @@ function Footer_section() {
           <div className="grid">
             <span className="!mb-1">
               <a
-                href="/test/"
+                href="/"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Main
@@ -139,7 +139,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/portfolio"
+                href="/portfolio"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Portfolio
@@ -157,7 +157,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/aboutUs"
+                href="/aboutUs"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 About Us
@@ -175,7 +175,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/contactUs"
+                href="/contactUs"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Contact Us
@@ -184,7 +184,7 @@ function Footer_section() {
             {/* <span className="!mb-1">
               {" "}
               <a
-                href="/test/ourTeam"
+                href="/ourTeam"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Our team
@@ -202,7 +202,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/softwareSection"
+                href="/softwareSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Software Development
@@ -211,7 +211,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/saasproductSection"
+                href="/saasproductSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Saas app development
@@ -220,7 +220,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/mobileappSection"
+                href="/mobileappSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Mobile app development
@@ -229,7 +229,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/webappSection"
+                href="/webappSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Web app development
@@ -238,7 +238,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/ecommerceSection"
+                href="/ecommerceSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 E-Commerce app development
@@ -247,7 +247,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/uxuiSection"
+                href="/uxuiSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 UI and UX Design
@@ -256,7 +256,7 @@ function Footer_section() {
             <span className="!mb-1">
               {" "}
               <a
-                href="/test/testingSection"
+                href="testingSection"
                 className="text-[#6e6e6e] text-[16px] font-syne capitalize"
               >
                 Testing Services
