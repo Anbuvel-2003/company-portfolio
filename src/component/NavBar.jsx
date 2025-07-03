@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/vineatzlogo2.png";
+import Logo1 from "../assets/favicon.png";
 import { CiMobile3, CiSettings } from "react-icons/ci";
 import { LuBrainCircuit, LuCloudCog, LuMonitorCog } from "react-icons/lu";
 import { FaPencilRuler } from "react-icons/fa";
@@ -282,14 +283,18 @@ const NavBar = () => {
       <div className="  px-4">
         <div className="flex  lg:justify-start justify-between w-[95vw]  items-center h-16">
           {/* Logo - moved significantly to the right */}
-          <div className="flex-shrink-0 ml-32 pl-20 ">
-            {/* <a href="/" className="text-xl font-bold text-black !ml-20">
-              DEON
-            </a> */}
+          <div className="flex-shrink-0 ml-32 lg:!pl-20 hidden lg:block ">
             <img
               src={Logo}
               alt={`client-`}
-              className="lg:w-[8vw] lg:h-[8vh] md:w-[6vw] md:h-[6vh] sm:h-[4vh] sm:w-[vw] h-[4vh] w-[10vw] !ml-10 contain"
+              className=""
+            />
+          </div>
+          <div className="flex-shrink-0 ml-32 md:!pt-5 !pt-3  !pl-10 lg:hidden block ">
+            <img
+              src={Logo1}
+              alt={`client-`}
+              className="w-[50%] h-[50%]"
             />
           </div>
 
