@@ -44,6 +44,7 @@ function App() {
       easing: "ease-in-out",
       once: true,
       mirror: false,
+      
     });
   }, []);
   const [showTopBtn, setShowTopBtn] = useState(false);
