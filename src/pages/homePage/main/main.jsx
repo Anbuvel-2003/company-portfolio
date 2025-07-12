@@ -6,6 +6,7 @@ import Client_section from "../../../component/client";
 import ReadOurNews from "../../../component/ReadOurNews";
 import Meetourclient from "../../../component/meetourclient";
 import Process from "../../../component/process";
+import Thinkyoutoknow from "../../../component/thinkyoutoknow";
 
 function Main() {
   const newsData = [
@@ -39,34 +40,13 @@ function Main() {
           <div className="h-[90%]">
             <Intro />
           </div>
-          {/* <div className="">
-            <div className="!ml-10 !mb-10 border-l-2 !pl-5 flex justify-between lg:w-[90vw] h-[5%]">
-              <h2 className="font-mono text-[14px] text-black capitalize">
-                Who <br /> We Are
-              </h2>
-            </div>
-          </div> */}
         </div>
         <Process />
+        <Thinkyoutoknow/>
         <WhoWeAre />
-        {/* <div className="!ml-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            Who <br /> We Are
-          </h2>
-        </div> */}
         <ReadOurNews />
-        {/* <div className="!ml-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            Read <br /> Our News
-          </h2>
-        </div> */}
         <News_section newsItems={newsData} />
         <Client_section />
-        {/* <div className="!m-10 border-l-2 !pl-5">
-          <h2 className="font-mono text-[14px] text-black capitalize">
-            meet <br /> our client
-          </h2>
-        </div> */}
         <Meetourclient />
       </div>
     </div>

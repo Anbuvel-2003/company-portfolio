@@ -370,16 +370,6 @@ function Footer_section() {
                 <FaLinkedin size={45} color="#ffff" />
               </a>
             </div>
-            <div>
-              <a href="/">
-                <FaSquareXTwitter size={45} color="#ffff" />
-              </a>
-            </div>
-            <div>
-              <a href="/">
-                <FaSquareYoutube size={45} color="#ffff" />
-              </a>
-            </div>
           </div>
         </div>
       </div>

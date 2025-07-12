@@ -1,358 +1,396 @@
 import React, { useState } from "react";
 import Meetourclient from "../../../component/meetourclient";
-import software1 from "../../../assets/web1.jpg";
-import software2 from "../../../assets/web2.jpg";
-import software3 from "../../../assets/web3.jpg";
-import software4 from "../../../assets/web4.jpg";
+import software1 from "../../../assets/mobile1.jpg";
+import software2 from "../../../assets/mobile2.jpg";
+import software3 from "../../../assets/mobile3.jpg";
+import software4 from "../../../assets/mobile4.jpg";
 import { Flex, Progress, Card } from "antd";
+import webbanner1 from "../../../assets/webbanner1.png";
+import web1 from "../../../assets/web1.png";
+import web2 from "../../../assets/web2.png";
+import web3 from "../../../assets/web3.png";
+import web4 from "../../../assets/web4.png";
+import web5 from "../../../assets/web5.png";
+import web6 from "../../../assets/web6.png";
+import web01 from "../../../assets/web01.png";
 
 function Web_Page() {
-  const conicColors = {
-    "0%": "#b9e6fe",
-    "50%": "#ccdfff",
-    "100%": "#e7d5ff",
-  };
-  const data = [
+  const webdata = [
     {
       id: 1,
-      title: "Design",
-      paragraph:
-        "We create visually appealing interfaces that align with your brand identity. Our designs are intuitive, modern, and built to enhance user engagement.",
-      points: [
+      image: web1,
+      t1: "Web Portals",
+      data: [
         {
           id: 1,
-          data: "User-Centric Layouts.",
+          value: "Self-service Portal",
         },
         {
           id: 2,
-          data: "Modern UI Elements.",
+          value: "Customer Portals",
         },
         {
           id: 3,
-          data: "Brand-Driven Aesthetics.",
+          value: "Employee Portals",
         },
         {
           id: 4,
-          data: "Creative Visual Flow.",
+          value: "Insurance Portals",
+        },
+        {
+          id: 5,
+          value: "Investor Portals ",
+        },
+        {
+          id: 6,
+          value: "Community Portals",
+        },
+        {
+          id: 7,
+          value: "E-Learning Portals",
+        },
+        {
+          id: 8,
+          value: "Patient Portals",
         },
       ],
     },
     {
       id: 2,
-      title: "Responsive",
-      paragraph:
-        "Our web applications adapt seamlessly to any device, ensuring consistent functionality and experience on desktops, tablets, and smartphones.",
-      points: [
+      image: web2,
+      t1: "Web Apps",
+      data: [
         {
           id: 1,
-          data: "Mobile-First Approach.",
+          value: "task management systems",
         },
         {
           id: 2,
-          data: "Cross-Device Compatibility.",
+          value: "CRM",
         },
         {
           id: 3,
-          data: "Flexible Grid Systems.",
+          value: "Financial Management Systems",
         },
         {
           id: 4,
-          data: "Adaptive Components.",
+          value: "Document Management Systems",
+        },
+        {
+          id: 5,
+          value: "Learning Management Systems ",
+        },
+        {
+          id: 6,
+          value: "Knowledge Management Systems",
+        },
+        {
+          id: 7,
+          value: "Collabration Software",
+        },
+        {
+          id: 8,
+          value: "Custom Web Apps",
         },
       ],
     },
     {
       id: 3,
-      title: "Security",
-      paragraph:
-        "We embed security at every layer and optimize performance to ensure your app is fast, reliable, and ready for scale.",
-      points: [
+      image: web3,
+      t1: "Customer Apps",
+      data: [
         {
           id: 1,
-          data: "Data Protection Standards.",
+          value: "Customer Service Apps",
         },
         {
           id: 2,
-          data: "Fast Load Times.",
+          value: "E-commerce web apps",
         },
         {
           id: 3,
-          data: "High Traffic Handling.",
+          value: "Advertising signage apps",
         },
         {
           id: 4,
-          data: "Code Optimization.",
+          value: "Mobile Banking apps",
+        },
+        {
+          id: 5,
+          value: "Payment apps",
+        },
+        {
+          id: 6,
+          value: "Lending Apps",
+        },
+        {
+          id: 7,
+          value: "Insurance Apps",
+        },
+        {
+          id: 8,
+          value: "Digital Wallets",
+        },
+      ],
+    },
+    {
+      id: 4,
+      image: web4,
+      t1: "Management Apps",
+      data: [
+        {
+          id: 1,
+          value: "Inventory Management Software",
+        },
+        {
+          id: 2,
+          value: "Asset Management software",
+        },
+        {
+          id: 3,
+          value: "Fleet Management Software",
+        },
+        {
+          id: 4,
+          value: "Order Management Software",
+        },
+        {
+          id: 5,
+          value: "Warehouse management ",
+        },
+        {
+          id: 6,
+          value: "Vendor Management",
+        },
+        {
+          id: 7,
+          value: "Delivery management",
+        },
+      ],
+    },
+    {
+      id: 5,
+      image: web5,
+      t1: "E-Commerce",
+      data: [
+        {
+          id: 1,
+          value: "B2B/B2C web Apps",
+        },
+        {
+          id: 2,
+          value: "Progressive Web Apps",
+        },
+        {
+          id: 3,
+          value: "Online Marketplaces",
+        },
+        {
+          id: 4,
+          value: "Headless Ecommerce",
+        },
+      ],
+    },
+    {
+      id: 6,
+      image: web6,
+      t1: "Online Services",
+      data: [
+        {
+          id: 1,
+          value: "SaaS",
+        },
+        {
+          id: 2,
+          value: "IaaS",
+        },
+        {
+          id: 3,
+          value: "PaaS",
+        },
+        {
+          id: 4,
+          value: "XaaS",
+        },
+      ],
+    },
+    {
+      id: 7,
+      image: web6,
+      t1: "Advanced apps",
+      data: [
+        {
+          id: 1,
+          value: "Internet Of Things",
+        },
+        {
+          id: 2,
+          value: "Computer Vision",
+        },
+        {
+          id: 3,
+          value: "Augmented Reality",
+        },
+        {
+          id: 4,
+          value: "Virtual Reality",
+        },
+        {
+          id: 5,
+          value: "Blockchain",
+        },
+        {
+          id: 6,
+          value: "Cloud computing",
+        },
+      ],
+    },
+    {
+      id: 8,
+      image: web6,
+      t1: "Analytics apps",
+      data: [
+        {
+          id: 1,
+          value: "Business intelligence",
+        },
+        {
+          id: 2,
+          value: "big data solutions",
+        },
+        {
+          id: 3,
+          value: "image analysis & aVI",
+        },
+        {
+          id: 4,
+          value: "risk analytics",
+        },
+        {
+          id: 5,
+          value: "data science solutions",
+        },
+        {
+          id: 6,
+          value: "aI Machine Learning",
         },
       ],
     },
   ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "We create visually appealing interfaces that align with your brand identity. Our designs are intuitive, modern, and built to enhance user engagement.",
-    points: [
-      {
-        id: 1,
-        data: "User-Centric Layouts.",
-      },
-      {
-        id: 2,
-        data: "Modern UI Elements.",
-      },
-      {
-        id: 3,
-        data: "Brand-Driven Aesthetics.",
-      },
-      {
-        id: 4,
-        data: "Creative Visual Flow.",
-      },
-    ],
-  });
-  const { Meta } = Card;
+  const web1data = [
+    {
+      id: 1,
+      data: "Safe start (via a feasibility study/PoC/MVP)",
+      image: web01,
+    },
+    {
+      id: 2,
+      data: "Strong Security",
+      image: web01,
+    },
+    {
+      id: 3,
+      data: "Releases every 2–3 weeks",
+      image: web01,
+    },
+    {
+      id: 4,
+      data: "Guaranteed increase in productivity",
+      image: web01,
+    },
+    {
+      id: 5,
+      data: "Apps that are easy to use, manage and evolve",
+      image: web01,
+    },
+    {
+      id: 6,
+      data: "Responsive, intuitive and appealing UI, seamless UX.",
+      image: web01,
+    },
+  ];
   return (
-    <div className="!pt-15">
-      <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
-        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl " data-aos="zoom-in">
-          Web app development
-        </h3>
-      </div>
-      <div className="lg:flex lg:gap-0 ">
-        <div className="lg:w-1/2 w-full lg:!mb-0  !mb-10" data-aos="zoom-in" data-aos-duration="1000">
-          <img src={software1} alt="software1" className="" />
+    <section className="">
+      <div className="!mt-15">
+        <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
+          <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl text-center ">
+            Web app development
+          </h3>
         </div>
-        <div className="lg:w-1/2  lg:place-self-center !justify-items-center  md:!pl-40 sm:!pl-40 !pl-5 lg:!mb-0 !mb-5">
-          <div className="" data-aos="zoom-in" data-aos-duration="1000">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase ">
-              Who We Are
+        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
+          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+            <img
+              alt=""
+              src={webbanner1}
+              className="w-[100%] h-[100%] object-contain"
+            />
+          </div>
+          <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <h3 className="text-[20px] text-base/10 ">
+              Our UI/UX design services are crafted to elevate your digital
+              presence with precision and creativity. We begin by understanding
+              your goals and your audience, ensuring that every design decision
+              aligns with your brand’s vision. Our approach integrates user
+              research, wireframing, and prototyping to create intuitive and
+              engaging interfaces.Our UI/UX design services are crafted to
+              elevate your digital presence with precision and creativity. We
+              begin by understanding your goals and your audience, ensuring{" "}
             </h3>
-            <h3 className="text-black lg:text-5xl md:text-4xl text-3xl tracking-wide font-syne ">
-              Trusted <br />
-              and Supported <br /> by Many
-            </h3>
-            <div className="lg:flex grid md:flex !gap-3 !mt-3  lg:!gap-10 md:!gap-10 border-b-1 border-[#57b8e0] lg:w-[100%] md:w-[70%] w-[50%] !mb-4">
-              {data?.map((item, index) => {
-                const isselected = item?.id == selecteditem?.id;
-                return (
-                  <div
-                    key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${isselected ? "border-b-1" : "border-0"
-                      } border-[#000000]`}
-                    onClick={() => {
-                      setselecteditem(item);
-                    }}
-                  >
-                    <p className="text-black lg:text-3xl md:text-3xl text-2xl tracking-wide font-syne cursor-pointer">
-                      {item?.title}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="">
-              <p className="lg:text-[20px] md:text-[18px] text-[16px] text-black !mb-4 font-sans lg:w-[90%] md:w-[70%] w-[60vw]">
-                {selecteditem?.paragraph}
-              </p>
-              <ul>
-                {selecteditem?.points &&
-                  selecteditem.points?.map((item, index) => {
-                    return (
-                      <li
-                        className="list-inside list-disc lg:text-[18px] md:text-[16px] text-[14px] font-sans"
-                        key={index}
-                      >
-                        {item?.data}
-                      </li>
-                    );
-                  })}
-              </ul>
-            </div>
           </div>
         </div>
-      </div>
-      <div className="lg:flex">
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:!mb-0 !mb-10 " data-aos="fade-right">
-          <div className="w-[60%]">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase !mb-3">
-              Brands
-            </h3>
-            <h2 className="text-black lg:text-5xl md:text-4xl text-3xl font-medium -tracking-tighter font-syne ">
-              Trusted <br /> and Supported <br /> by Many
-            </h2>
-            <div>
-              <div className="!my-5 ">
-                <h3 className="text-black lg:text-3xl md:text-3xl text-2xl  font-medium -tracking-tighter font-syne ">
-                  Design
-                </h3>
-                <Progress
-                  percent={95}
-                  status="active"
-                  strokeColor={conicColors}
-                />
-              </div>
-              <div className="!my-5 ">
-                <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Responsive
-                </h3>
-                <Progress
-                  percent={75}
-                  status="active"
-                  strokeColor={conicColors}
-                />
-              </div>
-              <div className="!my-5 ">
-                <h3 className="text-black lg:text-3xl md:text-3xl text-2xl font-medium -tracking-tighter font-syne ">
-                  Security
-                </h3>
-                <Progress
-                  percent={83}
-                  status="active"
-                  strokeColor={conicColors}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="lg:w-1/2 w-full" data-aos="fade-left">
-          <img src={software2} alt="software1" className="" />
+        <div>
+          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
+            Technologies used
+          </h3>
+          <div className="bg-[#F8F4FF] !py-10 !px-5"></div>
         </div>
       </div>
-      <div className="lg:flex">
-        <div className="lg:w-1/2 w-full lg:mb-0 " data-aos="fade-right">
-          <img src={software3} alt="software1" className="" />
-        </div>
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-left">
-          <div className="w-[60%]">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
-              Built for Your Business
-            </h3>
-            <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Modern <br /> Web Engineering</h2>
-            <div className="">
-              <p className="text-black text-[16px] font-normal">
-                We specialize in building robust and scalable web applications tailored to meet modern business needs. Our development process integrates cutting-edge UI/UX design to ensure visually appealing and user-friendly interfaces. Every application we deliver is fully responsive, offering seamless functionality across desktops, tablets, and mobile devices.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="lg:flex">
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 " data-aos="fade-right">
-          <div className="w-[60%]">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
-              Built for Your Business
-            </h3>
-            <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
-              Reliable <br /> Web Infrastructure
-            </h2>
-            <div className="">
-              <p className="text-black text-[16px] font-normal">
-                We prioritize security at every layer of development, implementing best practices to protect your data and users. In addition, our performance-optimized code ensures fast load times and a smooth user experience, even under high traffic. Whether you’re launching a startup or scaling an enterprise solution, our web applications are built for reliability, growth, and long-term success.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="lg:w-1/2 w-full " data-aos="fade-left">
-          <img src={software4} alt="software1" className="" />
-        </div>
-      </div>
-      {/* <div className="flex !my-20">
-        <div className="w-full h-[50%] relative">
-          <img
-            src={
-              "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Home-6-parallax-img.jpg"
-            }
-            alt="software2"
-            className=""
-          />
-          <div className="bg-white absolute top-0 ">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase !mb-3">
-              Brands
-            </h3>
-            <h2 className="text-black text-5xl font-medium -tracking-tighter font-syne ">
-              Trusted <br /> and Supported <br /> by Many
-            </h2>
-          </div>
-        </div>
-      </div> */}
-      <div className="relative w-full h-[800px]" data-aos="fade-up" >
-        <img
-          src="https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Home-6-parallax-img.jpg"
-          alt="software2"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-
-        {/* Overlay content */}
-        <div className="absolute inset-0 flex items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
-          <div className="bg-transparent bg-opacity-80 !p-8 max-w-xl text-left">
-            <h3 className="text-white text-[16px] tracking-wide uppercase mb-3">
-              Brands
-            </h3>
-            <h2 className="text-white lg:text-5xl md:text-4xl text-3xl font-medium font-syne leading-tight">
-              Trusted and <br /> Supported <br />
-            </h2>
-            <p className="text-white lg:text-[16px] md:text-[14px] text-[12px] font-normal">
-              Custom software development is the process of building tailored
-              software solutions designed specifically to meet the unique needs
-              of a business or organization. Unlike off-the-shelf software,
-              custom solutions are developed from the ground up to align with
-              specific workflows, goals, and challenges, offering greater
-              flexibility, scalability, and efficiency.
-            </p>
-            <div className="!mt-5">
-              <div className="!px-5 !py-2 border-1 border-white w-fit group hover:bg-white">
-                <span className="text-white font-syne text-[16px] group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text">
-                  View More
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="!my-20">
-        <h3 className=" text-black text-5xl font-medium -tracking-tighter font-syne text-center ">
-          Our Services
-        </h3>
-        <div className="!my-20">
-          <div className="flex flex-wrap justify-center items-center lg:!px-80 md:!px-10">
-            {service?.map((item, index) => {
+      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+        <div>
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 !gap-10 ">
+            {webdata?.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  className="lg:w-1/3 md:w-1/3 sm:w-1/2 w-full flex justify-center"
-                >
-                  <div className="!mb-5">
-                    <Card
-                      hoverable
-                      style={{ width: "80%" }}
-                      cover={<img alt="example" src={item?.img} />}
-                    >
-                      <Meta
-                        title={item?.title}
-                        description={item?.description}
-                        className="font-syne"
-                      />
-                      <div className="">
-                        <div className="!p-2 place-self-end">
-                          <a href={item?.path} className="">
-                            <span className="text-[16px] capitalize">
-                              Read more{" "}
-                            </span>
-                          </a>
+                <div key={index} className="!p-10 shadow-2xl rounded-[15px]">
+                  <img alt="" src={item?.image} className="" />
+                  <h3 className="lg:text-[30px] md:text-[25px] sm:text-[20px] text-[18px] text-[#AD46FF] font-syne capitalize">
+                    {item?.t1}
+                  </h3>
+                  <div>
+                    {item?.data?.map((data, index1) => {
+                      return (
+                        <div className="" key={index1}>
+                          <h2 className="text-black lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  font-syne capitalize">
+                            {data?.value}
+                          </h2>
                         </div>
-                      </div>
-                    </Card>
+                      );
+                    })}
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
-      </div> */}
-      <Meetourclient />
-    </div>
+      </div>
+      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+        <h2 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center capitalize">
+          benefits of Web App Development with{" "}
+          <span className="text-[#AD46FF]">vineatz Technologies</span>
+        </h2>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 !gap-10 ">
+          {web1data?.map((item, index) => {
+            return (
+              <div key={index} className="!p-10 place-items-center-safe  ">
+                <img alt="" src={item?.image} className="!mb-4" />
+                <h3 className="lg:text-[23px] md:text-[20px] sm:text-[18px] text-[16px] text-[#000] font-syne capitalize text-center">
+                  {item?.data}
+                </h3>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 

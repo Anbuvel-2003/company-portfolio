@@ -36,7 +36,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   {item?.id == 1 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <CiSettings size={30} style={{ color: "white" }} />
@@ -44,7 +44,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 2 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <LuCloudCog size={30} style={{ color: "white" }} />
@@ -52,7 +52,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 3 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <CiMobile3 size={30} style={{ color: "white" }} />
@@ -60,7 +60,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 4 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <LuMonitorCog size={30} style={{ color: "white" }} />
@@ -68,7 +68,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 5 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <AiOutlineShoppingCart
@@ -79,7 +79,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 6 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <FaPencilRuler size={30} style={{ color: "white" }} />
@@ -87,7 +87,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : item?.id == 7 ? (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <LuBrainCircuit size={30} style={{ color: "white" }} />
@@ -95,7 +95,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                   ) : (
                     <div
                       className={`flex justify-center items-center transition-all duration-300 
-                       bg-gradient-to-r from-indigo-500 to-cyan-400
+                       bg-[#9F70FD]
                        !p-3 rounded-full`}
                     >
                       <TbBrandSpeedtest size={30} style={{ color: "white" }} />
@@ -109,7 +109,7 @@ const DropdownMenu = ({ items, isOpen, isHorizontal = false }) => {
                         isHorizontal
                           ? "px-4 whitespace-nowrap"
                           : "block px-6 !py-3 mb-2"
-                      } uppercase text-sm font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-cyan-400 group-hover:bg-clip-text duration-200 text-center`}
+                      } uppercase text-sm font-syne tracking-wide text-black group-hover:text-transparent group-hover:bg-[#9F70FD] group-hover:bg-clip-text duration-200 text-center`}
                     >
                       {item.title}
                     </a>
@@ -315,7 +315,7 @@ const NavBar = () => {
                 <a
                   href={link.path}
                   className="relative group flex items-center uppercase text-sm font-syne text-black 
-    hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text transition-all duration-700 ease-in-out"
+    hover:text-transparent hover:bg-[#9F70FD] hover:bg-clip-text transition-all duration-700 ease-in-out"
                   style={{ letterSpacing: "0.15em" }}
                 >
                   {link.title}
@@ -324,7 +324,7 @@ const NavBar = () => {
                       ▾
                     </span>
                   )}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#9F70FD] group-hover:w-full transition-all duration-300"></span>
                 </a>
                 {/* Dropdown Menu */}
                 {link.dropdown && (
