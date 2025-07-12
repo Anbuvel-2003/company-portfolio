@@ -28,7 +28,7 @@ function Software_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[20px] text-base/10 ">
+            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] font-syne text-base/10 ">
               Our UI/UX design services are crafted to elevate your digital
               presence with precision and creativity. We begin by understanding
               your goals and your audience, ensuring that every design decision
@@ -58,23 +58,22 @@ function Software_Page() {
               Great Software
             </h1>
           </div>
-          <div className="flex flex-col lg:!pl-35 md:!p-20 !p-10 font-syne lg:!py-10 leading-10">
+          <div className="flex flex-col lg:!pl-20 md:!px-20 !p-10 font-syne  leading-8">
             <div className="flex lg:flex-row md:flex-col flex-col">
-              <div className="self-center lg:w-full w-fit">
+              <div className=" lg:w-full w-fit self-center">
                 <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
                   Build the right team to scale
                 </h1>
-                0128
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-10 !py-5  ">
+                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!pt-5 !py-3  ">
                   Finding the right talent is not easy. We help you find the
                   talent that suits your needs, follows your processes, and
                   sticks with you long term (not the case with freelancers)
                 </p>
-                <p className=" ">
+                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2   ">
                   Our <span className="text-[#AD46FF] ">delivery model</span>{" "}
                   helps you cut costs and deliver within budget.
                 </p>
-                <div className="!py-10 ">
+                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
                   <p className=" text-[#AD46FF] border-l-3 border-[#AD46FF] !pl-6 ">
                     "Simform is quick to identify larger problem with the
                     Software so we decided to expand our scope to build new
@@ -82,29 +81,29 @@ function Software_Page() {
                   </p>
                 </div>
               </div>
-              <div className="w-full lg:!pl- md:!p-30">
+              <div className=" w-full md:!px-30 !pb-10 ">
                 <img src={software6} alt="" />
               </div>
             </div>
 
-            <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse">
-              <div className="w-full lg:!py-10 md:!p-30 ">
+            <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse self-center">
+              <div className="w-full md:!px-10 !pb-10 ">
                 <img src={software7} alt="" />
               </div>
-              <div className="self-center lg:w-full w-fit    ">
+              <div className="self-center lg:w-full w-fit  lg:!pl-10  ">
                 <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
                   Build the right team to scale
                 </h1>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-10 !py-5  ">
+                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-5 !py-3  ">
                   Finding the right talent is not easy. We help you find the
                   talent that suits your needs, follows your processes, and
                   sticks with you long term (not the case with freelancers)
                 </p>
-                <p className=" ">
+                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-2 !py-2   ">
                   Our <span className="text-[#AD46FF]">delivery model</span>{" "}
                   helps you cut costs and deliver within budget.
                 </p>
-                <div className="!py-10 ">
+                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4">
                   <p className=" text-[#AD46FF] border-r-3 border-[#AD46FF] ">
                     "Simform is quick to identify larger problem with the
                     Software so we decided to expand our scope to build new
@@ -113,7 +112,7 @@ function Software_Page() {
                 </div>
               </div>
             </div>
-            <div className="flex lg:flex-row md:flex-col flex-col">
+            <div className="flex lg:flex-row md:flex-col flex-col ">
               <div className="self-center lg:w-full w-fit ">
                 <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
                   Build the right team to scale
@@ -123,11 +122,11 @@ function Software_Page() {
                   talent that suits your needs, follows your processes, and
                   sticks with you long term (not the case with freelancers)
                 </p>
-                <p className=" ">
+                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2  ">
                   Our <span className="text-[#AD46FF]">delivery model</span>{" "}
                   helps you cut costs and deliver within budget.
                 </p>
-                <div className="!py-10 ">
+                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
                   <p className=" !pl-6 text-[#AD46FF] border-l-3 border-[#AD46FF]">
                     "Simform is quick to identify larger problem with the
                     Software so we decided to expand our scope to build new
