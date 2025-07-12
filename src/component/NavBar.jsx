@@ -283,7 +283,7 @@ const NavBar = () => {
       <div className="  px-4">
         <div className="flex  lg:justify-start justify-between w-[95vw]  items-center h-16">
           {/* Logo - moved significantly to the right */}
-          <div className="flex-shrink-0 ml-32 lg:!pl-20 hidden lg:block ">
+          <div className="flex-shrink-0 ml-32 lg:!pl-20 hidden lg:block cursor-pointer ">
             <img
               src={Logo}
               alt={`client-`}

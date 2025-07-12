@@ -1,7 +1,12 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaLinkedin,FaSquareInstagram,FaSquareXTwitter,FaSquareYoutube} from "react-icons/fa6";
+import {
+  FaLinkedin,
+  FaSquareInstagram,
+  FaSquareXTwitter,
+  FaSquareYoutube,
+} from "react-icons/fa6";
 
 function Footer_section() {
   return (
@@ -287,10 +292,10 @@ function Footer_section() {
               <br className="!mb-2" /> Tamil Nadu-641004
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-medium capitalize">
-              T : 91 422 4711 021
+              p : 94881 60083
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-syne capitalize">
-              admin@vineatz.com
+              info@vineatztechnologies.com
             </span>
           </div>
         </div>
@@ -302,7 +307,7 @@ function Footer_section() {
           </div>
           <div className="grid">
             <span className="text-[#6e6e6e] text-[16px] font-syne capitalize !mb-2">
-              Floor, Krishnagiri to Salem Highways,
+              5/143, 1st Floor, Krishnagiri to Salem Highways,
               <br className="!mb-2" /> Near Nsk Landmark,
               <br className="!mb-2" />
               Krishnagiri-635001.
@@ -317,7 +322,7 @@ function Footer_section() {
         </div>
       </div>
       <div className="lg:flex w-full !gap-10 lg:!px-30 lg:!py-10">
-        <div className="grid w-[100%]  !mb-5" >
+        <div className="grid w-[100%]  !mb-5">
           <span className="!mb-2">
             <a href="/" className="text-white text-[20px] font-syne uppercase">
               Vineatz
@@ -335,35 +340,44 @@ function Footer_section() {
           </span>
         </div>
         <div className="lg:w-1/3">
-            <span>
+          <span>
             <a href="/" className="text-white text-[20px] font-syne capitalize">
               Contact with us
             </a>
           </span>
           <div className="flex !mt-3 !gap-5">
             <div>
-              <a href="https://www.facebook.com/profile.php?id=61576821402403" target="_blank">
-              <FaFacebookSquare size={45} color="#ffff"/>
+              <a
+                href="https://www.facebook.com/profile.php?id=61576821402403"
+                target="_blank"
+              >
+                <FaFacebookSquare size={45} color="#ffff" />
               </a>
             </div>
             <div>
-              <a href="https://www.instagram.com/vineatztechnologies?igsh=dzJ4dno0anRwN2w2" target="_blank">
-               <FaSquareInstagram size={45} color="#ffff"/>
+              <a
+                href="https://www.instagram.com/vineatztechnologies?igsh=dzJ4dno0anRwN2w2"
+                target="_blank"
+              >
+                <FaSquareInstagram size={45} color="#ffff" />
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/company/vineatz-technologies/" target="_blank">
-               <FaLinkedin size={45} color="#ffff"/>
+              <a
+                href="https://www.linkedin.com/company/vineatz-technologies/"
+                target="_blank"
+              >
+                <FaLinkedin size={45} color="#ffff" />
               </a>
             </div>
             <div>
               <a href="/">
-               <FaSquareXTwitter size={45} color="#ffff"/>
+                <FaSquareXTwitter size={45} color="#ffff" />
               </a>
             </div>
             <div>
               <a href="/">
-               <FaSquareYoutube size={45} color="#ffff"/>
+                <FaSquareYoutube size={45} color="#ffff" />
               </a>
             </div>
           </div>
