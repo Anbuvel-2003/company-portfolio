@@ -31,7 +31,7 @@ import Saas_Page from "./pages/services/saas_Page";
 import Testing_Page from "./pages/services/testing_Page";
 import Ecommerce from "./pages/services/ecommerce_Page";
 import Digital_Marketing from "./pages/services/digital_Page";
-import Sowtware_Page from "./pages/services/software_Page";
+import Software_Page from "./pages/services/software_Page";
 import Product_Section from "./pages/products";
 import Portfolio_Sction from "./pages/portfolio";
 import Careers_Section from "./pages/pages/careers";
@@ -99,7 +99,7 @@ function App() {
     },
     {
       path: "/softwareSection",
-      element: <Sowtware_Page />,
+      element: <Software_Page />,
     },
     {
       path: "/ProductSection",
