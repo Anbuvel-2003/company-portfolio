@@ -5,6 +5,18 @@ import Ux3 from "../../../assets/Ux3.png";
 import Ux4 from "../../../assets/Ux4.png";
 import Ux5 from "../../../assets/Ux5.png";
 import Ux6 from "../../../assets/Ux6.png";
+import Ui1 from "../../../assets/Ui1.png";
+import Ui2 from "../../../assets/Ui2.png";
+import Ui3 from "../../../assets/Ui3.png";
+import Ui7 from "../../../assets/Ui7.png";
+import Ui5 from "../../../assets/Ui5.png";
+import Uiob1 from "../../../assets/uiob1.png";
+import Uiob2 from "../../../assets/uiob2.png";
+import Uiob3 from "../../../assets/uiob3.png";
+import Uiob4 from "../../../assets/uiob4.png";
+import Uiob5 from "../../../assets/uiob5.png";
+import Uiob6 from "../../../assets/uiob6.png";
+
 function UIUX_Page() {
   const Question = [
     {
@@ -46,12 +58,74 @@ function UIUX_Page() {
   ];
   const question1 = [
     {
-      id:1 ,
-      image:Ui1,
-      q1:"Discover Phase",
-      q2:""
-    }
-  ]
+      id: 1,
+      image: Ui1,
+      q1: "Discover Phase",
+      q2: "The process begins by uncovering user needs through research to understand their goals.",
+    },
+    {
+      id: 2,
+      image: Ui2,
+      q1: "Analysis Stage",
+      q2: "The data is then analyzed to define the core problems and pinpoint usability issues.",
+    },
+    {
+      id: 3,
+      image: Ui3,
+      q1: "Ideation Phase",
+      q2: "aim to find innovative solutions to address the issues in the user flow.",
+    },
+    {
+      id: 4,
+      image: Ui5,
+      q1: "Prototyping Step",
+      q2: "Quick prototypes are built to test design ideas before moving on to more complex stages.",
+    },
+    {
+      id: 5,
+      image: Ui7,
+      q1: "Testing Stage",
+      q2: "Usability testing with real users refines the design through iterative feedback loops.",
+    },
+  ];
+  const question3 = [
+    {
+      image: Uiob1,
+      id: 1,
+      q1: "Best user experience",
+      q2: "Our UI/UX development services aim to enhance the user experience by creating intuitive, easy-to-navigate, and visually appealing interfaces.",
+    },
+    {
+      image: Uiob2,
+      id: 2,
+      q1: "Increased User Engagement",
+      q2: "Our user-friendly interfaces and seamless interactions significantly boost user engagement, promoting increased time spent on your platform.",
+    },
+    {
+      image: Uiob3,
+      id: 3,
+      q1: "Boosts brand awareness",
+      q2: "A well-designed UI/UX improves the brand image by showcasing professionalism, trustworthiness, and attention to detail, boosting brand perception.",
+    },
+    {
+      image: Uiob4,
+      id: 4,
+      q1: "Reduced Development Costs",
+      q2: "UI/UX design can save time and money by addressing usability issues early in the design process, preventing costly redesigns in the future.",
+    },
+    {
+      image: Uiob5,
+      id: 5,
+      q1: "Competitive Advantage",
+      q2: "Investing in superior UI/UX provides a competitive advantage by offering a unique and memorable user experience that attracts and retains customers.",
+    },
+    {
+      image: Uiob6,
+      id: 6,
+      q1: "Improved Usability",
+      q2: "The best UI/UX elevates brand image, conveys professionalism, trust, and attention to detail, and improves overall brand perception and reputation.",
+    },
+  ];
   return (
     <section className="">
       <div className="!mt-15">
@@ -124,6 +198,62 @@ function UIUX_Page() {
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+        <div className="place-items-center">
+          <div className="bg-[#F0F1FF] !py-3 !px-4 w-fit rounded-[20px] ">
+            <h2 className="text-[#9F70FD] text-[16px] font-syne capitalize ">
+              How Does It Work
+            </h2>
+          </div>
+        </div>
+        <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
+          Our Simple UI/UX Design Working Process
+        </h3>
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 !gap-10">
+          {question1?.map((item, index) => {
+            return (
+              <div className="!p-5 shadow-2xl rounded-[10px]">
+                <img src={item?.image} alt="" className="" />
+                <div className="">
+                  <h2 className="text-[20px] text-black font-syne">
+                    {item?.q1}
+                  </h2>
+                  <h2 className="text-[18px] text-[#9CA3AF]">{item?.q2}</h2>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+        <div className="place-items-center">
+          <div className="bg-[#F0F1FF] !py-3 !px-4 w-fit rounded-[20px] ">
+            <h2 className="text-[#9F70FD] text-[16px] font-syne capitalize ">
+              Benefits Offered
+            </h2>
+          </div>
+        </div>
+        <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
+          Why Great UI/UX Design matters for your Business
+        </h3>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 !gap-10">
+          {question3?.map((item, index) => {
+            return (
+              <div className="!p-5 shadow-2xl rounded-[10px]">
+                <img src={item?.image} alt="" className="" />
+                <div className="">
+                  <h2 className="text-[20px] text-black  !mt-3 font-syne">
+                    {item?.q1}
+                  </h2>
+                  <h2 className="text-[18px] text-[#4B5563] !mt-3">
+                    {item?.q2}
+                  </h2>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
