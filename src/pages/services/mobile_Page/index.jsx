@@ -11,6 +11,16 @@ import mobiletech2 from "../../../assets/mobiletech2.png";
 import mobiletech3 from "../../../assets/mobiletech3.png";
 import Step from "../../../component/stepfun";
 
+import figma from "../../../assets/figma.svg";
+import js from "../../../assets/js.svg";
+import metaai from "../../../assets/metaai.svg";
+import vscode from "../../../assets/vscode.svg";
+import mongodb from "../../../assets/mongodb.svg";
+import chatgpt from "../../../assets/openai.svg";
+import nodejs from "../../../assets/nodejs.svg";
+import android from "../../../assets/android.svg";
+import analytics from "../../../assets/analytics.svg";
+
 function Mobile_App() {
   const conicColors = {
     "0%": "#b9e6fe",
@@ -93,6 +103,18 @@ function Mobile_App() {
   ];
   const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
+
+  const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
   return (
     <section className="">
       <div className="!mt-15">
@@ -110,7 +132,7 @@ function Mobile_App() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[20px] text-base/10 ">
+            <h3 className="text-[20px] text-base/10 font-syne">
               Our UI/UX design services are crafted to elevate your digital
               presence with precision and creativity. We begin by understanding
               your goals and your audience, ensuring that every design decision
@@ -123,51 +145,67 @@ function Mobile_App() {
           </div>
         </div>
         <div>
-          <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center !my-10">
+          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
             Technologies used
           </h3>
-          <div className="bg-[#F8F4FF] !py-10 !px-5"></div>
-        </div>
-      </div>
-      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
-        <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
-          End-to-End Mobile App Development
-        </h3>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:!gap-30 md:!gap-20 !gap-10 !mt-10">
-          <div className="shadow-2xl !p-10 rounded-[20px]">
-            <img src={mobiletech1} alt="" className="!mt-10" />
-            <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
-              High-Performance Android Apps
-            </h2>
-            <h4 className="!mt-5 text-[20px] font-syne text-black">
-              Native Android apps built for speed, scale, and high performance.
-            </h4>
-          </div>
-          <div className="shadow-2xl !p-10 rounded-[20px]">
-            <img src={mobiletech2} alt="" className="!mt-10" />
-            <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
-              iOS Apps That Feel Premium
-            </h2>
-            <h4 className="!mt-5 text-[20px] font-syne text-black">
-              Premium iPhone & iPad apps designed for smooth Apple experiences.
-            </h4>
-          </div>
-          <div className="shadow-2xl !p-10 rounded-[20px]">
-            <img src={mobiletech3} alt="" className="!mt-10" />
-            <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
-              Secure, Scalable Backends
-            </h2>
-            <h4 className="!mt-5 text-[20px] font-syne text-black">
-              Scalable, secure backends with custom REST or GraphQL APIs.
-            </h4>
+
+          <div className="bg-[#F8F4FF] !py-10 !px-5">
+            <div className="group w-full overflow-hidden ">
+              <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
+                {/* First image set */}
+                {logos.map((img, i) => (
+                  <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+
+                {/* Second (duplicate) image set – appears directly after the first */}
+                {logos.map((img, i) => (
+                  <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-[#F8F4FF] lg:!p-20 md:!p-20 sm:!p-10 !p-10">
-        <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
-          Our process
-        </h3>
-        <Step />
+
+        <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+          <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
+            End-to-End Mobile App Development
+          </h3>
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:!gap-30 md:!gap-20 !gap-10 !mt-10">
+            <div className="shadow-2xl !p-10 rounded-[20px]">
+              <img src={mobiletech1} alt="" className="!mt-10" />
+              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+                High-Performance Android Apps
+              </h2>
+              <h4 className="!mt-5 text-[20px] font-syne text-black">
+                Native Android apps built for speed, scale, and high performance.
+              </h4>
+            </div>
+            <div className="shadow-2xl !p-10 rounded-[20px]">
+              <img src={mobiletech2} alt="" className="!mt-10" />
+              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+                iOS Apps That Feel Premium
+              </h2>
+              <h4 className="!mt-5 text-[20px] font-syne text-black">
+                Premium iPhone & iPad apps designed for smooth Apple experiences.
+              </h4>
+            </div>
+            <div className="shadow-2xl !p-10 rounded-[20px]">
+              <img src={mobiletech3} alt="" className="!mt-10" />
+              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+                Secure, Scalable Backends
+              </h2>
+              <h4 className="!mt-5 text-[20px] font-syne text-black">
+                Scalable, secure backends with custom REST or GraphQL APIs.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#F8F4FF] lg:!p-20 md:!p-20 sm:!p-10 !p-10">
+          <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
+            Our process
+          </h3>
+          <Step />
+        </div>
       </div>
     </section>
   );

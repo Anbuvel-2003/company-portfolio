@@ -85,6 +85,18 @@ function Digital_Marketing() {
   ];
   const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
+ const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
+
   return (
     <div className="!pt-15">
       <div className="place-self-center lg:!p-20 md:!p-20 !p-5" data-aos="zoom-in">

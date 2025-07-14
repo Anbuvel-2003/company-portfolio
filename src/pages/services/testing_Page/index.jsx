@@ -6,7 +6,15 @@ import testing4 from "../../../assets/testing4.png";
 import service1 from "../../../assets/service1.png";
 import service2 from "../../../assets/service2.png";
 import service3 from "../../../assets/service3.png";
-
+import figma from "../../../assets/figma.svg";
+import js from "../../../assets/js.svg";
+import metaai from "../../../assets/metaai.svg";
+import vscode from "../../../assets/vscode.svg";
+import mongodb from "../../../assets/mongodb.svg";
+import chatgpt from "../../../assets/openai.svg";
+import nodejs from "../../../assets/nodejs.svg";
+import android from "../../../assets/android.svg";
+import analytics from "../../../assets/analytics.svg";
 function Testing_Page() {
   const testing = [
     {
@@ -54,11 +62,22 @@ function Testing_Page() {
       q2: "Leverage Testvox's deep industry knowledge for insightful testing strategies.",
     },
   ];
+   const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
   return (
     <section className="">
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne font-bold lg:text-6xl sm:text-5xl text-center ">
             Testing services
           </h3>
         </div>
@@ -71,7 +90,7 @@ function Testing_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[20px] text-base/10 ">
+            <h3 className="text-[20px] text-base/15 text-[#788094] ">
               Our UI/UX design services are crafted to elevate your digital
               presence with precision and creativity. We begin by understanding
               your goals and your audience, ensuring that every design decision
@@ -83,13 +102,27 @@ function Testing_Page() {
             </h3>
           </div>
         </div>
-        <div>
+         <div>
           <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
             Technologies used
           </h3>
-          <div className="bg-[#F8F4FF] !py-10 !px-5"></div>
-        </div>
-      </div>
+
+          <div className="bg-[#F8F4FF] !py-10 !px-5">
+            <div className="group w-full overflow-hidden ">
+              <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
+                {/* First image set */}
+                {logos.map((img, i) => (
+                  <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+
+                {/* Second (duplicate) image set – appears directly after the first */}
+                {logos.map((img, i) => (
+                  <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+              </div>
+            </div>
+          </div>
+
       <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10">
         <div>
           <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-5">
@@ -162,6 +195,8 @@ function Testing_Page() {
             })}
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </section>
   );

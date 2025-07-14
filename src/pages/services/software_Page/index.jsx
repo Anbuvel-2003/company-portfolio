@@ -1,16 +1,35 @@
-import React, { useState } from "react";
-import Meetourclient from "../../../component/meetourclient";
-import software1 from "../../../assets/softwareimg1.jpg";
-import software2 from "../../../assets/custom1.jpg";
-import software3 from "../../../assets/custom2.jpg";
-import software4 from "../../../assets/custom3.jpg";
-import { Flex, Progress, Card } from "antd";
+
 import software5 from "../../../assets/servicebanner.png";
 import software6 from "../../../assets/Rectangle 17.png";
 import software7 from "../../../assets/Rectangle 18.png";
 import software8 from "../../../assets/Rectangle 19.png";
 
+import figma from "../../../assets/figma.svg";
+import js from "../../../assets/js.svg";
+import metaai from "../../../assets/metaai.svg";
+import vscode from "../../../assets/vscode.svg";
+import mongodb from "../../../assets/mongodb.svg";
+import chatgpt from "../../../assets/openai.svg";
+import nodejs from "../../../assets/nodejs.svg";
+import android from "../../../assets/android.svg";
+import analytics from "../../../assets/analytics.svg";
+
+
+
 function Software_Page() {
+
+  const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
+
   return (
     <section>
       <div className="!mt-15">
@@ -44,98 +63,114 @@ function Software_Page() {
           <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
             Technologies used
           </h3>
-          <div className="bg-[#F8F4FF] !py-10 !px-5"></div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div className="!py-10 place-items-center">
-            <h1 className="w-30 h-1 bg-[#AD46Ff] !mb-10"></h1>
-            <h1 className="!pb-3 lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-light">
-              Way of building
-            </h1>
-            <h1 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne !pb-10">
-              Great Software
-            </h1>
-          </div>
-          <div className="flex flex-col lg:!pl-20 md:!px-20 !p-10 font-syne  leading-8">
-            <div className="flex lg:flex-row md:flex-col flex-col">
-              <div className=" lg:w-full w-fit self-center">
-                <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
-                  Build the right team to scale
-                </h1>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!pt-5 !py-3  ">
-                  Finding the right talent is not easy. We help you find the
-                  talent that suits your needs, follows your processes, and
-                  sticks with you long term (not the case with freelancers)
-                </p>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2   ">
-                  Our <span className="text-[#AD46FF] ">delivery model</span>{" "}
-                  helps you cut costs and deliver within budget.
-                </p>
-                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
-                  <p className=" text-[#AD46FF] border-l-3 border-[#AD46FF] !pl-6 ">
-                    "Simform is quick to identify larger problem with the
-                    Software so we decided to expand our scope to build new
-                    modules"
-                  </p>
-                </div>
-              </div>
-              <div className=" w-full md:!px-30 !pb-10 ">
-                <img src={software6} alt="" />
-              </div>
-            </div>
 
-            <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse self-center">
-              <div className="w-full md:!px-10 !pb-10 ">
-                <img src={software7} alt="" />
-              </div>
-              <div className="self-center lg:w-full w-fit  lg:!pl-10  ">
-                <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
-                  Build the right team to scale
-                </h1>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-5 !py-3  ">
-                  Finding the right talent is not easy. We help you find the
-                  talent that suits your needs, follows your processes, and
-                  sticks with you long term (not the case with freelancers)
-                </p>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-2 !py-2   ">
-                  Our <span className="text-[#AD46FF]">delivery model</span>{" "}
-                  helps you cut costs and deliver within budget.
-                </p>
-                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4">
-                  <p className=" text-[#AD46FF] border-r-3 border-[#AD46FF] ">
-                    "Simform is quick to identify larger problem with the
-                    Software so we decided to expand our scope to build new
-                    modules"
-                  </p>
-                </div>
+          <div className="bg-[#F8F4FF] !py-10 !px-5">
+            <div className="group w-full overflow-hidden ">
+              <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
+                {/* First image set */}
+                {logos.map((img, i) => (
+                  <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+
+                {/* Second (duplicate) image set – appears directly after the first */}
+                {logos.map((img, i) => (
+                  <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
               </div>
             </div>
-            <div className="flex lg:flex-row md:flex-col flex-col ">
-              <div className="self-center lg:w-full w-fit ">
-                <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
-                  Build the right team to scale
-                </h1>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-10 !py-5  ">
-                  Finding the right talent is not easy. We help you find the
-                  talent that suits your needs, follows your processes, and
-                  sticks with you long term (not the case with freelancers)
-                </p>
-                <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2  ">
-                  Our <span className="text-[#AD46FF]">delivery model</span>{" "}
-                  helps you cut costs and deliver within budget.
-                </p>
-                <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
-                  <p className=" !pl-6 text-[#AD46FF] border-l-3 border-[#AD46FF]">
-                    "Simform is quick to identify larger problem with the
-                    Software so we decided to expand our scope to build new
-                    modules"
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div className="!py-10 place-items-center">
+              <h1 className="w-30 h-1 bg-[#AD46Ff] !mb-10"></h1>
+              <h1 className="!pb-3 lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne font-light">
+                Way of building
+              </h1>
+              <h1 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne !pb-10">
+                Great Software
+              </h1>
+            </div>
+            <div className="flex flex-col lg:!pl-20 md:!px-20 !p-10 font-syne  leading-8">
+              <div className="flex lg:flex-row md:flex-col flex-col">
+                <div className=" lg:w-full w-fit self-center">
+                  <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
+                    Build the right team to scale
+                  </h1>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!pt-5 !py-3  ">
+                    Finding the right talent is not easy. We help you find the
+                    talent that suits your needs, follows your processes, and
+                    sticks with you long term (not the case with freelancers)
                   </p>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2   ">
+                    Our <span className="text-[#AD46FF] ">delivery model</span>{" "}
+                    helps you cut costs and deliver within budget.
+                  </p>
+                  <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
+                    <p className=" text-[#AD46FF] border-l-3 border-[#AD46FF] !pl-6 ">
+                      "Simform is quick to identify larger problem with the
+                      Software so we decided to expand our scope to build new
+                      modules"
+                    </p>
+                  </div>
+                </div>
+                <div className=" w-full md:!px-30 !pb-10 ">
+                  <img src={software6} alt="" />
                 </div>
               </div>
-              <div className="w-full lg:!pl- md:!p-30">
-                <img src={software8} alt="" />
+
+              <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse self-center">
+                <div className="w-full md:!px-10 !pb-10 ">
+                  <img src={software7} alt="" />
+                </div>
+                <div className="self-center lg:w-full w-fit  lg:!pl-10  ">
+                  <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
+                    Build the right team to scale
+                  </h1>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-5 !py-3  ">
+                    Finding the right talent is not easy. We help you find the
+                    talent that suits your needs, follows your processes, and
+                    sticks with you long term (not the case with freelancers)
+                  </p>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-2 !py-2   ">
+                    Our <span className="text-[#AD46FF]">delivery model</span>{" "}
+                    helps you cut costs and deliver within budget.
+                  </p>
+                  <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4">
+                    <p className=" text-[#AD46FF] border-r-3 border-[#AD46FF] ">
+                      "Simform is quick to identify larger problem with the
+                      Software so we decided to expand our scope to build new
+                      modules"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex lg:flex-row md:flex-col flex-col ">
+                <div className="self-center lg:w-full w-fit ">
+                  <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] font-semibold ">
+                    Build the right team to scale
+                  </h1>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-10 !py-5  ">
+                    Finding the right talent is not easy. We help you find the
+                    talent that suits your needs, follows your processes, and
+                    sticks with you long term (not the case with freelancers)
+                  </p>
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-4 !py-2  ">
+                    Our <span className="text-[#AD46FF]">delivery model</span>{" "}
+                    helps you cut costs and deliver within budget.
+                  </p>
+                  <div className="lg:text-[18px] md:text-[16px] text-[14px] lg:!py-6 !py-4 ">
+                    <p className=" !pl-6 text-[#AD46FF] border-l-3 border-[#AD46FF]">
+                      "Simform is quick to identify larger problem with the
+                      Software so we decided to expand our scope to build new
+                      modules"
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full lg:!pl- md:!p-30">
+                  <img src={software8} alt="" />
+                </div>
               </div>
             </div>
           </div>

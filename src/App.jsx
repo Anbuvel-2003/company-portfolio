@@ -38,6 +38,7 @@ import Careers_Section from "./pages/pages/careers";
 import Blog_Section from "./pages/pages/blog";
 
 function App() {
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -149,6 +150,8 @@ function App() {
         )}
       </div>
     </div>
+    
+
   );
 }
 

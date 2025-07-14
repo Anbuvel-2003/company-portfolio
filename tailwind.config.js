@@ -28,10 +28,17 @@ export default {
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
       },
-      animation: {
-        floatIn: 'floatIn 1s ease-out forwards',
-        zoomFade: 'zoomFade 0.6s ease-out forwards',
+     
+
+       animation: {
+        'loop-scroll': 'loop-scroll 50s linear infinite',
       },
+      keyframes: {
+        'loop-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },     
     },
   },
   plugins: [],

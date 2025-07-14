@@ -4,6 +4,15 @@ import software1 from "../../../assets/saasimage1.png";
 import software2 from "../../../assets/saasimage2.png";
 import software3 from "../../../assets/saasimage3.png";
 import software4 from "../../../assets/Saas4.jpg";
+import figma from "../../../assets/figma.svg";
+import js from "../../../assets/js.svg";
+import metaai from "../../../assets/metaai.svg";
+import vscode from "../../../assets/vscode.svg";
+import mongodb from "../../../assets/mongodb.svg";
+import chatgpt from "../../../assets/openai.svg";
+import nodejs from "../../../assets/nodejs.svg";
+import android from "../../../assets/android.svg";
+import analytics from "../../../assets/analytics.svg";
 
 import { Flex, Progress, Card } from "antd";
 
@@ -89,6 +98,17 @@ function Saas_Page() {
   ];
   const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
+   const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
   return (
     // <div className="!pt-15">
     //   <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
@@ -293,7 +313,7 @@ function Saas_Page() {
     //     </div>
     //   </div>
 
-    //   {/* <div className="!my-20">
+    //   <div className="!my-20">
     //     <h3 className=" text-black text-5xl font-medium -tracking-tighter font-syne text-center ">
     //       Our Services
     //     </h3>
@@ -332,7 +352,7 @@ function Saas_Page() {
     //         })}
     //       </div>
     //     </div>
-    //   </div> */}
+    //   </div>
     //   <Meetourclient />
     // </div>
 
@@ -364,11 +384,26 @@ function Saas_Page() {
             </h3>
           </div>
         </div>
-        <div>
-          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
+         <div>
+          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center font-syne !my-10">
             Technologies used
           </h3>
-          <div className="bg-[#F8F4FF] !py-10 !px-5"></div>
+
+          <div className="bg-[#F8F4FF] !py-10 !px-5">
+            <div className="group w-full overflow-hidden ">
+              <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
+                {/* First image set */}
+                {logos.map((img, i) => (
+                  <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+
+                {/* Second (duplicate) image set – appears directly after the first */}
+                {logos.map((img, i) => (
+                  <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10">
@@ -381,7 +416,7 @@ function Saas_Page() {
             <div className="">
               <p className="text-[#788094] text-[24px]  ">
                 Enhance your brand’s impact with our creative agency's expert UX design services.
-                 We’ll craft engaging and intuitive user experiences that elevate your brand and captivate your audience.
+                We’ll craft engaging and intuitive user experiences that elevate your brand and captivate your audience.
               </p>
             </div>
             <div>
@@ -395,18 +430,18 @@ function Saas_Page() {
               </ul>
             </div>
             <div className=" lg:flex md:flex-row flex-row !gap-10 lg:!mt-10 ">
-              <img src={software2} alt=""  className="w-full lg:p-0 !py-5  "/>
+              <img src={software2} alt="" className="w-full lg:p-0 !py-5  " />
               <img src={software3} alt="" className="w-full lg:p-0 !py-5 " />
             </div>
             <div className=" ">
               <p className="text-[#788094] !pt-10 ">
                 Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis
-                 In pulvinar imperdiet venenatis Class aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos. 
-                 Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur placerat augue vestibulum Nulla aliquam elit eu diam pharetra.
-                 Nam posuere mauris enim,
+                In pulvinar imperdiet venenatis Class aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos.
+                Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur placerat augue vestibulum Nulla aliquam elit eu diam pharetra.
+                Nam posuere mauris enim,
               </p>
               <p className="text-[#788094] !pt-10 ">
-                Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis In pulvinar imperdiet venenatis 
+                Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis In pulvinar imperdiet venenatis
                 Class aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos. Donec eu pulvinar lorem.
               </p>
             </div>
