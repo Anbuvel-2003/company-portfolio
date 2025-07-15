@@ -200,10 +200,7 @@ function Mobile_App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F8F4FF] lg:!p-20 md:!p-20 sm:!p-10 !p-10">
-          <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
-            Our process
-          </h3>
+        <div className="bg-[#F8F4FF] !p-10">
           <Step />
         </div>
       </div>

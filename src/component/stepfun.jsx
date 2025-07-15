@@ -4,6 +4,8 @@ import mobile2 from "../assets/mobile2.png";
 import mobile3 from "../assets/mobile3.png";
 import mobile4 from "../assets/mobile4.png";
 
+
+
 function Step() {
   const steps = [
     {
@@ -27,14 +29,100 @@ function Step() {
       para: "Release + ongoing maintenance",
     },
   ];
+  
+  
+//   return (
+//     <div>
+//     <div className="place-items-center">
+//       <div className="p-6 rounded-xl w-[80%] md:mb-0 mb-10">
+//         <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-0">
+//           {steps.map((step, index) => (
+//             <React.Fragment key={index}>
+//               {/* Step Item */}
+//               <div className="flex flex-col items-center text-center">
+//                 <img
+//                   src={step.img}
+//                   alt={step.t1}
+//                   className="w-[100px] h-[100px] object-contain mb-2"
+//                 />
+//                 <h3 className="text-[20px] font-syne text-black mt-5 mb-2">
+//                   {step?.t1}
+//                 </h3>
+//                 <p className="text-[16px] font-syne text-black">
+//                   {step?.para}
+//                 </p>
+//               </div>
 
-  return (
-    <div className="place-items-center">
-      <div className="p-6 rounded-xl w-[80%] md:mb-0 mb-10">
+//               {/* Connector Line */}
+//               {index !== steps.length - 1 && (
+//                 <>
+//                   {/* Desktop (horizontal line) */}
+//                   <div className="hidden md:flex justify-center items-center mx-4">
+//                     <div className="w-[100px] h-[2px]  bg-[#AF4BFF]" />
+//                   </div>
+
+//                   {/* Mobile (vertical line) */}
+//                   <div className="flex md:hidden justify-center items-center my-4">
+//                     <div className="w-[2px] h-[40px] bg-[#AF4BFF]" />
+//                   </div>
+//                 </>
+//               )}
+//             </React.Fragment>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+// </div>
+// <div>
+//     <div className="place-items-center">
+//       <div className="p-6 rounded-xl w-[80%] md:mb-0 mb-10">
+//         <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-0">
+//           {flow.map((flow, index) => (
+//             <React.Fragment key={index}>
+//               {/* Step Item */}
+//               <div className="flex flex-col items-center text-center">
+//                 <img
+//                   src={flow.img}
+//                   alt={flow.t1}
+//                   className="w-[100px] h-[100px] object-contain mb-2"
+//                 />
+//                 <h3 className="text-[20px] font-syne text-black mt-5 mb-2">
+//                   {flow?.t1}
+//                 </h3>
+//                 <p className="text-[16px] font-syne text-black">
+//                   {flow?.para}
+//                 </p>
+//               </div>
+
+//               {/* Connector Line */}
+//               {index !== flow.length - 1 && (
+//                 <>
+//                   {/* Desktop (horizontal line) */}
+//                   <div className="hidden md:flex justify-center items-center mx-4">
+//                     <div className="w-[100px] h-[2px]  bg-[#AF4BFF]" />
+//                   </div>
+
+//                   {/* Mobile (vertical line) */}
+//                   <div className="flex md:hidden justify-center items-center my-4">
+//                     <div className="w-[2px] h-[40px] bg-[#AF4BFF]" />
+//                   </div>
+//                 </>
+//               )}
+//             </React.Fragment>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//     </div>
+//   );
+
+ return (
+    <div className="space-y-20 place-items-center">
+      {/* Steps Block */}
+      <div className="p-6 rounded-xl w-[80%]">
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-0">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
-              {/* Step Item */}
               <div className="flex flex-col items-center text-center">
                 <img
                   src={step.img}
@@ -49,15 +137,11 @@ function Step() {
                 </p>
               </div>
 
-              {/* Connector Line */}
               {index !== steps.length - 1 && (
                 <>
-                  {/* Desktop (horizontal line) */}
                   <div className="hidden md:flex justify-center items-center mx-4">
                     <div className="w-[100px] h-[2px] bg-[#AF4BFF]" />
                   </div>
-
-                  {/* Mobile (vertical line) */}
                   <div className="flex md:hidden justify-center items-center my-4">
                     <div className="w-[2px] h-[40px] bg-[#AF4BFF]" />
                   </div>
@@ -67,8 +151,9 @@ function Step() {
           ))}
         </div>
       </div>
-    </div>
+</div>
   );
 }
 
 export default Step;
+

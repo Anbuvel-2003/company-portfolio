@@ -13,8 +13,19 @@ import chatgpt from "../../../assets/openai.svg";
 import nodejs from "../../../assets/nodejs.svg";
 import android from "../../../assets/android.svg";
 import analytics from "../../../assets/analytics.svg";
+import icon1 from "../../../assets/icon1.png";
+import icon2 from "../../../assets/icon2.png";
+import icon3 from "../../../assets/icon3.png";
+import icon4 from "../../../assets/icon4.png";
+import icon5 from "../../../assets/icon5.png";
+import icon6 from "../../../assets/icon6.png";
+import icon7 from "../../../assets/icon7.png";
+import icon8 from "../../../assets/icon8.png";
+import icon9 from "../../../assets/icon9.png";
 
 import { Flex, Progress, Card } from "antd";
+import { h1, img } from "framer-motion/client";
+import { map } from "leaflet";
 
 function Saas_Page() {
   const conicColors = {
@@ -98,7 +109,60 @@ function Saas_Page() {
   ];
   const [selecteditem, setselecteditem] = useState(data[0]);
   const { Meta } = Card;
-   const logos = [
+
+  const saas = [
+
+    {
+      id: 1,
+      img: icon1,
+      t1: "Saas Development consulting",
+      data: "Let our consultants help you realize the full potential of SaaS.Our SaaS app consulting services cover onboarding development and marketing to ensure your project is successful",
+    },
+    {
+      id: 2,
+      img: icon2,
+      t1: "SaaS Application Platform Development",
+      data: "Equip your business with powerful SaaS platforms that offer unparalleled customization capabilities and advanced features to streamline daily tasks and achieve business goals more effectively",
+    },
+    {
+      id: 3,
+      img: icon3,
+      t1: "SaaS Integration Platforms",
+      data: "We offer custom API development and integration, payment gateway installation, and seamless external data sources connections to streamline your business operations",
+    },
+    {
+      id: 4,
+      img: icon4,
+      t1: "Tech Migration and Re-engineering",
+      data: "Radixweb has the expertise to help you make your SaaS solutions future- ready by migrating it to cutting-edge technologies, rework old code and add new features to meet customer demands",
+    },
+    {
+      id: 5,
+      img: icon5,
+      t1: "SaaS Mobile App Development",
+      data: "Our SaaS applications development team has the skills and experience to build top-tier mobile apps from scratch or transform your existing platforms into powerful native or hybrid apps",
+    },
+    {
+      id: 6,
+      img: icon6,
+      t1: "SaaS App Design and Prototyping",
+      data: "providing prototypes that give them an opportunity to test and provide feedback so we can perfect the concept before launch",
+    },
+    {
+      id: 7,
+      img: icon9,
+      t1: "Support and Maintenance",
+      data: "applications are always up and running, free from downtime and armed with the latest updates for top performance",
+    },
+    {
+      id: 8,
+      img: icon8,
+      t1: "Performance Optimization",
+      data: "We provide the networking tools to ensure that users experience lightning-fast performance with their SaaS applications at all times ensuring a consistently positive user journey",
+    },
+  ];
+
+  const logos = [
     figma,
     js,
     metaai,
@@ -364,7 +428,7 @@ function Saas_Page() {
           </h3>
         </div>
         <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
-          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[40vh] md:h-[60vh]  ">
+          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[80vh]  ">
             <img
               alt=""
               src={software1}
@@ -372,7 +436,7 @@ function Saas_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[#788094] lg:text-[20px] md:text-[18px] text-[16px] font-syne text-base/10 ">
+            <h3 className="text-[#788094] lg:text-[20px] md:text-[18px] text-[16px] font-syne lg:text-base/15 md:text-base/10 md:!pl-10 ">
               Our UI/UX design services are crafted to elevate your digital
               presence with precision and creativity. We begin by understanding
               your goals and your audience, ensuring that every design decision
@@ -384,8 +448,8 @@ function Saas_Page() {
             </h3>
           </div>
         </div>
-         <div>
-          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center font-syne !my-10">
+        <div>
+          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px]  text-[#1A1A2E] text-center font-syne !my-10">
             Technologies used
           </h3>
 
@@ -419,7 +483,7 @@ function Saas_Page() {
                 We’ll craft engaging and intuitive user experiences that elevate your brand and captivate your audience.
               </p>
             </div>
-            <div>
+            {/* <div>
               <ul className="grid lg:grid-cols-2 lg:w-1/2 w-full  !mt-5 list-disc font-syne !pl-5 leading-10 ">
                 <li>consectetur placerat augue vestibulum</li>
                 <li>Mauris tincidunt a eget facilisis Quisque</li>
@@ -428,7 +492,7 @@ function Saas_Page() {
                 <li>Donec at augue ante Nam posuere mauris</li>
                 <li>quis pretium elit placerat id Fusce egestas</li>
               </ul>
-            </div>
+            </div> */}
             <div className=" lg:flex md:flex-row flex-row !gap-10 lg:!mt-10 ">
               <img src={software2} alt="" className="w-full lg:p-0 !py-5  " />
               <img src={software3} alt="" className="w-full lg:p-0 !py-5 " />
@@ -440,10 +504,24 @@ function Saas_Page() {
                 Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur placerat augue vestibulum Nulla aliquam elit eu diam pharetra.
                 Nam posuere mauris enim,
               </p>
-              <p className="text-[#788094] !pt-10 ">
-                Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis In pulvinar imperdiet venenatis
-                Class aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos. Donec eu pulvinar lorem.
-              </p>
+            </div>
+            <div className="grid lg:grid-cols-2 grid-cols-1 !pt-10 !gap-10">
+              {saas?.map((item, index) => {
+                return (
+                  <div className="lg:p-5 lg:flex shrink-0 "> 
+                   <div> <img src={item?.img} alt="icon"  className="  lg:h-12 lg:w-25 "/></div>
+                    <div className="lg:!px-10 ">
+                      <h2 className="lg:text-[26px] md:text-[22px] text-[20px] text-[#AD46FF]  font-semibold lg:!pt-0 !pt-5  font-syne">
+                        {item?.t1}
+                      </h2>
+                      <h2 className="lg:text-[18px] md:text-[16px] text-[14px] leading-10  !pt-5 text-[#4B5563]">
+                        {item?.data}
+                      </h2>
+                    </div>
+                  </div>
+                )
+              }
+              )}
             </div>
           </div>
         </div>
