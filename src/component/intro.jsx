@@ -69,7 +69,7 @@ function Intro() {
     setIsAnimating(true);
   };
   return (
-    <section className="inset-3  w-full h-full">
+    <section className="inset-3 min-h-screen w-full h-full">
       {/* <div className="relative">
         <div className=" lg:absolute w-[70vw] lg:h-[70vh] md:h-[50vh] h-[35vh] place-self-center content-center lg:top-50 lg:left-70 bg-transparent z-1">
           <div className="!gap-20" data-aos="fade-up" data-aos-delay="500">

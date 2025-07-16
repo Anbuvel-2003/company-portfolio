@@ -289,32 +289,32 @@ function Web_Page() {
   const web1data = [
     {
       id: 1,
-      data: "Safe start (via a feasibility study/PoC/MVP)",
+      data: "End-to-End Expertise",
       image: web01,
     },
     {
       id: 2,
-      data: "Strong Security",
+      data: "Security-First Approach",
       image: web01,
     },
     {
       id: 3,
-      data: "Releases every 2–3 weeks",
+      data: "Scalable & Future-Ready Solutions",
       image: web01,
     },
     {
       id: 4,
-      data: "Guaranteed increase in productivity",
+      data: "User-Centric Design Thinking",
       image: web01,
     },
     {
       id: 5,
-      data: "Apps that are easy to use, manage and evolve",
+      data: "Transparent Process & Communication",
       image: web01,
     },
     {
       id: 6,
-      data: "Responsive, intuitive and appealing UI, seamless UX.",
+      data: "Long-Term Partnership & Support",
       image: web01,
     },
   ];
@@ -334,20 +334,20 @@ function Web_Page() {
     <section className="">
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
             Web app development
           </h3>
         </div>
-        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
-          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1 sm:!m-10 !m-10">
+          <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
             <img
               alt=""
               src={webbanner1}
               className="w-[100%] h-[100%] object-contain"
             />
           </div>
-          <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[20px] font-syne text-base/10 ">
+          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
               Our UI/UX design services are crafted to elevate your digital
               presence with precision and creativity. We begin by understanding
               your goals and your audience, ensuring that every design decision
@@ -389,14 +389,14 @@ function Web_Page() {
               return (
                 <div key={index} className="!p-10 shadow-2xl rounded-[15px]">
                   <img alt="" src={item?.image} className="" />
-                  <h3 className="lg:text-[30px] md:text-[25px] sm:text-[20px] text-[18px] text-[#AD46FF] font-syne capitalize">
+                  <h3 className="lg:text-[30px] md:text-[25px] sm:text-[20px] text-[18px] text-[#AD46FF] lg:!pt-5 font-syne leading-10 capitalize">
                     {item?.t1}
                   </h3>
                   <div>
                     {item?.data?.map((data, index1) => {
                       return (
                         <div className="" key={index1}>
-                          <h2 className="text-black lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  font-syne capitalize">
+                          <h2 className="text-black lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  lg:!pt-5 leading-8 font-syne capitalize">
                             {data?.value}
                           </h2>
                         </div>
@@ -414,7 +414,7 @@ function Web_Page() {
           benefits of Web App Development with{" "}
           <span className="text-[#AD46FF]">vineatz Technologies</span>
         </h2>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 !gap-10 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:!gap-10 ">
           {web1data?.map((item, index) => {
             return (
               <div key={index} className="!p-10 place-items-center-safe  ">

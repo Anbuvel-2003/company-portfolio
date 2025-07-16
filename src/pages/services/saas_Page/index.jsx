@@ -21,7 +21,7 @@ import icon5 from "../../../assets/icon5.png";
 import icon6 from "../../../assets/icon6.png";
 import icon7 from "../../../assets/icon7.png";
 import icon8 from "../../../assets/icon8.png";
-import icon9 from "../../../assets/icon9.png";
+import icon9 from "../../../assets/icon10.png";
 
 import { Flex, Progress, Card } from "antd";
 import { h1, img } from "framer-motion/client";
@@ -116,49 +116,49 @@ function Saas_Page() {
       id: 1,
       img: icon1,
       t1: "Saas Development consulting",
-      data: "Let our consultants help you realize the full potential of SaaS.Our SaaS app consulting services cover onboarding development and marketing to ensure your project is successful",
+      data: "Unlock the full potential of SaaS with Vineatz. Our expert consultants guide you from ideation to execution—covering strategy, onboarding, development, and go-to-market planning to ensure a strong, scalable product launch.",
     },
     {
       id: 2,
       img: icon2,
       t1: "SaaS Application Platform Development",
-      data: "Equip your business with powerful SaaS platforms that offer unparalleled customization capabilities and advanced features to streamline daily tasks and achieve business goals more effectively",
+      data: "Empower your business with custom SaaS platforms designed for flexibility, scalability, and efficiency. Our advanced development frameworks streamline operations, accelerate growth, and align with your unique business goals.",
     },
     {
       id: 3,
       img: icon3,
       t1: "SaaS Integration Platforms",
-      data: "We offer custom API development and integration, payment gateway installation, and seamless external data sources connections to streamline your business operations",
+      data: "We simplify operations through custom APIs, third-party integrations, and secure payment gateways. Vineatz builds seamless, connected ecosystems to help your platform communicate effortlessly with external data and services.",
     },
     {
       id: 4,
       img: icon4,
       t1: "Tech Migration and Re-engineering",
-      data: "Radixweb has the expertise to help you make your SaaS solutions future- ready by migrating it to cutting-edge technologies, rework old code and add new features to meet customer demands",
+      data: "Future-proof your SaaS product with Vineatz. We migrate legacy systems to modern stacks, refactor outdated code, and implement new features—ensuring performance, compatibility, and user satisfaction.",
     },
     {
       id: 5,
       img: icon5,
       t1: "SaaS Mobile App Development",
-      data: "Our SaaS applications development team has the skills and experience to build top-tier mobile apps from scratch or transform your existing platforms into powerful native or hybrid apps",
+      data: "We develop high-performing SaaS mobile apps for iOS, Android, and cross-platform use. Whether starting from scratch or upgrading, we ensure seamless functionality, sleek interfaces, and native-like performance.",
     },
     {
       id: 6,
       img: icon6,
       t1: "SaaS App Design and Prototyping",
-      data: "providing prototypes that give them an opportunity to test and provide feedback so we can perfect the concept before launch",
+      data: "Bring ideas to life with design-first thinking. Vineatz creates interactive prototypes that validate concepts early, refine user flows, and ensure intuitive experiences—before writing a single line of code",
     },
     {
       id: 7,
-      img: icon9,
+      img: icon8,
       t1: "Support and Maintenance",
-      data: "applications are always up and running, free from downtime and armed with the latest updates for top performance",
+      data: "Stay worry-free post-launch. Our dedicated team ensures your SaaS platform is updated, secure, and running smoothly 24/7—minimizing downtime and enhancing the user experience.",
     },
     {
       id: 8,
-      img: icon8,
+      img: icon9,
       t1: "Performance Optimization",
-      data: "We provide the networking tools to ensure that users experience lightning-fast performance with their SaaS applications at all times ensuring a consistently positive user journey",
+      data: "Vineatz guarantees lightning-fast SaaS experiences. We optimize load times, fine-tune performance, and ensure consistent reliability—delivering seamless digital journeys across every user touchpoint.y",
     },
   ];
 
@@ -423,28 +423,24 @@ function Saas_Page() {
     <section>
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9F70FD] font-syne lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
             Saas App Development
           </h3>
         </div>
-        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
-          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[80vh]  ">
+        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1  sm:!m-10 !m-10">
+          <div className="lg:w-1/2 md:full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
             <img
               alt=""
               src={software1}
               className="w-[100%] h-[100%] object-contain"
             />
           </div>
-          <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[#788094] lg:text-[20px] md:text-[18px] text-[16px] font-syne lg:text-base/15 md:text-base/10 md:!pl-10 ">
-              Our UI/UX design services are crafted to elevate your digital
-              presence with precision and creativity. We begin by understanding
-              your goals and your audience, ensuring that every design decision
-              aligns with your brand’s vision. Our approach integrates user
-              research, wireframing, and prototyping to create intuitive and
-              engaging interfaces.Our UI/UX design services are crafted to
-              elevate your digital presence with precision and creativity. We
-              begin by understanding your goals and your audience, ensuring{" "}
+          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne md:!pl-10 lg:leading-15">
+              Scalable, secure, and built for growth, our SaaS platforms are engineered with modular architecture, cloud-native reliability, and flexible feature sets.
+              From intuitive dashboards to seamless onboarding flows, every interface is crafted for usability. We emphasize performance, automation.
+              With DevOps practices, CI/CD pipelines, and containerized infrastructure, we ensure continuous delivery. Whether building from scratch or
+              modernizing legacy systems, our SaaS solutions evolve alongside your business needs with agility and resilience
             </h3>
           </div>
         </div>
@@ -470,17 +466,16 @@ function Saas_Page() {
           </div>
         </div>
         <div>
-          <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10">
-            <div className="!pt-10 ">
+          <div className="lg:!m-20 md:!m-20  !mx-10">
+            <div className="lg:!pt-0 md:!pt-0 !pt-10 ">
               <h1 className="!pb-3 lg:text-[48px] md:text-[40px] sm:text-[30px] text-[20px] text-[#1A1A2E] font-semibold font-syne">
-                Boost your brand with the help of our creative
-                agency's UX design.
+                Scale Smarter with Our Agile SaaS Expertise
               </h1>
             </div>
             <div className="">
-              <p className="text-[#788094] text-[24px]  ">
-                Enhance your brand’s impact with our creative agency's expert UX design services.
-                We’ll craft engaging and intuitive user experiences that elevate your brand and captivate your audience.
+              <p className="text-[#788094] lg:text-[24px] md:text-[20px] text-[16px] font-syne  ">
+                At Vineatz, we build SaaS platforms engineered for growth. Our agile development approach enables rapid deployment,
+                seamless updates, and flexible architecture tailored to your evolving business needs.
               </p>
             </div>
             {/* <div>
@@ -494,27 +489,26 @@ function Saas_Page() {
               </ul>
             </div> */}
             <div className=" lg:flex md:flex-row flex-row !gap-10 lg:!mt-10 ">
-              <img src={software2} alt="" className="w-full lg:p-0 !py-5  " />
-              <img src={software3} alt="" className="w-full lg:p-0 !py-5 " />
+              <img src={software2} alt="" className="w-full lg:p-0 !py-3  " />
+              <img src={software3} alt="" className="w-full lg:p-0 !py-3 " />
             </div>
             <div className=" ">
-              <p className="text-[#788094] !pt-10 ">
-                Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis
-                In pulvinar imperdiet venenatis Class aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos.
-                Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur placerat augue vestibulum Nulla aliquam elit eu diam pharetra.
-                Nam posuere mauris enim,
+              <p className="text-[#788094] !pt-5  font-syne">
+                From subscription handling to role-based access, our modular SaaS systems are designed to adapt and scale.
+                We combine clean code, intuitive interfaces, and cloud-native infrastructure to deliver secure, performance-optimized platforms.
+                Whether you're launching an MVP or modernizing legacy systems, our agile expertise ensures a reliable, future-proof digital foundation.
               </p>
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 !pt-10 !gap-10">
               {saas?.map((item, index) => {
                 return (
-                  <div className="lg:p-5 lg:flex shrink-0 "> 
-                   <div> <img src={item?.img} alt="icon"  className="  lg:h-12 lg:w-25 "/></div>
+                  <div className="lg:p-5 lg:flex shrink-0 ">
+                    <div> <img src={item?.img} alt="icon" className="  lg:h-12 lg:w-25 " /></div>
                     <div className="lg:!px-10 ">
                       <h2 className="lg:text-[26px] md:text-[22px] text-[20px] text-[#AD46FF]  font-semibold lg:!pt-0 !pt-5  font-syne">
                         {item?.t1}
                       </h2>
-                      <h2 className="lg:text-[18px] md:text-[16px] text-[14px] leading-10  !pt-5 text-[#4B5563]">
+                      <h2 className="lg:text-[18px] md:text-[16px] text-[14px] lg:leading-10 leading-8 font-syne !pt-5 text-[#4B5563]">
                         {item?.data}
                       </h2>
                     </div>

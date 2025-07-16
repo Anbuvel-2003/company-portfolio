@@ -6,41 +6,41 @@ function Thinkyoutoknow() {
   const Faq = [
     {
       id: 1,
-      title: "How long until we deliver your first blog post?",
+      title: "What services does Vineatz specialize in?",
       answer:
-        "How long until we deliver your first blog postHow long until we deliver your first blog post How long until we deliver your first blog postHow long until we deliver your first blog post How long until we deliver your first blog postHow long until we deliver your first blog post",
+        " We offer full-stack development for web, mobile, SaaS, and custom software solutions.",
     },
     {
       id: 2,
-      title: "How long until we deliver your first blog post?",
+      title: "What is the typical project timeline?",
       answer:
-        "How long until we deliver your first blog postHow long until we deliver your first blog post",
+        "Timelines vary by project scope, but we follow agile sprints for faster, transparent delivery.",
     },
     {
       id: 3,
-      title: "How long until we deliver your first blog post?",
+      title: "Do you provide post-launch support?",
       answer:
-        "How long until we deliver your first blog postHow long until we deliver your first blog post",
+        "Yes, we offer ongoing support, updates, and performance optimization after deployment",
     },
     {
       id: 4,
-      title: "How long until we deliver your first blog post?",
+      title: "Can you work with existing software or platforms?",
       answer:
-        "How long until we deliver your first blog postHow long until we deliver your first blog post",
+        "Absolutely—we enhance, integrate, or scale existing systems to meet evolving needs.",
     },
     {
       id: 5,
-      title: "How long until we deliver your first blog post?",
+      title: "How do you ensure data security in your solutions?",
       answer:
-        "How long until we deliver your first blog postHow long until we deliver your first blog post",
+        "We implement industry-standard encryption, secure APIs, and compliance-focused architecture.",
     },
   ];
   const [selected, setSelected] = useState(null);
   return (
-    <section className="w-full min-h-screen flex flex-col place-content-center items-center bg-white gap-10  py-10 !mt-10 md:!px-20 lg:!px-20 !px-10">
+    <section className="w-full min-h-screen flex flex-col place-content-center items-center gap-10  py-10 md:!px-20 lg:!px-20 !px-10">
       <div>
         <h2 className="font-syne text-3xl md:text-[38px] text-black text-center md:!mb-20 !mb-5">
-          Things you to <span className="text-[#AF4BFF]">know</span>
+          Frequently Asked <span className="text-[#AF4BFF]">Questions</span>
         </h2>
       </div>
       <div className="md:flex lg:flex grid w-full ">

@@ -31,37 +31,37 @@ function UIUX_Page() {
       id: 1,
       image: Ux1,
       q1: "Expertise in User-Centric Design",
-      q2: "We specialize in creating user-centric design solutions, ensuring a seamless and intuitive digital experience by catering to user needs and preferences.",
+      q2: "Our design process starts with empathy. We understand your users' behavior, goals, and pain points to craft intuitive experiences that feel natural and effortless",
     },
     {
       id: 2,
       image: Ux2,
       q1: "Collaborative Approach",
-      q2: "To guarantee that our clients' visions are realized, we work closely with them throughout the whole development process.",
+      q2: "Design is a shared vision. We involve clients in every phase—brainstorming, feedback loops, and revisions—to ensure the final output truly reflects their brand goals",
     },
     {
       id: 3,
       image: Ux3,
       q1: "Innovation",
-      q2: "To produce creative solutions that go above and beyond expectations, we keep up with the most recent UI/UX trends, technologies, and processes.",
+      q2: "We don’t follow trends—we set them. Our team explores emerging design technologies and creative interactions to craft forward-thinking digital experiences",
     },
     {
       id: 4,
       image: Ux4,
       q1: "Customer Satisfaction",
-      q2: "Customer satisfaction is our main priority, and we work hard to complete projects on schedule, within budget, and with the highest standards of quality.",
+      q2: "We aim for excellence with every project. From timelines to functionality, we deliver UI/UX solutions that exceed expectations and leave a lasting impression",
     },
     {
       id: 5,
       image: Ux5,
       q1: "Continuous Learning and Improvement",
-      q2: "We continuously learn to stay updated with the latest trends and technologies in UI/UX design to provide innovative solutions to our clients.",
+      q2: "We stay sharp by constantly evolving—learning new tools, testing new ideas, and applying industry best practices to stay ahead of the digital curve",
     },
     {
       id: 6,
       image: Ux6,
       q1: "Refinement through Research",
-      q2: "Our team delves into comprehensive research and analysis, gathering insights intouser behaviour, market trends, and competitor strategies",
+      q2: "Every decision is rooted in insight. We conduct deep user and market research to validate ideas and refine designs that perform in the real world",
     },
   ];
   const question1 = [
@@ -149,28 +149,25 @@ function UIUX_Page() {
     <section className="">
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9F70FD] font-syne font-bold lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne font-bold lg:text-[60px] md:text-[40px] text-[25px] text-center ">
             UI/UX Design Service
           </h3>
         </div>
-        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
-          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1 sm:!m-10 !m-10">
+          <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
             <img
               alt=""
               src={Uxuibanner}
               className="w-[100%] h-[100%] object-contain"
             />
           </div>
-          <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[20px] md:text-[16px] text-[14px] font-syne lg:text-base/15 md:text-base/10 text-base/8 text-[#788094] ">
-              Our UI/UX design services are crafted to elevate your digital
-              presence with precision and creativity. We begin by understanding
-              your goals and your audience, ensuring that every design decision
-              aligns with your brand’s vision. Our approach integrates user
-              research, wireframing, and prototyping to create intuitive and
-              engaging interfaces.Our UI/UX design services are crafted to
-              elevate your digital presence with precision and creativity. We
-              begin by understanding your goals and your audience, ensuring{" "}
+          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:text-base/15 md:!pl-10 lg:leading-15  text-[#788094] ">
+              We craft purposeful UI/UX designs that combine user insights, visual strategy, and functional clarity.
+              From persona creation and wireframes to high-fidelity prototypes, our design process ensures every interface 
+              feels intuitive and on-brand. Accessibility, consistency, and responsiveness guide our approach—resulting 
+              in inclusive, mobile-friendly experiences. we turn business goals into interactive journeys that drive engagement, 
+              Fsolve real user problems, and deliver seamless performance across every screen and platform
             </h3>
           </div>
         </div>
@@ -203,7 +200,7 @@ function UIUX_Page() {
                 Why Choose Us
               </h2>
             </div>
-            <h2 className="text-black capitalize font-syne lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px] lg:mb-0 !mb-15">
+            <h2 className="text-black capitalize font-syne lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px] lg:mb-0 !mb-5">
               Why Choose Us as Your UI/UX Design Partner?
             </h2>
           </div>
@@ -212,7 +209,7 @@ function UIUX_Page() {
               return (
                 <div
                   key={index}
-                  className="!p-5 bg-white rounded-[5px] shadow-2xl !mb-5"
+                  className="!p-5 bg-white rounded-[20px] shadow-2xl !mb-5"
                 >
                   <div className="flex items-center !gap-5">
                     <div>
@@ -225,7 +222,7 @@ function UIUX_Page() {
                     </div>
                   </div>
                   <div className="!mt-3 ">
-                    <h2 className="text-[#374151] lg:text-[16px] md:text-[16px] text-[14px] leading-10 ">{item?.q2}</h2>
+                    <h2 className="text-[#374151] lg:text-[16px] md:text-[16px] text-[14px] leading-8 ">{item?.q2}</h2>
                   </div>
                 </div>
               );
@@ -247,13 +244,13 @@ function UIUX_Page() {
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 !gap-10">
           {question1?.map((item, index) => {
             return (
-              <div className="!p-5 shadow-2xl rounded-[10px]">
+              <div className="!p-5 shadow-2xl rounded-[20px]">
                 <img src={item?.image} alt="" className="" />
                 <div className="">
                   <h2 className="text-[20px] text-black font-syne">
                     {item?.q1}
                   </h2>
-                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-10 text-[#9CA3AF]">{item?.q2}</h2>
+                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-8 text-[#9CA3AF]">{item?.q2}</h2>
                 </div>
               </div>
             );
@@ -274,13 +271,13 @@ function UIUX_Page() {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 !gap-10">
           {question3?.map((item, index) => {
             return (
-              <div className="!p-5 shadow-2xl rounded-[10px]">
+              <div className="!p-5 shadow-2xl rounded-[20px]">
                 <img src={item?.image} alt="" className="" />
                 <div className="">
                   <h2 className="text-[20px] text-black  !mt-3 font-syne">
                     {item?.q1}
                   </h2>
-                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-10 text-[#4B5563] !mt-3">
+                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-8 text-[#4B5563] !mt-3">
                     {item?.q2}
                   </h2>
                 </div>

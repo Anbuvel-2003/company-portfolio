@@ -352,20 +352,20 @@ function Ecommerce() {
     <section>
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9F70FD] font-syne lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
             E-commerce app development
           </h3>
         </div>
         <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
-          <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+          <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
             <img
               alt=""
               src={software1}
               className="w-[100%] h-[100%] object-contain"
             />
           </div>
-          <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:leading-15 md:leading-10 leading-5 ">
+          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:leading-15 md:!pl-10 ">
               Our e-commerce solutions deliver seamless shopping experiences with sleek interfaces and robust backend systems.
               From real-time inventory sync and secure payments to intelligent promotions and abandoned cart recovery, every feature
               is optimized for growth. We focus on speed, security, and scalability to help your business convert better and sell more.
@@ -396,14 +396,14 @@ function Ecommerce() {
           </div>
         </div>
         <div>
-          <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10">
-            <div className="!pt-10 ">
+          <div className="lg:!mx-20 md:!m-20 sm:!m-10 !m-10">
+            <div className="lg:!pt-10 ">
               <h1 className="!pb-3 lg:text-[48px] md:text-[40px] sm:text-[30px] text-[20px] text-[#1A1A2E] font-semibold font-syne">
                 Accelerate Sales with High-Performance eCommerce App Solutions
               </h1>
             </div>
             <div className="">
-              <p className="text-[#788094] text-[24px]  ">
+              <p className="text-[#788094] lg:text-[20px] md:text-[18px] text-[16px] font-syne lg:leading-12 leading-8 ">
                 Our eCommerce app solutions are built to convert—combining speed, usability, and smart design for customer journeys.
                 We focus on mobile-first architecture, dynamic product presentation, personalized experiences, and real-time performance
                 tracking to maximize user engagement. With a seamless fusion of frontend elegance and backend strength, our apps reduce
@@ -417,18 +417,18 @@ function Ecommerce() {
         <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10">
           <div className="lg:flex grid lg:!gap-20">
             <div className=" ">
-              <h2 className="text-black capitalize font-syne lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px] lg:mb-0 !mb-15">
+              <h2 className="text-black capitalize font-syne lg:text-[48px] md:text-[40px] sm:text-[30px] text-[25px] font-semibold lg:mb-0  !mb-5">
                 Why Vineatz Powers the Future of eCommerce Development
               </h2>
-              <p className=" lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] leading-12 !pb-10 ">
+              <p className=" lg:text-[20px] md:text-[18px] sm:text-[18px] text-[16px] lg:leading-12 leading-8 font-syne lg:!pb-10 !pb-5">
                 Vineatz crafts eCommerce ecosystems built to perform, adapt, and thrive. With a foundation in scalable architecture
                 and experience across diverse sectors, we deliver solutions that not only meet current demands but are ready for what's next.
                 Our approach blends deep technical insight with user-first design to fuel sustainable digital growth
               </p>
-              <h2 className="text-black capitalize font-syne lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px] lg:mb-0 !mb-15">
+              <h2 className="text-black capitalize lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px]  font-syne lg:mb-0 !mb-8">
                 Tailored eCommerce Platforms for Every Business Landscape
               </h2>
-              <p className=" lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] leading-12 ">
+              <p className=" lg:text-[20px] md:text-[18px] sm:text-[18px] text-[16px] font-syne lg:!pb-0 !pb-10  lg:leading-12 leading-8 ">
                 Every solution we build is customized to align with your brand, industry, and audience. From niche startups to large-scale enterprises,
                 our platforms combine intuitive UI, fast performance, and flexible backends to support sales, retention, and long-term scale. Whether
                 it’s B2C, B2B, or marketplace Vineatz builds with intent and impact.
@@ -440,12 +440,12 @@ function Ecommerce() {
           </div>
         </div>
         <div className="bg-[#F8F4FF] ">
-          <h1 className="!pb-3 lg:text-[30px] md:text-[26px] sm:text-[24px] text-[20px] text-[#AD46FF] font-semibold lg:!px-20 md:!px-20 px-10 !py-10 font-syne">
+          <h1 className="!pb-3 lg:text-[30px] md:text-[26px] sm:text-[24px] text-[20px] text-[#AD46FF] font-semibold lg:!px-20 md:!px-20 !px-10 !py-10 font-syne">
             Custom Ecommerce Development Routes for Every Business Stage
           </h1>
           <div className="lg:flex md:grid grid-cols-1 lg:!p-20 md:!p-15 !p-10 ">
             <div className="lg:w-1/2 w-full md:w-full lg:flex grid justify-center lg:h-[60vh] md:h-[60vh] ">
-              <img src={fig6} alt="business stage" className="w-[100%] h-[100%] object-contain" />
+              <img src={fig6} alt="business stage" className="w-[100%] h-[100%] object-contain"    />
             </div>
             <div className="grid grid-cols-1 lg:!gap-10 lg:!pl-30">
               <div className="lg:flex grid">
@@ -468,7 +468,7 @@ function Ecommerce() {
                   <h1 className=" lg:text-[24px] md:text-[23px] text-[20px] font-semibold font-syne ">
                     Mobile + Web Application Development
                   </h1>
-                  <p className="lg:!py-10 !py-5 lg:text-[20px] md:text-[18px] text-[16px] font-syne leading-10 ">
+                  <p className="lg:!py-10 !py-5 lg:text-[20px] md:text-[18px] text-[16px]  font-syne leading-10 ">
                     This path is designed for growing businesses or enterprise-grade brands looking to offer a connected, high-performance experience
                     across all digital touchpoints. We build seamless ecosystems that span mobile apps, web interfaces, and integrated systems—ready
                     for scale, performance, and innovation.</p>

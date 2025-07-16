@@ -119,11 +119,11 @@ function Mobile_App() {
     <section className="">
       <div className="!mt-15">
         <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
-          <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl text-center ">
+          <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
             Mobile App Development
           </h3>
         </div>
-        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid  sm:!m-10 !m-10">
+        <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1 sm:!m-10 !m-10">
           <div className="lg:w-1/2 md:w-1/2 w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
             <img
               alt=""
@@ -132,15 +132,14 @@ function Mobile_App() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[20px] text-base/10 font-syne">
-              Our UI/UX design services are crafted to elevate your digital
-              presence with precision and creativity. We begin by understanding
-              your goals and your audience, ensuring that every design decision
-              aligns with your brand’s vision. Our approach integrates user
-              research, wireframing, and prototyping to create intuitive and
-              engaging interfaces.Our UI/UX design services are crafted to
-              elevate your digital presence with precision and creativity. We
-              begin by understanding your goals and your audience, ensuring{" "}
+            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
+              We design and develop high-performance mobile applications tailored to your business goals.
+              Our process focuses on seamless user experiences, clean UI, and cross-platform functionality
+              using frameworks like Flutter and React Native. From MVPs to enterprise-grade apps,
+              we prioritize speed, security, and scalability. Features like real-time sync,
+              and offline access come standard. With robust backend architecture and future-ready
+              flexibility, our apps evolve with your business—delivering intuitive, reliable solutions
+              across Android and iOS and user engagement.
             </h3>
           </div>
         </div>
@@ -167,34 +166,35 @@ function Mobile_App() {
         </div>
 
         <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
-          <h3 className="text-[35px] font-syne text-[#1A1A2E] text-center">
+          <h3 className="!pb-3 lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne font-lightfont-syne text-[#1A1A2E] text-center">
             End-to-End Mobile App Development
           </h3>
           <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:!gap-30 md:!gap-20 !gap-10 !mt-10">
             <div className="shadow-2xl !p-10 rounded-[20px]">
               <img src={mobiletech1} alt="" className="!mt-10" />
-              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+              <h2 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-[#AD46FF]">
                 High-Performance Android Apps
               </h2>
-              <h4 className="!mt-5 text-[20px] font-syne text-black">
+              <h4 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-black">
                 Native Android apps built for speed, scale, and high performance.
               </h4>
             </div>
             <div className="shadow-2xl !p-10 rounded-[20px]">
               <img src={mobiletech2} alt="" className="!mt-10" />
-              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+              <h2 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-[#AD46FF]">
                 iOS Apps That Feel Premium
               </h2>
-              <h4 className="!mt-5 text-[20px] font-syne text-black">
+              <br/>
+              <h4 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-black">
                 Premium iPhone & iPad apps designed for smooth Apple experiences.
               </h4>
             </div>
             <div className="shadow-2xl !p-10 rounded-[20px]">
               <img src={mobiletech3} alt="" className="!mt-10" />
-              <h2 className="!mt-5 text-[20px] font-syne text-[#AD46FF]">
+              <h2 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-[#AD46FF]">
                 Secure, Scalable Backends
               </h2>
-              <h4 className="!mt-5 text-[20px] font-syne text-black">
+              <h4 className="!mt-5 lg:text-[20px] text-[16px] font-syne text-black">
                 Scalable, secure backends with custom REST or GraphQL APIs.
               </h4>
             </div>

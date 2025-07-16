@@ -58,7 +58,7 @@ function Flow() {
 
                                 {/* Vertical line if not last item */}
                                 {index !== flow.length - 1 && (
-                                    <div className="w-[2px] lg:h-[250px] md:h-[100px] h-[150px]  bg-[#D0B9FF] " />
+                                    <div className="w-[2px] lg:h-[260px] md:h-[100px] h-[300px]  bg-[#D0B9FF] " />
                                 )}
                             </div>
 
@@ -67,7 +67,7 @@ function Flow() {
                                 <h3 className="lg:text-[30px] md:text-[25px] text-[20px] font-syne text-black !pb-6 ">
                                     {item.t1}
                                 </h3>
-                                <p className="lg:text-[19px] md:text-[15px] text-[14px] font-syne text-black  lg:leading-12 md:leading-8 leading-5 ">
+                                <p className="lg:text-[20px] md:text-[18px] text-[16px] font-syne text-black lg:!pb-0 !pb-10 lg:leading-12 md:leading-8 leading-7 ">
                                     {item.para}
                                 </p>
                             </div>
