@@ -46,7 +46,7 @@ function Main() {
         </div>
         <Process />
         <ReadOurNews />
-        <News_section newsItems={newsData} />
+        {/* <News_section newsItems={newsData} /> */}
         <Collab />
         <Choose />
         <Client_section />

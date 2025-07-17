@@ -3,7 +3,7 @@ import Meetourclient from "../../../component/meetourclient";
 import About1 from "../../../assets/contact.jpg";
 import ContactMap from "../../../component/constactmap";
 import Projectreport from "../../../component/projectsreport";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function ContactUs() {
   const formRef = useRef(null);
@@ -22,11 +22,11 @@ function ContactUs() {
       message: message,
       email: email,
     };
-    emailjs.send(serviceId, templateId, templateparams, publicKey)
+    emailjs
+      .send(serviceId, templateId, templateparams, publicKey)
       .then((response) => {
         console.log("email sent successfully", response);
-
-      })
+      });
   };
   return (
     <div className="!mt-15">
@@ -37,10 +37,14 @@ function ContactUs() {
       </div>
       <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1  sm:!m-10 !m-10">
         <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
-          <img src={About1} alt="software1" className="rounded-[20px] w-[100%] h-[100%] object-contain" />
+          <img
+            src={About1}
+            alt="software1"
+            className="rounded-[20px] w-[100%] h-[100%] object-contain"
+          />
         </div>
-          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <div className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne lg:leading-10 leading-10  ">
+        <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+          <div className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne lg:leading-10 leading-10  ">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
             </h3>
@@ -85,7 +89,7 @@ function ContactUs() {
                 Got questions to ask ?
               </h3>
               <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
-                admin@vineatz.com
+                vineatztechnologies@gmail.com
               </h3>
               <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-full !pb-5 text-center">
                 Discuss your projects with us. We are open to question.

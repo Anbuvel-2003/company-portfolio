@@ -200,7 +200,7 @@ function Mobile_App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F8F4FF] !p-10">
+        <div className="bg-[#F8F4FF] !p-10 lg:!mb-20 md:!mb-20 sm:!mb-10 !mb-10">
           <Step />
         </div>
       </div>

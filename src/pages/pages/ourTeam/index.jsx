@@ -1,21 +1,45 @@
 import React from "react";
 import Meetourclient from "../../../component/meetourclient";
+import Team1 from "../../../assets/team-1.jpeg";
+import Team2 from "../../../assets/team-2.jpeg";
+import Team3 from "../../../assets/team-3.jpeg";
+import Team4 from "../../../assets/team-4.jpeg";
+import Team5 from "../../../assets/team-5.jpeg";
+import Team6 from "../../../assets/team-6.jpeg";
 
 function OurTeam() {
   const Outteamdata = [
     {
+      id: 0,
+      url: Team6,
+      name: "Vineeth Sharma",
+      role: "Chief Executive Officer",
+      facebookurl: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
+      id: 4,
+      url: Team2,
+      name: "Guhan",
+      role: "Administrator",
+      facebookurl: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
       id: 1,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "lynda lee",
-      role: "Designer",
+      url: Team1,
+      name: "Anbuvel",
+      role: "Full Stack Developer",
       facebookurl: "",
       twitter: "",
       linkedin: "",
     },
     {
       id: 2,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "lynda lee",
+      url: Team4,
+      name: "sabareesh",
       role: "Designer",
       facebookurl: "",
       twitter: "",
@@ -23,36 +47,19 @@ function OurTeam() {
     },
     {
       id: 3,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "lynda lee",
-      role: "Designer",
+      url: Team3,
+      name: "Sujith",
+      role: "Content Writer",
       facebookurl: "",
       twitter: "",
       linkedin: "",
     },
-    {
-      id: 4,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "lynda lee",
-      role: "Designer",
-      facebookurl: "",
-      twitter: "",
-      linkedin: "",
-    },
+    
     {
       id: 5,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "Bred Deen",
-      role: "Designer",
-      facebookurl: "",
-      twitter: "",
-      linkedin: "",
-    },
-    {
-      id: 6,
-      url: "https://deon.qodeinteractive.com/wp-content/uploads/2021/11/Team-img-5.jpg",
-      name: "lynda lee",
-      role: "Designer",
+      url: Team5,
+      name: "Sowndhar",
+      role: "Front End developer",
       facebookurl: "",
       twitter: "",
       linkedin: "",
@@ -75,10 +82,10 @@ function OurTeam() {
                   <div className="flex relative">
                     <img
                       src={item?.url}
-                      className="hover:opacity-10 duration-300"
+                      className=" duration-300"
                       alt=""
                     />
-                    <div className="absolute inset-0 flex opacity-0 hover:opacity-80 justify-evenly items-center hover:bg-white">
+                    {/* <div className="absolute inset-0 flex opacity-0 hover:opacity-80 justify-evenly items-center hover:bg-white">
                       <p className="text-[16px] text-black  hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text uppercase">
                         Facebook
                       </p>
@@ -88,14 +95,14 @@ function OurTeam() {
                       <p className="text-[16px] text-black  hover:text-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400 hover:bg-clip-text uppercase">
                         linkedin
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="">
                     <h2 className="text-center font-syne text-black lg:text-[30px] md:text-[20px]">
                       {item?.name}
                     </h2>
                     <h2 className="text-center font-syne text-[#acabac] text-[13px]">
-                      {item?.name}
+                      {item?.role}
                     </h2>
                   </div>
                 </div>

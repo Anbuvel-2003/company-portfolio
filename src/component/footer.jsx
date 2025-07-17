@@ -329,7 +329,7 @@ function Footer_section() {
             </a>
           </span>
           <span className="text-[#6e6e6e] text-[16px] font-syne text-left">
-            Vineatz Technology Pvt Ltd is your trusted partner for high-impact
+            Vineatz Technology OPC Pvt Ltd is your trusted partner for high-impact
             IT and software solutions across mobile, web, and SaaS platforms.Our
             dedicated teams drive innovation through DevOps-led development,
             thorough testing, and best-in-class CI/CD practices.We fuse

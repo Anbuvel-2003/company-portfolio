@@ -38,46 +38,7 @@ function Client_section() {
           ))}
         </div>
       </div>
-      <div className="lg:w-full sm:w-fit lg:h-[50vh] bg-white lg:flex md:grid sm:!mt-10 md:!mt-10 !mt-10  !mx-10">
-        <div className="lg:w-1/2 bg-white h-full lg:place-self-center lg:content-center !gap-2 md:!p-10 grid lg:justify-center ">
-          <h4
-            className="text-[#949494] bg-white text-1xl uppercase"
-            data-aos="fade-up"
-            data-aos-duration="5000"
-          >
-            partners
-          </h4>
-          <h4
-            className="text-black text-5xl font-syne  "
-            data-aos="fade-up"
-            data-aos-duration="4000"
-          >
-            Trusted and <br /> Supported by <br /> Many
-          </h4>
-          <h4 data-aos="fade-up" data-aos-duration="5000" className="font-syne !pt-10">
-            Empowered by trust and anchored in excellence, <br/> our expert-driven team is unwaveringly reliable <br/>committed to delivering your success and  consistently.
-          </h4>
-          {/* <div
-            className=" border hover:border-none w-[130px] h-[40px] justify-items-center content-center hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-400   cursor-pointer group"
-            data-aos="fade-up"
-            data-aos-duration="6000"
-          >
-            <h2 className="uppercase text-black text-[16px] font-sans group-hover:text-white">
-              View More
-            </h2>
-          </div> */}
-        </div>
-        <div className="lg:w-1/3 grid md:grid-cols-3 sm:grid-cols-2 md:!mx-10 gap-2 items-center justify-center">
-          {[img1, img2, img3, img4, img5, img6].map((imgSrc, idx) => (
-            <img
-              key={idx}
-              src={imgSrc}
-              alt={`client-${idx}`}
-              className="w-[250px]  h-[190px] object-contain"
-            />
-          ))}
-        </div>
-      </div>
+     
     </>
   );
 }
