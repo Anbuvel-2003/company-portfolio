@@ -22,25 +22,25 @@ function ContactUs() {
       message: message,
       email: email,
     };
-    emailjs.send(serviceId,templateId,templateparams,publicKey)
-    .then((response) =>{
-      console.log("email sent successfully",response);
-      
-    })
+    emailjs.send(serviceId, templateId, templateparams, publicKey)
+      .then((response) => {
+        console.log("email sent successfully", response);
+
+      })
   };
   return (
-    <div className="!pt-15">
-      <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
-        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl ">
+    <div className="!mt-15">
+      <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10  ">
+        <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
           Contact Us
         </h3>
       </div>
-      <div className="lg:flex">
-        <div className="lg:w-1/2 w-full lg:mb-0 ">
-          <img src={About1} alt="software1" className="" />
+      <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1  sm:!m-10 !m-10">
+        <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+          <img src={About1} alt="software1" className="rounded-[20px] w-[100%] h-[100%] object-contain" />
         </div>
-        <div className="lg:w-1/2 w-full place-self-center justify-items-center lg:mb-0 !mb-10 ">
-          <div className="w-[60%] lg:mt-0 md:mt-0 !mt-10">
+          <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
+            <div className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne lg:leading-10 leading-10  ">
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
             </h3>
@@ -59,46 +59,46 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div className=" place-self-center !mt-10">
+      <div className=" place-self-center !mt-25">
         <div className=" justify-items-center">
-          <h2 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
-            Connect With our team!
+          <h2 className="text-[#000000] font-syne lg:text-4xl sm:text-3xl">
+            Connect With our <span className="text-[#AD46FF] ">team!</span>
           </h2>
-          <h4 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 w-1/2 text-center">
+          <h4 className="text-black font-syne lg:text-[24px] md:text-[20px] text-[18px] !mt-5 w-1/2 text-center">
             Reach out to us! We're here to discuss your projects, brainstorm
             ideas and answer any questions you might have.
           </h4>
-          <div className="lg:flex md:flex grid lg:!mt-10 md:!mt-10 !mt-5 w-full">
-            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0">
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
+          <div className="lg:flex md:flex grid lg:!mt-10 md:!mt-10 !mt-5 w-full md:!px-10  !gap-10  ">
+            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 bg-[#F9F6FF] rounded-[20px]">
+              <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
                 have a great idea ?
               </h3>
-              <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
+              <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
                 94881 60083
               </h3>
-              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-[1/3] text-center">
+              <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-full !pb-5 text-center">
                 tell Us more about your business idea to get consulted
               </h3>
             </div>
-            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0">
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
+            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 rounded-[20px] bg-[#F9F6FF]">
+              <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
                 Got questions to ask ?
               </h3>
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
+              <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
                 admin@vineatz.com
               </h3>
-              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] w-[1/3] text-center">
-                Discuss your projects with us. We're open to question
+              <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-full !pb-5 text-center">
+                Discuss your projects with us. We are open to question.
               </h3>
             </div>
-            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0">
-              <h3 className="text-black font-syne lg:text-2xl sm:text-2xl text-center">
+            <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 rounded-[20px] bg-[#F9F6FF]">
+              <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
                 We are hiring!
               </h3>
-              <h3 className="text-black font-medium lg:text-2xl sm:text-2xl text-center">
-                6379108978
+              <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
+                63791 08978
               </h3>
-              <h3 className="text-black font-syne lg:text-[18px]  md:text-[18px]  sm:text-[16px] text-[14px] w-[1/3] text-center">
+              <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-[1/3] font-poppins !pb-5 text-center">
                 We do more for your career. Come and join Us
               </h3>
             </div>
@@ -220,7 +220,6 @@ function ContactUs() {
           </div>
         </form>
       </div>
-      <Meetourclient />
     </div>
   );
 }

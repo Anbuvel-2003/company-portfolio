@@ -17,20 +17,20 @@ const ReadNews = () => {
   const [activeImage, setActiveImage] = useState(card1);
 
   return (
-    <section className=" min-h-screen w-full flex items-center justify-center bg-white px-6 py-24 overflow-hidden font-sans">
-      <div className=" lg:w-[65vw] w-[75vw] grid grid-cols-1 lg:grid-cols-2 gap-40 items-center">
+    <section className=" w-full flex items-center justify-center bg-white px-6 lg:!py-24 md:!py-18  overflow-hidden font-sans">
+      <div className=" lg:w-[65vw] w-[75vw] grid grid-cols-1 lg:grid-cols-2 lg:gap-40 md:gap-20 gap-10 items-center">
         {/* Left Side - Image */}
         <div className="">
           <img
             src={activeImage}
             alt="Card and Phone"
-            className="shadow-xl w-full lg:h-[80vh] object-cover transition-all duration-300"
+            className="shadow-xl w-full lg:h-[80vh] object-cover rounded-[20px] transition-all duration-300"
           />
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="flex flex-col sm:place-self-center lg:pb-0 md:pb-0 !pb-10">
-          <span className="uppercase tracking-widest text-sm text-gray-500 mb-3">
+        <div className="flex flex-col sm:place-self-center ">
+          <span className="uppercase tracking-widest text-sm font-syne text-gray-500">
             How It Works
           </span>
 
@@ -42,7 +42,7 @@ const ReadNews = () => {
           </h2>
 
           {/* Gradient Link List */}
-          <ul className="flex flex-col gap-6 lg:!mt-10 md:!mt-10 border-gray-700 pl-6">
+          <ul className="flex flex-col gap-6 lg:!mt-10 md:!mt-10 !mt-5 border-gray-700 pl-6">
             {[
               "Strategy-First Approach",
               "Discovery & Ideation",
@@ -60,7 +60,7 @@ const ReadNews = () => {
               >
                 {console.log("qqqq", i)}
                 <span className="absolute  left-0 top-0 h-0 w-0.5 bg-black group-hover:h-full transition-all duration-400"></span>
-                <span className="!ml-8 text-transparent bg-clip-text lg:text-3xl md:text-3xl text-[14px] bg-gradient-to-r from-purple-500 to-sky-400 hover:from-indigo-500 hover:to-cyan-400 transition-all duration-300 cursor-pointer">
+                <span className="!ml-8 text-transparent bg-clip-text lg:text-3xl md:text-3xl text-[14px] font-syne bg-gradient-to-r from-purple-500 to-sky-400 hover:from-indigo-500 hover:to-cyan-400 transition-all duration-300 cursor-pointer">
                   {text}
                 </span>
               </li>

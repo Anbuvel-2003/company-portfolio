@@ -93,20 +93,20 @@ import React from "react";
 
 function News_section({ newsItems, view = true }) {
   return (
-    <section className="py-20 px-6 md:px-16 !p-40 justify-items-center">
-      <div className="max-w-7xl mx-auto  grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-20 md:text-left">
+    <section className="lg:!mx-30 md:!mx-25 !mx-10 md:px-16 lg:!py-30 !py-10 justify-items-center">
+      <div className="max-w-7x1  grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12  md:text-left">
         {newsItems.map((item, index) => (
           <div className="relative lg:w-[80%] md:w-[80%] w-[100%]" key={index}>
             <div
-              className="text-[200px] bg-gradient-to-r bg-clip-text to-[#dfecfc] from-[#c4b7e5] text-transparent font-bold absolute !-top-20 !-left-2 lg:!-top-35 lg:!-left-15 -z-10 md:!left-0"
+              className="text-[200px] bg-gradient-to-r bg-clip-text to-[#dfecfc] from-[#c4b7e5] text-transparent font-bold absolute !-top-20 !2 lg:!-top-35 lg:!-left-15 -z-10 md:!left-0"
               data-aos="fade-left"
             >
               {item.id}
             </div>
-            <h3 className="text-4xl font-syne text-black w-[100%]">
+            <h3 className="text-4xl font-syne text-black w-[100%] lg:leading-15 ">
               {item.title}
             </h3>
-            <p className="text-black text-[18px] mt-4">{item.description}</p>
+            <p className="text-black text-[18px] mt-4 !mb-10 lg:leading-10 font-syne leading-5">{item.description}</p>
             {/* <div className="mt-6 inline-flex items-center group gap-2">
              <span className="block w-14 h-0.5 bg-[#57b8e0] mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
               <a
@@ -116,17 +116,7 @@ function News_section({ newsItems, view = true }) {
                 View More
               </a>
             </div> */}
-            {view && (
-              <div className="mt-6 inline-flex items-center group gap-2">
-                <span className="block w-14 h-0.5 bg-[#57b8e0] mb-2 mx-auto md:mx-0 transition-all duration-500 group-hover:w-0 group-hover:opacity-0"></span>
-                <a
-                  href={item.link}
-                  className="text-xs tracking-widest font-semibold uppercase ml-2 text-black"
-                >
-                  View More
-                </a>
-              </div>
-            )}
+         
           </div>
         ))}
       </div>

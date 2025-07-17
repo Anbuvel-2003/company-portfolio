@@ -69,7 +69,7 @@ function Intro() {
     setIsAnimating(true);
   };
   return (
-    <section className="inset-3 min-h-screen w-full h-full">
+    <section className="inset-3 lg:min-h-screen w-full h-full">
       {/* <div className="relative">
         <div className=" lg:absolute w-[70vw] lg:h-[70vh] md:h-[50vh] h-[35vh] place-self-center content-center lg:top-50 lg:left-70 bg-transparent z-1">
           <div className="!gap-20" data-aos="fade-up" data-aos-delay="500">
@@ -143,7 +143,7 @@ function Intro() {
       <div className="w-full h-full relative">
         <div className="absolute w-[90vw] lg:flex md:flex h-full lg:left-40 md:left-20  ">
           <div
-            className={`lg:w-1/2 md:w-full w-full place-content-end h-[85%] lg:place-items-end md:place-items-end place-items-center`}
+            className={`lg:w-1/2 md:w-full w-full place-content-end lg:h-[65%] h-[85%] lg:place-items-end md:place-items-end place-items-center`}
           >
             {" "}
             <div>

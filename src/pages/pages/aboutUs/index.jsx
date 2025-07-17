@@ -3,6 +3,7 @@ import About1 from "../../../assets/About-us-img-1.jpg";
 import About2 from "../../../assets/About-us-img-2.jpg";
 import News_section from "../../../component/News";
 import Meetourclient from "../../../component/meetourclient";
+import OurTeam from "../ourTeam";
 
 function AboutUs() {
   const data = [
@@ -216,7 +217,7 @@ function AboutUs() {
           <img src={About2} alt="" className="" />
         </div>
       </div>
-      <Meetourclient />
+      <OurTeam />
     </div>
   );
 }

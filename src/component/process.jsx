@@ -29,13 +29,13 @@ function Process() {
     },
   ];
   return (
-    <div className="w-full flex flex-col place-content-center items-center  gap-10 px-4  !my-20">
-      <h2 className="font-syne text-3xl md:text-[38px] text-black text-center md:!mb-20">
+    <div className="w-full flex  flex-col place-content-center items-center gap-10 px-4 !mt-10">
+      <h2 className="font-syne text-3xl md:text-[38px] text-black text-center !px-10 md:!my-10">
         Our Working <span className="text-[#AF4BFF]">process</span>
       </h2>
 
-      <div className="  rounded-xl w-[80%] md:mb-0">
-        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-0">
+      <div className="  rounded-xl w-[80%]  md:!mb-10">
+        <div className="flex flex-col md:flex-row items-center md:justify-between !mb-10 gap-10 md:gap-0">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
               <div className="flex flex-col items-center text-center">

@@ -109,10 +109,7 @@ function Software_Page() {
                     </p>
                   </div>
                 </div>
-                {/* <div className=" w-full md:!px-30 !pb-10 ">
-                  <img src={software6} alt="" />
-                </div> */}
-
+               
                 <div className=" w-full  place-items-center lg:h-[60vh] md:h-[80vh]  ">
                   <img
                     alt=""
@@ -150,12 +147,12 @@ function Software_Page() {
                   </div>
                 </div>
               </div>
-              <div className="flex lg:flex-row md:flex-col flex-col lg:!py-5 !pb-10">
+              <div className="flex lg:flex-row md:flex-col flex-col lg:!py-10 !py-0">
                 <div className="self-center lg:w-full w-fit ">
                   <h1 className=" lg:text-[28px] md:text-[24px] text-[20px] text-[#1A202C] font-semibold ">
                     Testing, Deployment & Maintenance
                   </h1>
-                  <p className="lg:text-[18px] md:text-[16px] text-[14px] text-[#2D3748] lg:!py-10 !py-5  ">
+                  <p className="lg:text-[18px] md:text-[16px] text-[14px] text-[#2D3748] lg:!pt-5 !py-3  ">
                     We perform rigorous QA and security testing before deployment.
                     After launch, we offer ongoing support, updates, and maintenance to keep things running smoothly.
                   </p>

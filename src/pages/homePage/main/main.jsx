@@ -6,7 +6,10 @@ import Client_section from "../../../component/client";
 import ReadOurNews from "../../../component/ReadOurNews";
 import Meetourclient from "../../../component/meetourclient";
 import Process from "../../../component/process";
-import Thinkyoutoknow from "../../../component/thinkyoutoknow";
+import Faq from "../../../component/Faq";
+import { FaQ } from "react-icons/fa6";
+import Collab from "../../../component/collab";
+import Choose from "../../../component/chooseus";
 
 function Main() {
   const newsData = [
@@ -42,12 +45,13 @@ function Main() {
           </div>
         </div>
         <Process />
-        <Thinkyoutoknow/>
-        <WhoWeAre />
         <ReadOurNews />
         <News_section newsItems={newsData} />
+        <Collab />
+        <Choose />
         <Client_section />
-        <Meetourclient />
+        <Faq/>
+    
       </div>
     </div>
   );
