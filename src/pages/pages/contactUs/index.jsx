@@ -111,7 +111,7 @@ function ContactUs() {
           </h3>
           <h3 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 text-center w-1/2">
             visit our office locations to experience the environment where our
-            teams thrives. Our spaces are Spaces are designed to inspire and
+            teams thrives. Our spaces are designed to inspire and
             support our work{" "}
           </h3>
         </div>

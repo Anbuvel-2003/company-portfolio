@@ -319,17 +319,17 @@ function Web_Page() {
     },
   ];
 
-   const logos = [
-      figma,
-      js,
-      metaai,
-      vscode,
-      mongodb,
-      chatgpt,
-      nodejs,
-      android,
-      analytics,
-    ];
+  const logos = [
+    figma,
+    js,
+    metaai,
+    vscode,
+    mongodb,
+    chatgpt,
+    nodejs,
+    android,
+    analytics,
+  ];
   return (
     <section className="">
       <div className="!mt-15">
@@ -348,85 +348,81 @@ function Web_Page() {
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
             <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
-              Our UI/UX design services are crafted to elevate your digital
-              presence with precision and creativity. We begin by understanding
-              your goals and your audience, ensuring that every design decision
-              aligns with your brand’s vision. Our approach integrates user
-              research, wireframing, and prototyping to create intuitive and
-              engaging interfaces.Our UI/UX design services are crafted to
-              elevate your digital presence with precision and creativity. We
-              begin by understanding your goals and your audience, ensuring{" "}
+              Modern, secure, and scalable web applications are crafted to match your brand, enhance engagement, and support growth.
+              With intuitive design, responsive layouts, and optimized performance, our solutions ensure seamless experiences across
+              all devices. Every platform is engineered with flexibility, speed, and strong security at its core. From startups to enterprises,
+              we deliver future-ready web experiences that adapt, perform, and leave a lasting impact in an ever-evolving digital landscape.
             </h3>
           </div>
         </div>
         <div>
-         <div>
-          <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
-            Technologies used
-          </h3>
+          <div>
+            <h3 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center !my-10">
+              Technologies used
+            </h3>
 
-          <div className="bg-[#F8F4FF] !py-10 !px-5">
-            <div className="group w-full overflow-hidden ">
-              <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
-                {/* First image set */}
-                {logos.map((img, i) => (
-                  <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
-                ))}
+            <div className="bg-[#F8F4FF] !py-10 !px-5">
+              <div className="group w-full overflow-hidden ">
+                <div className="flex lg:animate-none animate-loop-scroll sm:animate-loop-scroll space-x-16 min-w-max group-hover:paused ">
+                  {/* First image set */}
+                  {logos.map((img, i) => (
+                    <img key={i} src={img} alt={`tech-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                  ))}
 
-                {/* Second (duplicate) image set – appears directly after the first */}
-                {logos.map((img, i) => (
-                  <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
-                ))}
+                  {/* Second (duplicate) image set – appears directly after the first */}
+                  {logos.map((img, i) => (
+                    <img key={`dup-${i}`} src={img} alt={`tech-dup-${i}`} className="h-16 w-auto !px-10 object-contain lg:!mx-10" />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
-        <div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 !gap-10 ">
-            {webdata?.map((item, index) => {
-              return (
-                <div key={index} className="!p-10 shadow-2xl rounded-[15px]">
-                  <img alt="" src={item?.image} className="" />
-                  <h3 className="lg:text-[30px] md:text-[25px] sm:text-[20px] text-[18px] text-[#AD46FF] lg:!pt-5 font-syne leading-10 capitalize">
-                    {item?.t1}
-                  </h3>
-                  <div>
-                    {item?.data?.map((data, index1) => {
-                      return (
-                        <div className="" key={index1}>
-                          <h2 className="text-black lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  lg:!pt-5 leading-8 font-syne capitalize">
-                            {data?.value}
-                          </h2>
-                        </div>
-                      );
-                    })}
+        <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+          <div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 !gap-10 ">
+              {webdata?.map((item, index) => {
+                return (
+                  <div key={index} className="!p-10 shadow-2xl rounded-[15px]">
+                    <img alt="" src={item?.image} className="" />
+                    <h3 className="lg:text-[30px] md:text-[25px] sm:text-[20px] text-[18px] text-[#AD46FF] lg:!pt-5 font-syne leading-10 capitalize">
+                      {item?.t1}
+                    </h3>
+                    <div>
+                      {item?.data?.map((data, index1) => {
+                        return (
+                          <div className="" key={index1}>
+                            <h2 className="text-black lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  lg:!pt-5 leading-8 font-syne capitalize">
+                              {data?.value}
+                            </h2>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
+          <h2 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center capitalize">
+            benefits of Web App Development with{" "}
+            <span className="text-[#AD46FF]">vineatz Technologies</span>
+          </h2>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:!gap-10 ">
+            {web1data?.map((item, index) => {
+              return (
+                <div key={index} className="!p-10 place-items-center-safe  ">
+                  <img alt="" src={item?.image} className="!mb-4" />
+                  <h3 className="lg:text-[23px] md:text-[20px] sm:text-[18px] text-[16px] text-[#000] font-syne capitalize text-center">
+                    {item?.data}
+                  </h3>
                 </div>
               );
             })}
           </div>
         </div>
-      </div>
-      <div className="lg:!m-20 md:!m-20 sm:!m-10 !m-10 ">
-        <h2 className="lg:text-[35px] md:text-[30px] sm:text-[25px] text-[20px] font-syne text-[#1A1A2E] text-center capitalize">
-          benefits of Web App Development with{" "}
-          <span className="text-[#AD46FF]">vineatz Technologies</span>
-        </h2>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:!gap-10 ">
-          {web1data?.map((item, index) => {
-            return (
-              <div key={index} className="!p-10 place-items-center-safe  ">
-                <img alt="" src={item?.image} className="!mb-4" />
-                <h3 className="lg:text-[23px] md:text-[20px] sm:text-[18px] text-[16px] text-[#000] font-syne capitalize text-center">
-                  {item?.data}
-                </h3>
-              </div>
-            );
-          })}
-        </div>
-      </div>
       </div>
     </section>
   );
