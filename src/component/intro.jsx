@@ -141,7 +141,7 @@ function Intro() {
         </div>
       </div> */}
       <div className="w-full h-full relative">
-        <div className="absolute w-[90vw] lg:flex md:flex h-full lg:left-40 md:left-20  ">
+        <div className="absolute w-[90vw] lg:flex md:flex h-full  md:left-20  ">
           <div
             className={`lg:w-1/2 md:w-full w-full place-content-end lg:h-[65%] h-[85%] lg:place-items-end md:place-items-end place-items-center`}
           >

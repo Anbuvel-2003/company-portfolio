@@ -365,12 +365,12 @@ function Ecommerce() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:leading-15 md:!pl-10 ">
+            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne text-justify lg:leading-15 md:!pl-10 ">
               Our e-commerce solutions deliver seamless shopping experiences with sleek interfaces and robust backend systems.
               From real-time inventory sync and secure payments to intelligent promotions and abandoned cart recovery, every feature
               is optimized for growth. We focus on speed, security, and scalability to help your business convert better and sell more.
               With built-in analytics, SEO tools, and a frictionless checkout, we empower you to drive revenue while ensuring a
-              secure, user-friendly experience for every customer.{" "}
+              secure, user-friendly experience for every customer.
             </h3>
           </div>
         </div>
@@ -423,7 +423,7 @@ function Ecommerce() {
               <p className=" lg:text-[20px] md:text-[18px] sm:text-[18px] text-[16px] lg:leading-12 leading-8 font-syne lg:!pb-10 !pb-5">
                 Vineatz crafts eCommerce ecosystems built to perform, adapt, and thrive. With a foundation in scalable architecture
                 and experience across diverse sectors, we deliver solutions that not only meet current demands but are ready for what's next.
-                Our approach blends deep technical insight with user-first design to fuel sustainable digital growth
+                Our approach blends deep technical insight with user-first design to fuel sustainable digital growth.
               </p>
               <h2 className="text-black capitalize lg:text-[60px] md:text-[50px] sm:text-[30px] text-[25px]  font-syne lg:mb-0 !mb-8">
                 Tailored eCommerce Platforms for Every Business Landscape

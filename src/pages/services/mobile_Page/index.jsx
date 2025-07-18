@@ -132,7 +132,7 @@ function Mobile_App() {
             />
           </div>
           <div className="lg:w-1/2 md:w-1/2 w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
+            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne text-justify lg:leading-15  ">
               We design and develop high-performance mobile applications tailored to your business goals.
               Our process focuses on seamless user experiences, clean UI, and cross-platform functionality
               using frameworks like Flutter and React Native. From MVPs to enterprise-grade apps,

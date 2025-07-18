@@ -43,7 +43,7 @@ function Collab() {
                     <div className="!p-5 shadow-2xl bg-[#FFFFFF] place-items-center-safe rounded-[20px]">
                         <img src={item?.image} alt="" className=" " />
                         <div className="">
-                            <h2 className="text-[20px] text-black  !mt-3 font-syne">
+                            <h2 className="text-[20px] text-black text-center !mt-3 font-syne">
                                 {item?.q1}
                             </h2>
                             <h2 className="lg:text-[16px] md:text-[16px] text-[14px] font-syne leading-8 text-[#4B5563] !mt-3">

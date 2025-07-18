@@ -17,7 +17,7 @@ function Main() {
       id: "01",
       title: "Strategy- First Methodology",
       description:
-        "We start with thorough planning and research in order to understand your objectives, target market, and sector. This strategic basis guarantees that each initiative is in line with your company's goals.",
+        "We start with planning and research in order to understand your objectives, target market, and sector. This strategic basis guarantees that each initiative is in line with your company's goals.",
       link: "#",
     },
     {

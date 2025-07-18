@@ -116,7 +116,7 @@ function Footer_section() {
     //   </div>
     // </div>
     <div className="w-full bg-primary lg:!p-20 md:!p-20 !p-10">
-      <div className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 lg:!px-30">
+      <div className="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2">
         <div className="!mb-5">
           <div className="!mb-3">
             <span className="text-white text-[20px] font-syne uppercase">
@@ -321,7 +321,7 @@ function Footer_section() {
           </div>
         </div>
       </div>
-      <div className="lg:flex w-full !gap-10 lg:!px-30 lg:!py-10">
+      <div className="lg:flex w-full !gap-10 lg:!py-10">
         <div className="grid w-[100%]  !mb-5">
           <span className="!mb-2">
             <a href="/" className="text-white text-[20px] font-syne uppercase">

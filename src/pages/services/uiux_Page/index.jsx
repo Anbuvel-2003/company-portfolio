@@ -31,37 +31,37 @@ function UIUX_Page() {
       id: 1,
       image: Ux1,
       q1: "Expertise in User-Centric Design",
-      q2: "Our design process starts with empathy. We understand your users' behavior, goals, and pain points to craft intuitive experiences that feel natural and effortless",
+      q2: "Our design process starts with empathy. We understand your users' behavior, goals, and pain points to craft intuitive experiences that feel natural and effortless.",
     },
     {
       id: 2,
       image: Ux2,
       q1: "Collaborative Approach",
-      q2: "Design is a shared vision. We involve clients in every phase—brainstorming, feedback loops, and revisions—to ensure the final output truly reflects their brand goals",
+      q2: "Design is a shared vision. We involve clients in every phase—brainstorming, feedback loops, and revisions to ensure the final output truly reflects their brand goals.",
     },
     {
       id: 3,
       image: Ux3,
       q1: "Innovation",
-      q2: "We don’t follow trends—we set them. Our team explores emerging design technologies and creative interactions to craft forward-thinking digital experiences",
+      q2: "We don’t follow trends—we set them. Our team explores emerging design technologies and creative interactions to craft forward-thinking digital experiences.",
     },
     {
       id: 4,
       image: Ux4,
       q1: "Customer Satisfaction",
-      q2: "We aim for excellence with every project. From timelines to functionality, we deliver UI/UX solutions that exceed expectations and leave a lasting impression",
+      q2: "We aim for excellence with every project. From timelines to functionality, we deliver UI/UX solutions that exceed expectations and leave a lasting impression.",
     },
     {
       id: 5,
       image: Ux5,
       q1: "Continuous Learning and Improvement",
-      q2: "We stay sharp by constantly evolving—learning new tools, testing new ideas, and applying industry best practices to stay ahead of the digital curve",
+      q2: "We stay sharp by constantly evolving—learning new tools, testing new ideas, and applying industry best practices to stay ahead of the digital curve.",
     },
     {
       id: 6,
       image: Ux6,
       q1: "Refinement through Research",
-      q2: "Every decision is rooted in insight. We conduct deep user and market research to validate ideas and refine designs that perform in the real world",
+      q2: "Every decision is rooted in insight. We conduct deep user and market research to validate ideas and refine designs that perform in the real world.",
     },
   ];
   const question1 = [
@@ -162,12 +162,12 @@ function UIUX_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:text-base/15 md:!pl-10 lg:leading-15  text-[#788094] ">
+            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:text-base/15 md:!pl-10 lg:leading-15 text-justify text-[#788094] ">
               We craft purposeful UI/UX designs that combine user insights, visual strategy, and functional clarity.
-              From persona creation and wireframes to high-fidelity prototypes, our design process ensures every interface 
+              From personal creation and wireframes to high-fidelity prototypes, our design process ensures every interface 
               feels intuitive and on-brand. Accessibility, consistency, and responsiveness guide our approach—resulting 
               in inclusive, mobile-friendly experiences. we turn business goals into interactive journeys that drive engagement, 
-              Fsolve real user problems, and deliver seamless performance across every screen and platform
+              solve real user problems, and deliver seamless performance across every screen and platform.
             </h3>
           </div>
         </div>
@@ -222,7 +222,7 @@ function UIUX_Page() {
                     </div>
                   </div>
                   <div className="!mt-3 ">
-                    <h2 className="text-[#374151] lg:text-[16px] md:text-[16px] text-[14px] leading-8 ">{item?.q2}</h2>
+                    <h2 className="text-[#374151] lg:text-[16px] md:text-[16px]  text-[14px] font-syne leading-8 ">{item?.q2}</h2>
                   </div>
                 </div>
               );
@@ -250,7 +250,7 @@ function UIUX_Page() {
                   <h2 className="text-[20px] text-black font-syne">
                     {item?.q1}
                   </h2>
-                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-8 text-[#9CA3AF]">{item?.q2}</h2>
+                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] font-syne leading-8 text-[#9CA3AF]">{item?.q2}</h2>
                 </div>
               </div>
             );
@@ -277,7 +277,7 @@ function UIUX_Page() {
                   <h2 className="text-[20px] text-black  !mt-3 font-syne">
                     {item?.q1}
                   </h2>
-                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] leading-8 text-[#4B5563] !mt-3">
+                  <h2 className="lg:text-[16px] md:text-[16px] text-[14px] font-syne leading-8 text-[#4B5563] !mt-3">
                     {item?.q2}
                   </h2>
                 </div>

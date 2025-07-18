@@ -53,7 +53,7 @@ function ContactUs() {
               With Our Experts
             </h2>
             <div className="">
-              <p className="text-black text-[16px] font-normal">
+              <p className="text-black lg:text-[24px] md:text-[20px] text-[16px] text-justify font-normal">
                 Stay ahead with expert insights and the latest in tech. Whether
                 you're planning a project or exploring ideas, our team is just a
                 message away.Let’s connect and turn possibilities into powerful
@@ -63,52 +63,52 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div className=" place-self-center !mt-25">
-        <div className=" justify-items-center">
-          <h2 className="text-[#000000] font-syne lg:text-4xl sm:text-3xl">
+      <div className=" place-self-center lg:!mx-10 md:!mx-10 !mx-0 !mt-25">
+        <div className=" justify-items-center lg:!mx-0 md:!mx-0 sm:!mx-10">
+          <h2 className="text-[#000000] font-syne lg:text-[30px] md:text-[25px] sm:text-[23px]">
             Connect With our <span className="text-[#AD46FF] ">team!</span>
           </h2>
           <h4 className="text-black font-syne lg:text-[24px] md:text-[20px] text-[18px] !mt-5 w-1/2 text-center">
             Reach out to us! We're here to discuss your projects, brainstorm
             ideas and answer any questions you might have.
           </h4>
-          <div className="lg:flex md:flex grid lg:!mt-10 md:!mt-10 !mt-5 w-full md:!px-10  !gap-10  ">
+          <div className="lg:flex md:flex grid lg:!mt-10 md:!mt-10 !mt-5 w-full !px-10  !gap-10  ">
             <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 bg-[#F9F6FF] rounded-[20px]">
               <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
-                have a great idea ?
+              💡 Have a Great Idea?
               </h3>
               <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
-                94881 60083
+                📞 <span className="font-bold">Call us:</span> 94881 60083
               </h3>
               <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-full !pb-5 text-center">
-                tell Us more about your business idea to get consulted
+                Let’s bring your business vision to life. Share your idea and get expert consulting tailored to your goals.
               </h3>
             </div>
             <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 rounded-[20px] bg-[#F9F6FF]">
               <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
-                Got questions to ask ?
+               ❓ Got Questions?
               </h3>
               <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
                 vineatztechnologies@gmail.com
               </h3>
               <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-full !pb-5 text-center">
-                Discuss your projects with us. We are open to question.
+               From project planning to partnership inquiries, our team is happy to answer and guide you every step of the way
               </h3>
             </div>
             <div className="lg:w-1/3 !mt-5 lg:!mt-0 md:!mt-0 rounded-[20px] bg-[#F9F6FF]">
               <h3 className="text-[#AD46FF] font-syne lg:text-[27px] md:text-[24px] text-[22px] !pt-5 text-center">
-                We are hiring!
+               🚀 We’re Hiring
               </h3>
               <h3 className="text-[#3F3F3F] font-medium lg:text-[18px] md:text-[16px] text-[14px] font-poppins !py-4 text-center">
-                63791 08978
+             📱 <span className="font-bold">Join us:</span> 63791 08978
               </h3>
               <h3 className="text-black font-syne lg:text-[21px]  md:text-[18px]  sm:text-[16px] text-[14px] !w-[1/3] font-poppins !pb-5 text-center">
-                We do more for your career. Come and join Us
+                 Be part of a team that values innovation, growth, and passion. Let’s build great things together.  
               </h3>
             </div>
           </div>
         </div>
-        <ContactMap />
+        {/* <ContactMap />
         <div className="!mt-10 justify-items-center !mb-10">
           <h3 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
             Where We Work!
@@ -118,7 +118,7 @@ function ContactUs() {
             teams thrives. Our spaces are designed to inspire and
             support our work{" "}
           </h3>
-        </div>
+        </div> */}
         {/* <Projectreport/> */}
         <div className="!mt-10 justify-items-center !mb-10">
           <h3 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
@@ -217,7 +217,7 @@ function ContactUs() {
           <div>
             <button
               type="submit"
-              className="w-full cursor-pointer relative overflow-hidde border border-transparent hover:!bg-white hover:text-black hover:border-black bg-gradient-to-r from-purple-500 to-sky-400 text-white font-medium !py-3 !px-6 rounded-lg transition duration-200"
+              className="w-full cursor-pointer relative overflow-hidde border border-transparent hover:!bg-white hover:text-black hover:border-black bg-[#AD46FF] text-white font-medium !py-3 !px-6 rounded-lg transition duration-200"
             >
               Send Message
             </button>

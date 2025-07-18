@@ -25,16 +25,16 @@ function Process() {
     {
       img: step4,
       t1: "Deploy & Evolve",
-      para: "We launch with stability and prepare for growth. Post-launch, we iterate, optimize, and support your product to ensure lasting success.",
+      para: "We launch stability and prepare for growth. Post-launch, we iterate, optimize, and support your product to ensure lasting success.",
     },
   ];
   return (
-    <div className="w-full flex  flex-col place-content-center items-center gap-10 px-4 !mt-10">
-      <h2 className="font-syne text-3xl md:text-[38px] text-black text-center !px-10 md:!my-10">
+    <div className="w-full flex  flex-col place-content- items- gap-10 !px-20  !mt-10 ">
+      <h2 className="font-syne text[25px] md:text-[38px] text-black text-center !px-10 md:!my-10">
         Our Working <span className="text-[#AF4BFF]">process</span>
       </h2>
 
-      <div className="  rounded-xl w-[80%]  md:!mb-10">
+      <div className="  rounded-xl w-[100%]   md:!mb-10">
         <div className="flex flex-col md:flex-row items-center md:justify-between !mb-10 gap-10 md:gap-0">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
@@ -44,11 +44,11 @@ function Process() {
                   alt={step.label}
                   className="w-20 h-20 object-contain mb-2"
                 />
-                <img alt="" src={line} />
+               
                 <h3 className="text-[20px] font-syne text-black !mt-5 !mb-5">
                   {step?.t1}
                 </h3>
-                <h3 className="text-[16px] font-syne text-black">
+                <h3 className="text-[16px] font-syne  text-black">
                   {step?.para}
                 </h3>
               </div>

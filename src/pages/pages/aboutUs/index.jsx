@@ -11,47 +11,43 @@ function AboutUs() {
       id: 1,
       title: "Design",
       paragraph:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
+        "We craft intuitive, user-first designs that balance beauty and functionality—elevating experiences across every screen.",
       points: [
         {
           id: 1,
-          data: "Donec pede justo, fringilla.",
+          data: "Responsive, mobile-friendly UI/UX.",
         },
         {
           id: 2,
-          data: "Donec pede justo, fringilla.",
+          data: "Brand-aligned visual design.",
         },
         {
           id: 3,
-          data: "Donec pede justo, fringilla.",
+          data: "Prototypes & interaction models.",
         },
         {
           id: 4,
-          data: "Donec pede justo, fringilla.",
+          data: "Conversion-focused interfaces.",
         },
       ],
     },
     {
       id: 2,
-      title: "Marketing",
+      title: "Development",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod reus tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "From front-end to full-stack, we build scalable digital products that grow with your business Clean, optimized codebases.",
       points: [
         {
           id: 1,
-          data: "Lorem ipsum dolor est.",
+          data: "Agile, test-driven development.",
         },
         {
           id: 2,
-          data: "Aliquam lorem ante.",
+          data: "Scalable architecture.",
         },
         {
           id: 3,
-          data: "Phasellus viverra nulla.",
-        },
-        {
-          id: 4,
-          data: "Curabitur ullamcorper.",
+          data: "Seamless third-party integrations.",
         },
       ],
     },
@@ -59,23 +55,23 @@ function AboutUs() {
       id: 3,
       title: "Devs",
       paragraph:
-        "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
+        "Our DevOps and backend specialists ensure reliability, performance, and security behind the scenes.",
       points: [
         {
           id: 1,
-          data: "Maecenas nec odio ante.",
+          data: "Continuous integration & delivery.",
         },
         {
           id: 2,
-          data: "Etiam amet orci eget.",
+          data: "Cloud-native infrastructure setup.",
         },
         {
           id: 3,
-          data: "Phasellus nec tincidunt.",
+          data: "API development & management.",
         },
         {
           id: 4,
-          data: "Commodo ligula dolor.",
+          data: "Monitoring, support, and maintenance.",
         },
       ],
     },
@@ -103,73 +99,55 @@ function AboutUs() {
       link: "#",
     },
   ];
-  const [selecteditem, setselecteditem] = useState({
-    id: 1,
-    title: "Design",
-    paragraph:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamconisi ut aliquip ex ea commodo Duis aute irure euripidis ne mel, mel lobortis viverra nulla varius laoreet.",
-    points: [
-      {
-        id: 1,
-        data: "Donec pede justo, fringilla.",
-      },
-      {
-        id: 2,
-        data: "Viverra quis, feugiat tellus.",
-      },
-      {
-        id: 3,
-        data: "Aenean commodo eget dolor.",
-      },
-      {
-        id: 4,
-        data: "Etiam orci eget eros.",
-      },
-    ],
-  });
+  const [selecteditem, setselecteditem] = useState(data[0]);
   return (
-    <div className="!pt-15">
-      <div className="place-self-center lg:!p-20 md:!p-20 !p-5">
-        <h3 className="text-[#9e9e9e] font-syne lg:text-6xl sm:text-5xl ">
+    <div className="!mt-15">
+      <div className="bg-[#F8F4FF] md:!py-20 lg:!py-20 !py-10 ">
+        <h3 className="text-[#9F70FD] font-syne lg:text-[60px] md:text-[40px] text-[25px] text-center ">
           About Us
         </h3>
       </div>
-      <div className="lg:flex grid gap-20">
-        <div className="lg:w-[70vw] w-full">
-          <img src={About1} alt="" className="" />
+
+      <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1 sm:!m-10 !m-10">
+        <div className="lg:w-1/2 md:w-full w-full  place-items-center lg:h-[60vh] md:h-[60vh]  ">
+          <img
+            alt=""
+            src={About1}
+            className="w-[100%] h-[100%] rounded-[20px] md:items-center md:justify-center object-contain"
+          />
         </div>
-        <div className="lg:w-1/2 place-self-center md:!pl-40 sm:!pl-40 lg:!mt-20 md:!mt-20 !pl-5">
-          <div className="!mb-3">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
-              Who We Are
-            </h3>
+        <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 lg:!px-20 md:!pl-10 ">
+          <div className="!mb-3 bg-[#F0F1FF] !py-3 !px-4 w-fit rounded-[20px]">
+            <h2 className="text-[#9F70FD] text-[16px] font-syne capitalize ">
+              Who we are
+            </h2>
           </div>
           <div className="!mb-3">
-            <h3 className="text-black text-5xl tracking-wide font-syne">
+            <h3 className="text-black lg:text-[35px] md:text-[30px] text-[25px] font-syne">
               Smart <br /> Platform <br /> Integration
             </h3>
           </div>
-          <div>
-            <p className="text-black tracking-wide  lg:w-1/2 md:w-1/2 w-[90%]  text-left">
-              Strategically crafted solutions by our diverse team of ideators,
-              designers, writers, and technical experts. We prioritize customer
-              satisfaction over profits, delivering high-quality software that
-              enhances brand identity and solves more problems than it causes.
-              Our commitment to excellence drives every aspect of our work.
-            </p>
-          </div>
+          <h3 className="lg:text-[24px] md:text-[20px] text-[18px] font-syne lg:leading-10 text-justify text-[#788094] ">
+            Strategically crafted solutions by our diverse team of ideators,
+            designers, writers, and technical experts. We prioritize customer
+            satisfaction over profits, delivering high-quality software that
+            enhances brand identity and solves more problems than it causes.
+            Our commitment to excellence drives every aspect of our work.
+          </h3>
         </div>
       </div>
-      <div className="lg:!mt-20 md:!mt-20">
+      {/* <div className="lg:!mt-20 md:!mt-20 w-fit">
         <News_section newsItems={newsData} view={false} />
-      </div>
-      <div className="lg:flex grid !gap-20 lg:!mb-30 md:!mb-30">
-        <div className="lg:w-1/2  lg:place-self-center md:!pl-40 sm:!pl-40 !pl-5">
-          <div className="place-self-center lg:!pl-[15vw]">
-            <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase ">
+      </div> */}
+      <div className="lg:!m-20 md:!m-20 md:flex lg:flex grid md:grid-cols-1 sm:!m-10 !m-10">
+        <div className="lg:w-1/2  lg:place-self-centr md:!pl-0 ">
+          <div className="!mb-3 bg-[#F0F1FF] !py-3 !px-4  w-fit rounded-[20px]">
+            <h2 className="text-[#9F70FD] text-[16px] font-syne capitalize ">
               Who We Are
-            </h3>
-            <h3 className="text-black text-5xl tracking-wide font-syne ">
+            </h2>
+          </div>
+          <div>
+            <h3 className="text-black lg:text-[35px] md:text-[30px] text-[25px] font-syne ">
               Trusted <br />
               and Supported <br /> by Many
             </h3>
@@ -179,14 +157,13 @@ function AboutUs() {
                 return (
                   <div
                     key={index}
-                    className={`lg:!py-3 md:!py-3 pr-10  ${
-                      isselected ? "border-b-1" : "border-0"
-                    } border-[#000000]`}
+                    className={`lg:!py-3 md:!py-3   ${isselected ? "border-b-1" : "border-0"
+                      } border-[#000000]`}
                     onClick={() => {
                       setselecteditem(item);
                     }}
                   >
-                    <p className="text-black lg:text-3xl md:text-3xl text-2xl tracking-wide font-syne cursor-pointer">
+                    <p className="text-black lg:text- md:text-[20px] text-[15px] font-syne cursor-pointer">
                       {item?.title}
                     </p>
                   </div>
@@ -194,7 +171,7 @@ function AboutUs() {
               })}
             </div>
             <div className="">
-              <p className="text-[20px] text-black !mb-4 font-sans lg:w-[90%] md:w-[70%] w-[80vw]">
+              <p className="text-[20px] text-black !mb-4 font-syne lg:w-[90%] md:w-[70%] w-[80vw]">
                 {selecteditem?.paragraph}
               </p>
               <ul>
@@ -202,7 +179,7 @@ function AboutUs() {
                   selecteditem.points?.map((item, index) => {
                     return (
                       <li
-                        className="list-inside list-disc text-[18px] font-sans"
+                        className="list-inside list-disc text-[18px] text-[#788094] font-syne"
                         key={index}
                       >
                         {item?.data}
@@ -213,8 +190,12 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="w-1\2">
-          <img src={About2} alt="" className="" />
+        <div className="lg:w-1/2 md:w-full w-full  place-items-center  lg:h-[60vh] md:h-[40vh]  ">
+          <img
+            alt=""
+            src={About2}
+            className="lg:w-full md:w-fit w-full rounded-[20px] lg:!mt-[0px] md:!mt-[0px] !mt-[20px] lg:h-[60vh] md:h-[40vh] "
+          />
         </div>
       </div>
       <OurTeam />

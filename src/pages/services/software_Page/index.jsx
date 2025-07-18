@@ -47,12 +47,12 @@ function Software_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
+            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne text-justify lg:leading-15  ">
               We build software tailored to your business workflows, goals, and industry-specific requirements.
               From logic mapping to iterative feedback, our development process ensures every feature serves a purpose.
               Using scalable frameworks, modern databases, and API-first architecture, we deliver solutions built for
               performance and growth. Whether cloud-based or on-prem, our systems integrate seamlessly with ERPs,
-              CRMs, payment gateways, and third-party tools—ensuring smooth, connected operations from day one{" "}
+              CRMs, payment gateways, and third-party tools—ensuring smooth, connected operations from day one.
             </h3>
           </div>
         </div>
@@ -109,7 +109,7 @@ function Software_Page() {
                     </p>
                   </div>
                 </div>
-               
+
                 <div className=" w-full  place-items-center lg:h-[60vh] md:h-[80vh]  ">
                   <img
                     alt=""

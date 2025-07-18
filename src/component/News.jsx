@@ -91,10 +91,11 @@
 
 import React from "react";
 
+
 function News_section({ newsItems, view = true }) {
   return (
-    <section className="lg:!mx-30 md:!mx-25 !mx-10 md:px-16 lg:!py-30 !py-10 justify-items-center">
-      <div className="max-w-7x1  grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12  md:text-left">
+    <section className="lg:!ml-32 lg:!-mr-10 md:!mx-25 !mx-10 md:px-16 lg:!py-30 !py-10 ">
+      <div className=" w-full grid md:grid-cols-1 lg:grid-cols-3 lg:gap-12 md:text-left">
         {newsItems.map((item, index) => (
           <div className="relative lg:w-[80%] md:w-[80%] w-[100%]" key={index}>
             <div

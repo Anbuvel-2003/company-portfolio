@@ -347,7 +347,7 @@ function Web_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne lg:leading-15  ">
+            <h3 className="lg:text-[20px] md:text-[18px] text-[16px] text-[#788094] md:!pl-10 font-syne text-justify lg:leading-15  ">
               Modern, secure, and scalable web applications are crafted to match your brand, enhance engagement, and support growth.
               With intuitive design, responsive layouts, and optimized performance, our solutions ensure seamless experiences across
               all devices. Every platform is engineered with flexibility, speed, and strong security at its core. From startups to enterprises,

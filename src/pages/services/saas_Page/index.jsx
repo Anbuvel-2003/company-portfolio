@@ -146,7 +146,7 @@ function Saas_Page() {
       id: 6,
       img: icon6,
       t1: "SaaS App Design and Prototyping",
-      data: "Bring ideas to life with design-first thinking. Vineatz creates interactive prototypes that validate concepts early, refine user flows, and ensure intuitive experiences—before writing a single line of code",
+      data: "Bring ideas to life with design-first thinking. Vineatz creates interactive prototypes that validate concepts early, refine user flows, and ensure intuitive experiences—before writing a single line of code.",
     },
     {
       id: 7,
@@ -158,7 +158,7 @@ function Saas_Page() {
       id: 8,
       img: icon9,
       t1: "Performance Optimization",
-      data: "Vineatz guarantees lightning-fast SaaS experiences. We optimize load times, fine-tune performance, and ensure consistent reliability—delivering seamless digital journeys across every user touchpoint.y",
+      data: "Vineatz guarantees lightning-fast SaaS experiences. We optimize load times, fine-tune performance, and ensure consistent reliability—delivering seamless digital journeys across every user touchpoint.",
     },
   ];
 
@@ -436,11 +436,11 @@ function Saas_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne md:!pl-10 lg:leading-15">
+            <h3 className="text-[#788094] lg:text-[24px] md:text-[20px] text-[18px] font-syne md:!pl-10 text-justify lg:leading-15">
               Scalable, secure, and built for growth, our SaaS platforms are engineered with modular architecture, cloud-native reliability, and flexible feature sets.
               From intuitive dashboards to seamless onboarding flows, every interface is crafted for usability. We emphasize performance, automation.
               With DevOps practices, CI/CD pipelines, and containerized infrastructure, we ensure continuous delivery. Whether building from scratch or
-              modernizing legacy systems, our SaaS solutions evolve alongside your business needs with agility and resilience
+              modernizing legacy systems, our SaaS solutions evolve alongside your business needs with agility and resilience.
             </h3>
           </div>
         </div>
@@ -474,7 +474,7 @@ function Saas_Page() {
             </div>
             <div className="">
               <p className="text-[#788094] lg:text-[24px] md:text-[20px] text-[16px] font-syne  ">
-                At Vineatz, we build SaaS platforms engineered for growth. Our agile development approach enables rapid deployment,
+                At Vineatz, we build SaaS platforms engineered for growth. Our agile development enables rapid deployment,
                 seamless updates, and flexible architecture tailored to your evolving business needs.
               </p>
             </div>

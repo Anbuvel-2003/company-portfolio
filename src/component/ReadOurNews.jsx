@@ -17,7 +17,7 @@ const ReadNews = () => {
   const [activeImage, setActiveImage] = useState(card1);
 
   return (
-    <section className=" w-full flex items-center justify-center bg-white px-6 lg:!py-24 md:!py-18  overflow-hidden font-sans">
+    <section className=" w-full flex items-center justify-center bg-white px-6 lg:!py-24 md:!py-18  overflow-hidden font-sans !mb-5">
       <div className=" lg:w-[65vw] w-[75vw] grid grid-cols-1 lg:grid-cols-2 lg:gap-40 md:gap-20 gap-10 items-center">
         {/* Left Side - Image */}
         <div className="">

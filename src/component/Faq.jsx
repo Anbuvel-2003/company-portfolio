@@ -6,7 +6,7 @@ function Faq() {
   const Faq = [
     {
       id: 1,
-      title: "What services does Vineatz specialize in?",
+      title: "What services does Vineatz expertise in?",
       answer:
         " We offer full-stack development for web, mobile, SaaS, and custom software solutions.",
     },
@@ -37,14 +37,14 @@ function Faq() {
   ];
   const [selected, setSelected] = useState(null);
   return (
-    <section className="w-full flex flex-col place-content-center items-center gap-10  lg:!py-20 !py-10  lg:!px-20 !px-10">
+    <section className="w-full flex flex-col place-content-center items-center gap-10 lg:!py-20 !py-10">
       <div>
         <h2 className="font-syne text-3xl md:text-[38px] text-black text-center !pb-10">
           Frequently Asked <span className="text-[#AF4BFF]">Questions</span>
         </h2>
       </div>
       <div className="md:flex lg:flex grid w-full ">
-        <div className="lg:w-1/2 md:w-1/2 w-full flex justify-center  items-center">
+        <div className="lg:w-1/2 md:w-1/2  flex  lg:!mx-20 md:!mx-15 !mx-10 items-center">
           <div className="lg:w-[80%] md:w-[80%] w-full">
             {Faq?.map((item, index) => {
               console.log("item", item, index);

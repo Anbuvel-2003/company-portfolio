@@ -13,7 +13,7 @@ function Portfolio_Sction() {
       <div className="w-full h-[40vh]">
         <h3 className="text-center text-[30px] font-syne capitalize !pt-20">update in progress !...</h3>
       </div>
-      <Meetourclient />
+      {/* <Meetourclient /> */}
     </div>
   );
 }

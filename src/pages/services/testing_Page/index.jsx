@@ -90,7 +90,7 @@ function Testing_Page() {
             />
           </div>
           <div className="lg:w-1/2 md:w-full w-full place-content-center !mt-10 lg:!mt-0 md:!mt-0 ">
-            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne lg:leading-15 ">
+            <h3 className="lg:text-[24px] md:text-[20px] text-[18px] text-[#788094] md:!pl-10 font-syne text-justify lg:leading-15 ">
               Our quality assurance process ensures your software is stable, secure, and user-ready
               before it reaches production. From manual testing to automated scripts, we simulate real-world
               scenarios, uncover bugs, and verify functionality across devices and use cases. Each feature
@@ -128,7 +128,7 @@ function Testing_Page() {
                 <span className="text-[#AD46FF]">Vineatz Technologies</span>
               </h3>
               <h3 className="lg:text-[23px] md:text-[20px] sm:text-[18px] text-[16px] font-syne text-[#788094] text-center">
-                We helps you to acelerate your Product Releases with Our Expert
+                We helps you to accelerate your Product Releases with Our Expert
                 Testing team and ensuring optimal quality for your apps.
               </h3>
             </div>

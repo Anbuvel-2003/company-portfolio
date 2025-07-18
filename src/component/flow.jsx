@@ -16,7 +16,7 @@ function Flow() {
         {
             img: fig2,
             t1: "Mobile-First Shopping Experiences",
-            para: "We design mobile-first eCommerce apps that deliver smooth, intuitive experiences. From browsing to checkout, every interaction is tailored to engage mobile users and drive conversions",
+            para: "We design mobile-first eCommerce apps that deliver smooth, intuitive experiences. From browsing to checkout, every interaction is tailored to engage mobile users and drive conversions.",
         },
         {
             img: fig3,
@@ -31,7 +31,7 @@ function Flow() {
         {
             img: fig5,
             t1: "AI-Powered Shopping",
-            para: "Our platforms integrate AI-powered tools like dynamic product recommendations, smart search, and automated promotions—enhancing personalization, boosting engagement, and increasing sales in real time",
+            para: "Our platforms integrate AI-powered tools like dynamic product recommendations, smart search, and automated promotions—enhancing personalization, boosting engagement, and increasing sales in real time.",
         },
     ];
 
