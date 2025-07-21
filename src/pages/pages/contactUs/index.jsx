@@ -48,12 +48,12 @@ function ContactUs() {
             <h3 className="text-[#b3938a] text-[16px] tracking-wide uppercase">
               Built for Your Business
             </h3>
-            <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter font-syne ">
+            <h2 className=" text-black lg:text-5xl md:text-4xl text-3xl  font-medium -tracking-tighter lg:!mb-10 md:!mb-8 !mb-5 font-syne ">
               Get in Touch <br />
               With Our Experts
             </h2>
             <div className="">
-              <p className="text-black lg:text-[24px] md:text-[20px] text-[16px] text-justify font-normal">
+              <p className="text-black lg:text-[24px] md:text-[20px] text-[16px] text-justify lg:leading-12 md:leading-10 leading-7  font-normal">
                 Stay ahead with expert insights and the latest in tech. Whether
                 you're planning a project or exploring ideas, our team is just a
                 message away.Let’s connect and turn possibilities into powerful
@@ -121,7 +121,7 @@ function ContactUs() {
         </div> */}
         {/* <Projectreport/> */}
         <div className="!mt-10 justify-items-center !mb-10">
-          <h3 className="text-[#9e9e9e] font-syne lg:text-4xl sm:text-3xl">
+          <h3 className="text-[#9F70FD] font-syne lg:text-4xl sm:text-3xl">
             Contact
           </h3>
           <h3 className="text-black font-syne lg:text-2xl sm:text-2xl !mt-5 text-center w-1/2">
@@ -217,7 +217,7 @@ function ContactUs() {
           <div>
             <button
               type="submit"
-              className="w-full cursor-pointer relative overflow-hidde border border-transparent hover:!bg-white hover:text-black hover:border-black bg-[#AD46FF] text-white font-medium !py-3 !px-6 rounded-lg transition duration-200"
+              className="lg:w-1/7 md:w-1/3 w-full cursor-pointer relative overflow-hidde border border-transparent hover:!bg-white hover:text-black hover:border-black bg-[#AD46FF] text-white font-medium !py-3 !px-6 rounded-lg transition duration-200"
             >
               Send Message
             </button>

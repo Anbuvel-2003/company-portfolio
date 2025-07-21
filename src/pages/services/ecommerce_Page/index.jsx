@@ -456,7 +456,7 @@ function Ecommerce() {
                   <h1 className=" lg:text-[24px] md:text-[23px] text-[20px] font-semibold font-syne ">
                     Mobile-Only App Development
                   </h1>
-                  <p className="lg:!py-10 !py-5 lg:text-[20px] md:text-[18px] text-[16px] font-syne leading-10"> This option is ideal for businesses focused on mobile-first strategies or select the right tech stack,
+                  <p className="lg:!py-10 !py-5 lg:text-[20px] md:text-[18px] text-[16px] font-syne leading-10"> This option is ideal for businesses focused on mobile-first strategies or select the right tech stack
                     and develop high-performing mobile applications with user-centric design and seamless backend integrations.</p>
                 </div>
               </div>

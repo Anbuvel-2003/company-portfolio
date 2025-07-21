@@ -53,13 +53,13 @@ function Testing_Page() {
       id: 2,
       image: service2,
       q1: "A second pair of hands",
-      q2: "Extend your team's capabilities with Testvox's collaborative support.",
+      q2: "Extend your team's capabilities with Vineatz's collaborative support.",
     },
     {
       id: 3,
       image: service3,
       q1: "Expert opinion at your service",
-      q2: "Leverage Testvox's deep industry knowledge for insightful testing strategies.",
+      q2: "Leverage Vineatz's deep industry knowledge for insightful testing strategies.",
     },
   ];
   const logos = [
