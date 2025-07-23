@@ -292,7 +292,7 @@ function Footer_section() {
               <br className="!mb-2" /> Tamil Nadu-641004
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-medium capitalize">
-              p : 94881 60083
+              phone : 94881 60083
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-syne capitalize">
               info@vineatztechnologies.com
@@ -313,7 +313,7 @@ function Footer_section() {
               Krishnagiri-635001.
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-medium capitalize">
-              P : 94881 60083
+              Phone : 94881 60083
             </span>
             <span className="text-[#6e6e6e] text-[16px] font-syne capitalize">
               info@vineatz.com
@@ -384,7 +384,7 @@ function Footer_section() {
           <div className="lg:flex md:flex sm:flex flex items-center !gap-3">
             <div>
               <a
-                href="/"
+                href="/privacy"
                 className="text-[#6e6e6e] text-[14px] font-syne uppercase"
               >
                 Privacy Policy
@@ -395,7 +395,7 @@ function Footer_section() {
             </div>
             <div>
               <a
-                href="/"
+                href="/terms"
                 className="text-[#6e6e6e] text-[14px] font-syne uppercase"
               >
                 Terms & Conditions

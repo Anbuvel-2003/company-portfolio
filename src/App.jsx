@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Footer_section from "./component/footer";
+import Privacy from "./component/privacy";
+import Terms from "./component/terms";
 import NavBar from "./component/NavBar";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -129,6 +131,14 @@ function App() {
     {
       path: "/contactUs",
       element: <ContactUs />,
+    },
+    {
+      path: "/privacy",
+      element: <Privacy />,
+    },
+    {
+      path: "/terms",
+      element: <Terms />,
     },
   ]);
   return (
