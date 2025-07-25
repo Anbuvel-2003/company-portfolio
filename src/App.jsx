@@ -50,16 +50,25 @@ function App() {
       
     });
   }, []);
-  const [showTopBtn, setShowTopBtn] = useState(false);
+const [showTopBtn, setShowTopBtn] = useState(false);
+const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowTopBtn(window.scrollY > 300);
-    };
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (currentScrollY > 300 && currentScrollY > lastScrollY) {
+      setShowTopBtn(true); // Scrolling down
+    } else {
+      setShowTopBtn(false); // Scrolling up or not far enough
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
 
   const scrollToTop = () => {
     window.scrollTo({

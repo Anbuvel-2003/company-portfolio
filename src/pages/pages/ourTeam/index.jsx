@@ -12,8 +12,8 @@ function OurTeam() {
     {
       id: 0,
       url: Team6,
-      name: "Vineeth Sharma",
-      role: "Chief Executive Officer",
+      name: "Vineeth Sharma Murali",
+      role: "Founder & CEO",
       facebookurl: "",
       twitter: "",
       linkedin: "",
